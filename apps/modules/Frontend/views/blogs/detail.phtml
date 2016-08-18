@@ -1,0 +1,110 @@
+<?php echo $this->partial('partial/menu_top_desktop') ?>
+
+    <section id="hq-breadcrumb">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-head-gallery">tin tức & sự kiện</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-9" class="hq-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="hq-blog-single">
+                        <div class="hq-img-blog">
+                            <img width="100%" src="<?php echo $data->n_image_link ?>"
+                                 alt="<?php echo $data->n_name ?>">
+                        </div>
+                        <div class="hq-content-blog">
+                            <h2 class="hq-title-blog-single"><?php echo $data->n_name ?></h2>
+                            <div style="font-size: 14px;margin-bottom: 13px;" class="hq-meta-blog">
+                                <?php echo $data->showCreateDate() ?>
+                            </div>
+                            <div class="hq-line hq-mg-bot-30"></div>
+                            <div class="hq-detail-blog">
+                                <?php echo $data->n_description ?>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hq-line hq-mg-bot-30"></div>
+                    <div class="hq-share">
+                        <div class="as-share-social-list">
+                            <div class="as-list-icon-share-btn">
+                                <span>Share: </span>
+                                <script type="text/javascript"
+                                        src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-571ca9f3d29cb3c0"></script>
+                                <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                                <div class="addthis_sharing_toolbox"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hq-line hq-mg-bot-30"></div>
+                    <!--
+                                                        <div class="hq-next-prev-post">
+                                                                <div class="row">
+                                                                        <div class="col-md-6"><a href="#" class="hq-btn hq-prev-btn">Previous Post</a></div>
+                                                                        <div class="col-md-6"><a href="#" class="hq-btn hq-next-btn">Next Post</a></div>
+                                                                </div>
+                                                        </div>
+                    -->
+                    <div class="hq-cmt-fb">
+                        <div id="fb-root"></div>
+                        <script>(function (d, s, id) {
+                                var js, fjs = d.getElementsByTagName(s)[0];
+                                if (d.getElementById(id)) return;
+                                js = d.createElement(s);
+                                js.id = id;
+                                js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.6&appId=" + appFbId;
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }(document, 'script', 'facebook-jssdk'));</script>
+                        <div class="fb-comments"
+                             data-href="<?php echo $this->config['rootUrl'] . "blogs/detail/" . $data->n_seo_link; ?>"
+                             data-width="100%" data-numposts="5"></div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="hq-side-bar">
+                        <div class="hq-widget-wrapper">
+                            <div class="hq-title-widget">
+                                <h2>Related Posts</h2>
+                            </div>
+                            <div class="hq-relate-post-sidebar">
+                                <ul>
+                                    <?php if ($relatedPosts) {
+                                        foreach ($relatedPosts as $news) { ?>
+                                            <li>
+                                                <div class="hq-img">
+                                                    <a href="<?php echo $this->url->get("blogs/detail/") . $news->n_seo_link ?>">
+                                                        <img
+                                                            src="<?php echo $news->n_image_link ?>"
+                                                            alt="<?php echo $news->n_name ?>"></a>
+                                                </div>
+                                                <div class="hq-content">
+                                                    <h3>
+                                                        <a href="<?php echo $this->url->get("blogs/detail/") . $news->n_seo_link ?>"><?php echo $news->n_name ?></a>
+                                                    </h3>
+                                                    <div class="hq-meta-blog">
+                                                        <?php echo $news->showCreateDate() ?>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </li>
+                                        <?php }
+                                    } ?>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<?php echo $this->partial('partial/footer') ?>

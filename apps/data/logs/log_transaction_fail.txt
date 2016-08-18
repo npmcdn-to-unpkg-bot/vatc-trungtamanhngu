@@ -1,0 +1,57 @@
+===== 2016-05-29 11:15:44 ===== 
+ UserID: 11 
+ Email: asdasd890@yahoo.com 
+ ===== End ===== 
+ ===== 2016-05-29 11:17:04 ===== 
+ UserID: 11 
+ Email: asdasd890@yahoo.com 
+ ===== End ===== 
+ ===== 2016-05-29 11:59:47 ===== 
+ UserID: 11 
+ Email: asdasd890@yahoo.com 
+ Error: Số tiền giao dịch lớn hơn hoặc nhỏ hơn quy định 
+===== End ===== 
+ ===== 2016-05-29 12:00:06 ===== 
+ UserID: 11 
+ Email: asdasd890@yahoo.com 
+ Error: Số tiền giao dịch lớn hơn hoặc nhỏ hơn quy định 
+===== End ===== 
+ ===== 2016-05-29 12:01:21 ===== 
+ UserID: 11 
+ Email: asdasd890@yahoo.com 
+ Error: Số tiền giao dịch lớn hơn hoặc nhỏ hơn quy định 
+===== End ===== 
+ ===== 2016-05-29 12:01:34 ===== 
+ UserID: 11 
+ Email: asdasd890@yahoo.com 
+ Error: Số tiền giao dịch lớn hơn hoặc nhỏ hơn quy định 
+===== End ===== 
+ ===== 2016-05-29 16:31:01 ===== 
+ UserID: 11 
+ Email: asdasd890@yahoo.com 
+ Order ID: N111464532261 
+ Total: 2000 
+ Error: Số tiền giao dịch lớn hơn hoặc nhỏ hơn quy định 
+===== End ===== 
+ ===== 2016-05-29 16:31:22 ===== 
+ UserID: 11 
+ Email: asdasd890@yahoo.com 
+ Order ID: N111464532282 
+ Total: 2000 
+ Error: Số tiền giao dịch lớn hơn hoặc nhỏ hơn quy định 
+===== End ===== 
+ ===== 2016-05-29 16:32:11 ===== 
+ UserID: 11 
+ Email: asdasd890@yahoo.com 
+ Order ID: N111464532331 
+ Total: 5000 
+ Error: Số tiền giao dịch lớn hơn hoặc nhỏ hơn quy định 
+===== End ===== 
+ ===== 2016-05-29 16:32:19 ===== 
+ UserID: 11 
+ Email: asdasd890@yahoo.com 
+ Order ID: N111464532339 
+ Total: 10000 
+ Error: Số tiền giao dịch lớn hơn hoặc nhỏ hơn quy định 
+===== End ===== 
+ 

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- CSS -->
+        <?php $this->assets->collection('core-error-css')->addCss("http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900", false); ?>
+        <?php $this->assets->collection('core-error-css')->addCss("icons/icomoon/styles.css"); ?>
+        <?php $this->assets->collection('core-error-css')->addCss("css/lib/boostrap/bootstrap.min.css"); ?>
+        <?php $this->assets->collection('core-error-css')->addCss("css/main/admin/core.min.css"); ?>
+        <?php $this->assets->collection('core-error-css')->addCss("css/main/admin/components.min.css"); ?>
+        <?php $this->assets->collection('core-error-css')->addCss("css/main/admin/colors.min.css"); ?>
+        <?php $this->assets->outputCss('core-error-css'); ?>
+        <!-- CSS -->
+
+        <!-- Core JS files -->
+        <?php $this->assets->collection('core-error-js')->addJs("js/lib/plugins/loader/pace.min.js"); ?>
+        <?php $this->assets->collection('core-error-js')->addJs("js/lib/jquery.min.js"); ?>
+        <?php $this->assets->collection('core-error-js')->addJs("js/lib/bootstrap.min.js"); ?>
+        <?php $this->assets->collection('core-error-js')->addJs("js/lib/plugins/loader/blockui.min.js"); ?>
+        <?php $this->assets->collection('core-error-js')->addJs("js/main/admin/app.js"); ?>
+        <?php $this->assets->outputJs('core-error-js'); ?>
+        <!-- /core JS files -->
+
+    </head>
+
+    <body>
+
+        <!-- Page container -->
+        <div class="page-container login-container">
+
+            <!-- Page content -->
+            <div class="page-content">
+
+                <!-- Main content -->
+                <div class="content-wrapper">
+
+                    <!-- Content area -->
+                    <div class="content">
+
+                        <!-- Error wrapper -->
+                        <div class="container-fluid text-center">
+                            <?php echo $this->getContent(); ?>
+                        </div>
+                        <!-- /error wrapper -->
+
+                    </div>
+                    <!-- /content area -->
+
+                </div>
+                <!-- /main content -->
+
+            </div>
+            <!-- /page content -->
+
+        </div>
+        <!-- /page container -->
+
+    </body>
+</html>

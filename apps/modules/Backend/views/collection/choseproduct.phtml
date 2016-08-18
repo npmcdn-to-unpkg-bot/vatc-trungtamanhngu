@@ -1,0 +1,186 @@
+<?php if ($data) { ?>
+    <div class="form-group">
+        <label class="control-label col-sm-2">ID Product</label>
+        <div class="col-sm-10">
+            <input type="hidden" value="<?php echo isset($data) ? $data->pr_id : '' ?>"
+                   name="pr_id" class="form-control">
+            <input disabled type="text" value="<?php echo isset($data) ? $data->pr_public_id : '' ?>"
+                   name="pr_public_id" class="form-control">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2">Name</label>
+        <div class="col-sm-10">
+
+            <input disabled type="text" value="<?php echo isset($data) ? $data->pr_name : '' ?>"
+                   required="true" name="pr_name" class="form-control">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2">Image</label>
+        <div class="col-sm-10">
+            <div class="col-sm-10">
+                <input disabled name="ava_img_img" type="image" style="max-width: 200px;"
+                       src="<?php echo isset($image) ? $image->pa_image_link : '' ?>"
+                       alt="">
+            </div>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2">Quantity</label>
+        <div class="col-sm-10">
+
+            <input disabled required type="text" number="true"
+                   value="<?php echo isset($data) ? $data->pr_quantity : '' ?>"
+                   name="pr_quantity" class="form-control">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2">Price Promotion</label>
+        <div class="col-sm-10">
+
+            <input disabled type="text" number="true"
+                   value="<?php echo isset($data) ? $data->pr_price_promotion : '' ?>"
+                   name="pr_price_promotion" class="form-control">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2">Date Promotion From</label>
+        <div class="input-group">
+            <span class="input-group-addon"><i class="icon-calendar22"></i></span>
+            <input disabled name="pr_date_sale_from" class="form-control daterange-single"
+                   value="<?php echo isset($data) && !is_null($data->pr_date_sale_from) ? $data->pr_date_sale_from : date("Y-m-d", strtotime('-1 month', time())) ?>"
+                   type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2">Date Promotion To</label>
+        <div class="input-group">
+            <span class="input-group-addon"><i class="icon-calendar22"></i></span>
+            <input disabled name="pr_date_sale_to" class="form-control daterange-single"
+                   value="<?php echo isset($data) && !is_null($data->pr_date_sale_to) ? $data->pr_date_sale_to : date("Y-m-d", strtotime('-1 month', time())) ?>"
+                   type="text">
+        </div>
+    </div>
+    <?php
+    if ($category_option) {
+        foreach ($category_option as $op) {
+            ?>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2"><?php echo $op->po_name ?></label>
+                <div class="col-sm-10">
+
+                    <select disabled name="<?php echo $op->po_name ?>" multiple="multiple"
+                            data-placeholder="Enter tags" class="select-icons">
+                        <?php
+                        if ($op->ProductListOptionModel) {
+
+                            foreach ($op->ProductListOptionModel as $lis) {
+                                if (isset($data) && $data->ProductOptionDetailModel) {
+                                    ?>
+
+                                    <option <?php
+                                    foreach ($data->ProductOptionDetailModel as $ava) {
+                                        if ($ava->plo_id == $lis->plo_id) {
+                                            echo "selected";
+                                        }
+                                    }
+                                    ?> value="<?php echo $lis->plo_id ?>" <?php if ($lis->plo_detail) { ?> data-icon="<?php echo $lis->plo_detail ?>" <?php } ?> >
+                                        <?php echo $lis->plo_name ?>
+                                    </option>
+                                    <?php
+                                } else {
+                                    ?>
+                                    <option
+                                        value="<?php echo $lis->plo_id ?>" <?php if ($lis->plo_detail) { ?> data-icon="<?php echo $lis->plo_detail ?>" <?php } ?> >
+                                        <?php echo $lis->plo_name ?>
+                                    </option>
+                                    <?php
+                                }
+                            }
+                        }
+                        ?>
+                    </select>
+                </div>
+            </div>
+            <?php
+        }
+    }
+    ?>
+    <div class="form-group">
+        <label class="control-label col-sm-2">Weight(Kg)</label>
+        <div class="col-sm-10">
+
+            <input disabled type="text" number="true"
+                   value="<?php echo isset($data) ? $data->pr_weight : '' ?>"
+                   name="pr_weight" class="form-control">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2">Product Status</label>
+        <div class="col-sm-10">
+            <div class="checkbox checkbox-switch">
+                <label>
+                    <input disabled name="product_status" type="checkbox" data-on-color="success"
+                           data-off-color="danger" data-on-text="Còn" data-off-text="Hết"
+                           class="switch" checked="true">
+                    Còn Hàng/Hết Hàng
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2">Status</label>
+        <div class="col-sm-10">
+            <div class="checkbox checkbox-switch">
+                <label>
+                    <input disabled name="pr_status" type="checkbox" data-on-color="success"
+                           data-off-color="warning" data-on-text="Show" data-off-text="Hide"
+                           class="switch" checked="true">
+                    Show/hide
+                </label>
+            </div>
+        </div>
+    </div>
+
+<?php } ?>
+<script type="text/javascript">
+
+    var price = 0;
+    $(document).ready(function () {
+        $(".jui-tabs-basic").tabs();
+        <?php if (isset($data->product_status) && $data->product_status == 0 && isset($data)) { ?>
+        $('input[name="product_status"]').bootstrapSwitch('state', false);
+        <?php } else { ?>
+        $('input[name="product_status"]').bootstrapSwitch('state', true);
+        <?php } ?>
+        <?php if (isset($data->pr_status) && $data->pr_status == 0 && isset($data)) { ?>
+        $('input[name="pr_status"]').bootstrapSwitch('state', false);
+        <?php } else { ?>
+        $('input[name="pr_status"]').bootstrapSwitch('state', true);
+        <?php } ?>
+
+        $('.daterange-basic').daterangepicker({
+            applyClass: 'bg-slate-600',
+            cancelClass: 'btn-default',
+            defaultDate:' asasdasdasd',
+            setDate:'saa'
+        });
+        if ($(".select-search").length) {
+            $('.select-search').select2();
+        }
+        if ($(".select-icons").length) {
+            $(".select-icons").select2({
+                templateResult: iconFormat,
+                minimumResultsForSearch: Infinity,
+                templateSelection: iconFormat,
+                escapeMarkup: function (m) {
+                    return m;
+                }
+            });
+        }
+    });
+
+</script>

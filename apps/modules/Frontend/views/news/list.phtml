@@ -1,0 +1,58 @@
+<div  class="wrapper">
+    <div class="blog-list-area">
+        <?php echo $this->partial('news/_menu_news') ?>
+
+        <div class="main-blog-list">
+            <?php
+            if ($listNews) {
+                foreach ($listNews->items as $val) {
+                    ?>
+                    <div class="blog-list-box">
+                        <a href="<?php echo $this->url->get() . $val->showSeoLink(); ?>">
+                            <img src="<?php echo isset($val) ? $val->n_image_link : '' ?>" alt="">
+                            <h1><?php echo isset($val) ? $val->n_name : '' ?></h1>
+                        </a>
+                        <div class="time-coment-share">
+                            <ul>
+                                <li>
+                                    <i class="fa fa-clock-o " aria-hidden="true"></i>
+                                    <?php echo isset($val) ? $val->showCreateDate() : '' ?>
+                                </li>
+                                <li>
+                                    <div id="fb-root"></div>
+                                    <script>(function (d, s, id) {
+                                            var js, fjs = d.getElementsByTagName(s)[0];
+                                            if (d.getElementById(id)) return;
+                                            js = d.createElement(s);
+                                            js.id = id;
+                                            js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.6&appId=1388971278034665";
+                                            fjs.parentNode.insertBefore(js, fjs);
+                                        }(document, 'script', 'facebook-jssdk'));</script>
+                                    <div class="fb-like"
+                                         data-href="<?php echo $this->url->get("news/detail/") . $val->n_seo_link ?>"
+                                         data-layout="button_count" data-action="like" data-show-faces="true"
+                                         data-share="true"></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <p>
+                            <?php echo isset($val) ? $val->n_short_description : '' ?>
+                        </p>
+                        <a href="<?php echo $this->url->get() . $val->showSeoLink(); ?>" class="btn-bl-readmore">READ MORE</a>
+                    </div>
+                    <?php
+                }
+            }
+            ?>
+            <?php echo "You are in page ", $listNews->current, " of ", $listNews->total_pages; ?>
+            <div class="pagination-area">
+                <a class="pg-previous " href="<?php echo $this->url->get() . "news/list?page=" . $listNews->before ?>" >Trước</a>
+                <?php for ($i = 1; $i <= $listNews->total_pages; $i++) { ?>
+                    <a class="btn-pagination <?php if($listNews->current==$i){ echo " pagination-active "; } ?> " href="<?php echo $this->url->get() . "news/list?page=" . $i ?>"><?php echo $i; ?></a>
+                <?php } ?>
+                <a class="pg-next" href="<?php echo $this->url->get() . "news/list?page=" . $listNews->next ?>" >Sau</a>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>

@@ -1,0 +1,248 @@
+<style>
+    @media screen {
+        #printSection {
+            display: none;
+            width: 1000px;
+        }
+    }
+
+    @media print {
+        body * {
+            visibility: hidden;
+        }
+
+        #printSection, #printSection * {
+            visibility: visible;
+        }
+
+        #printSection {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+
+
+</style>
+<!-- Main content -->
+<div class="content-wrapper">
+
+    <!-- Page header -->
+    <div class="page-header">
+        <div class="page-header-content">
+            <div class="page-title">
+                <h4><i class="icon-arrow-left52 position-left"></i> <span
+                        class="text-semibold"><?php echo $header_title; ?></span></h4>
+            </div>
+        </div>
+
+        <div class="breadcrumb-line">
+            <ul class="breadcrumb">
+                <li><a href="<?php echo $urlModule; ?>"><i class="icon-home2 position-left"></i> Home</a></li>
+                <li class="active"><?php echo $header_title; ?></li>
+            </ul>
+
+        </div>
+    </div>
+    <!-- /page header -->
+
+
+    <!-- Content area -->
+    <div class="content">
+        <div class="panel panel-white ">
+            <div class="panel-heading">
+                <h6 class="panel-title"><?php echo $header_title; ?></h6>
+                <div class="heading-elements">
+                    <a href="<?php echo $this->url->get("backend/order/print?id=") . $data->or_id ?>" target="_blank"
+                       class="btn btn-default btn-xs heading-btn "><i class="icon-printer position-left"></i> Print</a>
+                </div>
+            </div>
+            <div class="panel-body no-padding-bottom">
+                <div class="row">
+                    <div class="col-md-6 content-group">
+                        <img
+                            src="<?php echo $this->config['rootUrl'] . "public/BackendMD/" ?>assets/images/logo_demo.png"
+                            class="content-group mt-10" alt="" style="width: 120px;">
+                        <ul class="list-condensed list-unstyled">
+                            <li>Địa chỉ cửa hàng</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6 content-group">
+                        <div class="invoice-details">
+                            <h5 class="text-uppercase text-semibold">Invoice# <?php echo $data->or_public_id ?></h5>
+                            <ul class="list-condensed list-unstyled">
+                                <li>Ngày: <span
+                                        class="text-semibold"><?php echo date("d/m/Y", strtotime($data->or_create_date)) ?></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 col-lg-9 content-group">
+                        <span class="text-muted">Địa Chỉ Giao Hàng:</span>
+                        <ul class="list-condensed list-unstyled">
+                            <li><h5><?php echo $data->or_name ?></h5></li>
+                            <li><span class="text-semibold">Địa chỉ: <?php echo $data->or_address ?></span></li>
+                            <li><?php echo $data->ZoneDistrictModel->zd_name ?></li>
+                            <li><?php echo $data->ZoneProvinceModel->zp_name ?></li>
+                            <li>SĐT : <?php echo $data->or_phone ?></li>
+                            <li><a href="javascript:;"><?php echo $data->or_email ?></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 content-group">
+                        <span class="text-muted">Thông Tin Khách Hàng:</span>
+                        <ul class="list-condensed list-unstyled invoice-payment-details">
+                            <li><h5>ID: <?php echo $data->UserModel->us_id ?></h5></li>
+                            <li><h5><?php echo $data->UserModel->us_full_name ?></h5></li>
+                            <li><?php echo $data->UserModel->us_phone ?></li>
+                            <li><a href="javascript:;"><?php echo $data->UserModel->us_email ?></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-lg">
+                    <thead>
+                    <tr>
+                        <th class="col-sm-1">STT</th>
+                        <th>Sản Phẩm</th>
+                        <th>Màu</th>
+                        <th>Size</th>
+                        <th class="col-sm-1">Số Lượng</th>
+                        <th class="col-sm-2">Đơn Giá</th>
+                        <th class="col-sm-2">Total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <?php
+                    $i = 1;
+                    foreach ($data->OrderDetailModel as $detail) {
+                        ?>
+                        <tr>
+                            <td><?php echo $i++; ?></td>
+                            <td>
+                                <h6 class="no-margin"><?php echo $detail->ProductModel->pr_name ?></h6>
+                            </td>
+                            <td><?php echo isset($detail->ColorModel) ? $detail->ColorModel->plo_name : '' ?></td>
+                            <td><?php echo isset($detail->SizeModel) ? $detail->SizeModel->plo_name : '' ?></td>
+                            <td><?php echo $detail->od_quantity ?></td>
+                            <td><?php echo number_format($detail->od_price) . " VNĐ" ?></td>
+                            <td><span
+                                    class="text-semibold"><?php echo number_format($detail->od_total_price) . " VNĐ" ?></span>
+                            </td>
+                        </tr>
+                    <?php } ?>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="panel-body">
+                <div class="row invoice-payment">
+                    <div class="col-sm-7">
+
+                    </div>
+
+                    <div class="col-sm-5">
+                        <div class="content-group">
+                            <h6>Total due</h6>
+                            <div class="table-responsive no-border">
+                                <table class="table">
+                                    <tbody>
+                                    <tr>
+                                        <th>Thành Tiền:</th>
+                                        <td class="text-right"><?php echo $data->setPrice($data->or_total - $data->or_discount - $data->or_fee_drive); ?></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Discount:</th>
+                                        <td class="text-right"><?php echo $data->setPrice($data->or_discount); ?></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Phí Giao Hàng:</th>
+                                        <td class="text-right"><?php echo $data->setPrice($data->or_fee_drive); ?></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Tổng Tiền:</th>
+                                        <td class="text-right text-primary"><h5
+                                                class="text-semibold"><?php echo $data->showPrice() ?></h5></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-white">
+        <div class="panel-heading">
+            <h6 class="panel-title">Add Order History</h6>
+
+        </div>
+
+        <div class="panel-body no-padding-bottom">
+            <form class="status-form" onsubmit="return false;" method="post">
+                <div class="panel panel-flat">
+                    <div class="panel-body">
+                        <div class="col-md-3">
+                            <span class="text-semibold">Trạng Thái :</span>
+                        </div>
+                        <div class="col-md-7">
+                            <input type="hidden" name="or_id" value="<?php echo $data->or_id ?>">
+                            <input type="hidden" name="usa_id" value="<?php echo $user['usa_id'] ?>">
+                            <select name="os_id" class="select-search ">
+                                <option value="-1">Chose</option>
+                                <?php
+                                if (isset($category_status)) {
+                                    foreach ($category_status as $val) {
+                                        ?>
+                                        <option value="<?php echo $val->os_id ?>"><?php echo $val->os_name ?></option>
+                                        <?php
+                                    }
+                                }
+                                ?>
+                            </select>
+                        </div>
+                        <div class="col-md-2">
+                            <button type="submit" class="btn btn-primary btn-add-historyorder">Add<i
+                                    class=" icon-add position-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <table class="table table-lg">
+                <thead>
+                <tr>
+                    <th>Admin</th>
+                    <th>Ngày Nhập</th>
+                    <th>Trạng Thái</th>
+                </tr>
+                </thead>
+                <tbody>
+                <?php
+                foreach ($order_history as $detail) {
+                    ?>
+                    <tr>
+                        <td><?php echo $detail->UserAdminModel->usa_username ?></td>
+                        <td><?php echo date("d-m-Y H:i:s", strtotime($detail->oh_time)) ?></td>
+                        <td><span class="text-semibold"><?php echo $detail->OrderStatusModel->os_name ?></span></td>
+                    </tr>
+                <?php } ?>
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+    <!-- /content area -->
+
+</div>
+<!-- /main content -->

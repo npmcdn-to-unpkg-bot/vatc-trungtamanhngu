@@ -1,0 +1,47 @@
+<table class="table table-bordered table-hover datatable-highlight">
+    <thead>
+    <tr class="success">
+        <th>ID</th>
+        <th>Order ID</th>
+        <th>Customer</th>
+        <th>Email Customer</th>
+        <th>Total</th>
+        <th>Payment Type</th>
+        <th>Date Added</th>
+        <th>Order Status</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <?php if ($data) { ?>
+        <?php foreach ($data as $key => $val) { ?>
+            <tr>
+                <td><?php echo $val->or_id ?></td>
+                <td><?php echo $val->or_public_id ?></td>
+                <td><?php echo $val->or_name ?></td>
+                <td><?php echo $val->or_email ?></td>
+                <td><?php echo number_format($val->or_total) . " VNĐ" ?></td>
+                <td><?php echo $val->or_payment_type ?></td>
+                <td><?php echo $val->or_create_date ?></td>
+                <td><?php echo $val->OrderStatusModel->os_name ?></td>
+                <td>
+                    <a href="<?php echo $this->url->get("backend/order/order-detail?id=") . $val->or_id ?>"
+                       class="btn btn-success btn-icon"><i class="icon-eye"></i></a>
+
+                    <button onclick="showPopup(<?php echo $val->or_id ?>)" data-original-title="Edit"
+                            data-toggle="modal" data-target="#modal_form_horizontal"
+                            data-popup="tooltip"
+                            type="button" class="btn btn-info btn-icon btn-edit-content">
+                        <i class="icon-pencil7"></i>
+                    </button>
+
+
+                </td>
+            </tr>
+            <?php
+        }
+    }
+    ?>
+
+    </tbody>
+</table>

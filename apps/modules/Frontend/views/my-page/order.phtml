@@ -1,0 +1,108 @@
+<?php echo $this->partial('my-page/menu') ?>
+<div class="container me-body-container">
+    <div class="row">
+        <div class="col-xs-60">
+            <div class="row">
+                <div class="col-xs-60">
+                    <div class="grid-col-container" id="appeal-alert">
+                        <h3 class="page-title">Orders</h3>
+                    </div>
+                    <div class="grid-col-container">
+                        <div class="me-ui-box">
+
+                            <form method="post" action="<?php echo $this->url->get("my-page/order") ?>">
+
+                                <div class="order-list-search">
+                                    <div id="simple-search">
+                                        <label class="first-label row-mobile">
+                                            <span>Order number: </span>
+                                            <input value="" id="order-no" maxlength="20" name="or_public_id">
+                                        </label>
+
+                                        <label class="row-mobile">
+                                            <span>Product: </span>
+                                            <select name="os_id" class="selectbox">
+                                                <option value="-1">Chose</option>
+                                                <?php foreach ($order_status as $val) { ?>
+                                                    <option
+                                                        value="<?php echo $val->os_id ?>"><?php echo $val->os_name ?></option>
+                                                <?php } ?>
+                                            </select>
+                                        </label>
+                                        <label class="row-mobile">
+                                            <label class="first-label">
+                                                <span>Thời gian đặt hàng: </span>
+                                                <input name="date_from" class="input-contact-form datapicker "
+                                                       type="text">
+
+                                            </label>
+                                        </label>
+                                        <label class="row-mobile">
+                                            <input name="date_to" class="input-contact-form datapicker "
+                                                   type="text">
+                                        </label>
+                                        <button id="search-btn" class="ui-button ui-button-primary search-btn"
+                                                type="submit">Search
+                                        </button>
+
+                                    </div>
+
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+                    <div class="grid-col-container">
+                        <div class="me-ui-box">
+                            <table id="buyer-ordertable" class="util-clearfix">
+                                <thead>
+                                <tr class="product-table-title">
+                                    <th class="product-name" colspan="2" style="padding-left:10px;">
+                                        Mã Đơn Hàng
+                                    </th>
+                                    <th class="product-action">Tổng Tiền</th>
+                                    <th class="order-status">Thời Gian</th>
+                                    <th class="order-action">Trạng Thái</th>
+                                </tr>
+                                </thead>
+
+                                <tbody>
+                                <?php if (count($order) > 0) {
+                                    foreach ($order as $or) { ?>
+                                        <tr class="order-body">
+                                            <td class="product-name" colspan="2" style="padding-left:10px;">
+                                                <?php echo $or->or_public_id ?>
+                                            </td>
+                                            <td class="product-action" style="font-weight: bold">
+                                                <?php echo $or->showPrice() ?>
+                                            </td>
+                                            <td class="order-status">
+                                                <?php echo $or->showCreateDate() ?>
+                                            </td>
+                                            <td class="order-action">
+                                                <?php echo $or->OrderStatusModel->os_name ?>
+                                            </td>
+                                        </tr>
+                                    <?php }
+                                } else { ?>
+                                    <td colspan="9" class="zero-result">Your search didn't match any listings.</td>
+                                <?php } ?>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+    $(function () {
+        $(".datapicker").datepicker();
+    });
+</script>

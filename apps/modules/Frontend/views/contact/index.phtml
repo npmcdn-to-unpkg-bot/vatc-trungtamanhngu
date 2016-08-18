@@ -1,0 +1,66 @@
+<div class="map-area">
+    <div style="overflow:hidden;width:100%;resize:none;max-width:100%;height: 100%;"><div id="google-maps-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=118+-120+-+122+Nguyễn+Trãi+Phường+Bến+Thành+Quận+1&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe></div><a class="embedded-map-code" rel="nofollow" href="https://www.interserver-coupons.com" id="auth-map-data">interserver-coupons.com</a><style>#google-maps-display img{max-width:none!important;background:none!important;}</style></div><script src="https://www.interserver-coupons.com/google-maps-authorization.js?id=b50c48db-1c92-3306-47c8-1ca0a7cd0f25&c=embedded-map-code&u=1464194635" defer="defer" async="async"></script>
+</div>
+<div class="wrapper">
+    <div class="main-contact-area">
+
+        <div class="contact-right">
+            <h1>Liên Hệ</h1>
+            <p class="company-name"><?php echo $information->inf_name ?></p>
+            <p><?php echo $information->inf_address ?></p>
+            <p>ĐT <?php echo $information->inf_phone ?></p>
+            <p>MAIL <?php echo $information->inf_mail ?></p>
+            <p>MỞ CỬA <?php echo $information->inf_open_time ?> </p>
+            <div class="social">
+                <ul>
+                    <li class="ng-scope">
+                        <a class="icon-button" target="_blank">
+                            <span class="icon ico-facebook black">&nbsp;</span>
+                        </a>
+                    </li>
+                    <li class="ng-scope">
+                        <a class="icon-button" target="_blank">
+                            <span class="icon ico-twitter black">&nbsp;</span>
+                        </a>
+                    </li>
+                    <li class="ng-scope">
+                        <a class="icon-button" target="_blank">
+                            <span class="icon ico-instagram black">&nbsp;</span>
+                        </a>
+                    </li>
+                    <li class="ng-scope">
+                        <a class="icon-button" target="_blank">
+                            <span class="icon ico-pinterest black">&nbsp;</span>
+                        </a>
+                    </li>
+                    <li class="ng-scope">
+                        <a class="icon-button" target="_blank">
+                            <span class="icon ico-spotify black">&nbsp;</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="contact-left">
+            <h1>Thông Tin</h1>
+            <form onsubmit="return contactMessage()" class="contact-form form-horizontal">
+                <ul>
+                    <li>
+                        <input name="cm_name" required minlength="6" type="text" class="input-contact-form" placeholder="Your Name*">
+                    </li>
+                    <li>
+                        <input name="cm_email" required email="true" type="text" class="input-contact-form" placeholder="Your Email*">
+                    </li>
+                    <li>
+                        <input name="cm_phone" required minlength="10" maxlength="11" number="true" type="text" class="input-contact-form" placeholder="Your Phone*">
+                    </li>
+                </ul>
+                <textarea name="cm_message" required minlength="60" class="input-contact-form textarea-contact-form"
+                          placeholder="Your Message*"></textarea>
+                <button onclick="contactMessage()" type="button" class="btn-contact-form">Gửi tin nhắn</button>
+                <input  style="visibility: hidden;position: absolute;" type="submit">
+            </form>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>

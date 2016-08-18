@@ -1,0 +1,47 @@
+<div class="m-filter-area">
+    <div id="accordian">
+        <ul>
+            <li class="">
+                <h3 style="text-transform: uppercase;"><?php echo isset($textList) ? $textList : 'TIN TỨC'; ?></h3>
+                <ul style="display: none;">
+                    <li>
+                        <a class="m-select-filter m-menu-blog"
+                           href="<?php echo $this->url->get() . "news/list/" ?>">Tất Cả</a>
+                    </li>
+                    <?php
+                    if (count($category_news) > 0) {
+                        foreach ($category_news as $ct_news) {
+                            ?>
+                            <li>
+                                <a class="m-select-filter m-menu-blog"
+                                   href="<?php echo $this->url->get() . "news/list/" . $ct_news->nc_id ?>"><?php echo $ct_news->nc_name ?></a>
+                            </li>
+                            <?php
+                        }
+                    }
+                    ?>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="menu-blog-list">
+    <ul>
+        <li>
+            <a <?php echo !isset($categoryNewsID) ? 'style="font-weight: bold;text-decoration: underline" ' : '' ?>
+                href="<?php echo $this->url->get() . "news/list" ?>">Tổng Hợp</a>
+        </li>
+        <?php
+        if (count($category_news) > 0) {
+            foreach ($category_news as $ct_news) {
+                ?>
+                <li>
+                    <a <?php echo isset($categoryNewsID) && $categoryNewsID == $ct_news->nc_id ? 'style="font-weight: bold;text-decoration: underline" ' : '' ?>
+                        href="<?php echo $this->url->get() . "news/list/" . $ct_news->nc_id ?>"><?php echo $ct_news->nc_name ?></a>
+                </li>
+                <?php
+            }
+        }
+        ?>
+    </ul>
+</div>

@@ -1,0 +1,122 @@
+<style>
+    .error {
+        color: red;
+    }
+</style>
+<!-- Horizontal form modal -->
+<div id="modal_form_horizontal" class="modal fade">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h5 class="modal-title"><?php echo $header_title; ?></h5>
+            </div>
+
+            <form enctype="multipart/form-data" method="post" onsubmit="return false;" class="form-horizontal ">
+                <div class="modal-body">
+                    <input type="hidden" name="us_id" class="form-control">
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">Full Name</label>
+                        <div class="col-sm-9">
+                            <input type="text" name="us_full_name" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">User Name</label>
+                        <div class="col-sm-9">
+                            <input type="text" minlength="5" required="true" name="us_name" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">Email</label>
+                        <div class="col-sm-9">
+                            <input type="text" email="true" required="true" name="us_email" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">Password</label>
+                        <div class="col-sm-9">
+                            <input type="password" minlength="6" name="us_password" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">Phone</label>
+                        <div class="col-sm-9">
+                            <input type="text" minlength="10" maxlength="11" number="true" name="us_phone"
+                                   class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">Address</label>
+                        <div class="col-sm-9">
+                            <textarea style="width: 500px; height: 110px;" rows="5" cols="5" class="form-control"
+                                      name="us_address"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">BirthDay</label>
+                        <div class="col-sm-9">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="icon-calendar3"></i></span>
+                                <input type="text" name="us_birthday" class="form-control anytime-month-numeric"
+                                       id="anytime-month-numeric">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2">Newsletter</label>
+                        <div class="col-sm-10">
+                            <div class="checkbox checkbox-switch">
+                                <label>
+                                    <input name="us_newsletter" type="checkbox" data-on-color="success"
+                                           data-off-color="danger" data-on-text="Yes" data-off-text="No" class="switch"
+                                           checked="true">
+                                    Yes/No
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2">Status</label>
+                        <div class="col-sm-10">
+                            <div class="checkbox checkbox-switch">
+                                <label>
+                                    <input name="us_status" type="checkbox" data-on-color="success"
+                                           data-off-color="warning" data-on-text="Show" data-off-text="Hide"
+                                           class="switch" checked="true">
+                                    Show/hide
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary btn-submit-content">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<p id="demo"></p>
+<!-- /horizontal form modal -->
+<script type="text/javascript">
+    var columns = {
+        'us_id': 'inputtext',
+        'us_name': 'inputtext',
+        'us_email': 'inputtext',
+        'us_password': 'inputtext',
+        'us_full_name': 'inputtext',
+        'us_phone': 'inputtext',
+        'us_address': 'textarea',
+        'us_birthday': 'inputtext',
+        'us_newsletter': 'checkbox-switch',
+        'us_status': 'checkbox-switch'
+    };
+
+
+</script>

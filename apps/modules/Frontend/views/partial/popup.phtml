@@ -1,0 +1,330 @@
+<div class="modal fade" id="popupLogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+
+        <div class="modal-content popup-main">
+            <a href="javascript:;" class="btn-close-popup" data-dismiss="modal" aria-label="Close">
+                <img src="<?php echo $this->url->get("public/FrontendCore/") ?>images/icon-close.png" alt="">
+            </a>
+            <div class="modal-header">
+
+                <h4 class="modal-title"><img src="<?php echo $this->url->get("public/FrontendCore/") ?>images/logo.png"
+                                             alt=""></h4>
+            </div>
+            <div class="modal-body">
+                <form onsubmit="loginUser(); return false; " id="login-form" name="login-form" class="form-horizontal">
+                    <div class="content-popup">
+                        <label class="error" for="message_error"></label>
+                        <label class="error" for="us_name"></label>
+                        <div class="input-group input-group-lg">
+                            <input name="us_name" required minlength="6" class="form-control input-popup"
+                                   placeholder="Tài Khoản Hoặc Email"
+                                   aria-describedby="sizing-addon1">
+                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+
+                        </div>
+                    </div>
+                    <div class="content-popup">
+                        <label class="error" for="us_password"></label>
+                        <div class="input-group input-group-lg">
+                            <input name="us_password" required minlength="6" type="password"
+                                   class="form-control input-popup" placeholder="Mật Khẩu"
+                                   aria-describedby="sizing-addon1">
+                            <span class="input-group-addon"><i class="fa fa-unlock-alt"></i></span>
+
+                        </div>
+                    </div>
+                    <div class="content-group">
+                        <ul class="list-inline social-buttons-login">
+                            <li>
+                                Đăng nhập bằng :
+                            </li>
+                            <li><a onclick="facebookLogin();" href="javascript:;">
+                                    <img src="<?php echo $this->url->get("public/FrontendCore/") ?>images/icon-fb.png"
+                                         alt="">
+                                </a>
+                            </li>
+                            <li><a onclick="googleLogin();" href="javascript:;">
+                                    <img src="<?php echo $this->url->get("public/FrontendCore/") ?>images/icon-gg.png"
+                                         alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-5 ">
+                            <input name="event_submit_do_login" value="submit" type="hidden">
+                            <a onclick="loginUser()" href="javascript:;" class="btn-login-submit">Đăng Nhập</a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6 ">
+                            <a data-dismiss="modal" data-toggle="modal" data-target="#popupForgotPass"
+                               href="javascript:;"
+                               class="btn-forgot-pass">Quên mật khẩu ? </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                Bạn chưa có tài khoản ? <a data-dismiss="modal" data-toggle="modal" data-target="#popupRegister"
+                                           href="javascript:;">Đăng Ký ngay !</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="popupRegister" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+
+        <div class="modal-content popup-main">
+            <a href="javascript:;" class="btn-close-popup" data-dismiss="modal" aria-label="Close">
+                <img src="<?php echo $this->url->get("public/FrontendCore/") ?>images/icon-close.png" alt="">
+            </a>
+            <div class="modal-header">
+
+                <h4 class="modal-title"><img src="<?php echo $this->url->get("public/FrontendCore/") ?>images/logo.png"
+                                             alt=""></h4>
+            </div>
+            <div class="modal-body">
+                <form onsubmit=" registerUser(); return false; " class="register-form" id="join-form">
+                    <div class="content-popup">
+                        <label class="error" for="message_error"></label>
+                        <label class="error" for="us_name"></label>
+                        <div class="input-group input-group-lg">
+                            <input name="us_name" required minlength="6" class="form-control input-popup"
+                                   placeholder="Tài Khoản "
+                                   aria-describedby="sizing-addon1">
+
+                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+
+                        </div>
+                    </div>
+                    <div class="content-popup">
+                        <label class="error" for="us_email"></label>
+                        <div class="input-group input-group-lg">
+                            <input name="us_email" required email="true" class="form-control input-popup"
+                                   placeholder="Email"
+                                   aria-describedby="sizing-addon1">
+
+                            <span class="input-group-addon"><i class="fa fa-envelope-o"></i></span>
+
+                        </div>
+                    </div>
+                    <div class="content-popup">
+                        <label class="error" for="us_password"></label>
+                        <div class="input-group input-group-lg">
+                            <input required minlength="6" name="us_password" type="password"
+                                   class="form-control input-popup" placeholder="Mật Khẩu"
+                                   aria-describedby="sizing-addon1">
+
+                            <span class="input-group-addon"><i class="fa fa-unlock-alt"></i></span>
+
+                        </div>
+                    </div>
+                    <div class="content-popup">
+                        <label class="error" for="us_confirm_password"></label>
+                        <div class="input-group input-group-lg">
+                            <input required minlength="6" name="us_confirm_password" type="password"
+                                   class="form-control input-popup" placeholder="Nhập Lại Mật Khẩu"
+                                   aria-describedby="sizing-addon1">
+
+                            <span class="input-group-addon"><i class="fa fa-unlock-alt"></i></span>
+
+                        </div>
+                    </div>
+                    <p>Tôi đồng ý với chính sách & điều khoản của VATC</p>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-5 ">
+                            <input name="event_submit_do_login" value="submit" type="hidden">
+                            <a onclick="registerUser();" href="javascript:;" class="btn-login-submit">Đăng Ký</a>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <ul class="list-inline social-buttons">
+                                <li><a onclick="facebookLogin();" href="javascript:;">
+                                        <img
+                                            src="<?php echo $this->url->get("public/FrontendCore/") ?>images/icon-fb.png"
+                                            alt="">
+                                    </a>
+                                </li>
+                                <li><a onclick="googleLogin();" href="javascript:;">
+                                        <img
+                                            src="<?php echo $this->url->get("public/FrontendCore/") ?>images/icon-gg.png"
+                                            alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="popupForgotPass" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+
+        <div class="modal-content popup-main">
+            <a href="javascript:;" class="btn-close-popup" data-dismiss="modal" aria-label="Close">
+                <img src="<?php echo $this->url->get("public/FrontendCore/") ?>images/icon-close.png" alt="">
+            </a>
+            <div class="modal-header">
+
+                <h4 class="modal-title"><img src="<?php echo $this->url->get("public/FrontendCore/") ?>images/logo.png"
+                                             alt=""></h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" id="forgot-form" onsubmit="forgotPasswordUser(); return false; ">
+                    <label class="error" for="message_error"></label>
+                    <div class="content-popup">
+                        <label class="error" for="us_email"></label>
+                        <div class="input-group input-group-lg">
+                            <input required email="true" name="us_email" class="form-control input-popup"
+                                   placeholder="Email"
+                                   aria-describedby="sizing-addon1">
+                            <span class="input-group-addon"><i class="fa fa-envelope-o"></i></span>
+                        </div>
+                    </div>
+
+                    <p>* Kiểm tra Email để lấy lại mật khẩu</p>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input value="submit" type="hidden">
+                            <a onclick="forgotPasswordUser();" href="javascript:;" class="btn-login-submit">Lấy Lại Mật
+                                Khẩu</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                Bạn chưa có tài khoản ? <a data-dismiss="modal" data-toggle="modal" data-target="#popupRegister"
+                                           href="javascript:;">Đăng Ký ngay !</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="popupChangePass" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+
+        <div class="modal-content popup-main">
+            <a href="javascript:;" class="btn-close-popup" data-dismiss="modal" aria-label="Close">
+                <img src="<?php echo $this->url->get("public/FrontendCore/") ?>images/icon-close.png" alt="">
+            </a>
+            <div class="modal-header">
+
+                <h4 class="modal-title"><img src="<?php echo $this->url->get("public/FrontendCore/") ?>images/logo.png"
+                                             alt=""></h4>
+            </div>
+            <div class="modal-body">
+                <form id="changePassForm" onsubmit="return myPage('userInfo','changePassForm');return false;">
+                    <label class="error" for="message_error"></label>
+                    <div class="content-popup">
+                        <label class="error" for="current_password"></label>
+                        <div class="input-group input-group-lg">
+                            <input required minlength="6" name="current_password" type="password"
+                                   class="form-control input-popup" placeholder="Mật Khẩu Hiện Tại"
+                                   aria-describedby="sizing-addon1">
+                            <span class="input-group-addon"><i class="fa fa-unlock-alt"></i></span>
+                        </div>
+                    </div>
+                    <div class="content-popup">
+                        <label class="error" for="us_password"></label>
+                        <div class="input-group input-group-lg">
+                            <input required minlength="6" name="us_password" type="password"
+                                   class="form-control input-popup" placeholder="Mật Khẩu Mới"
+                                   aria-describedby="sizing-addon1">
+                            <span class="input-group-addon"><i class="fa fa-unlock-alt"></i></span>
+                        </div>
+                    </div>
+                    <div class="content-popup">
+                        <div class="input-group input-group-lg">
+                            <label class="error" for="us_confirm_password"></label>
+                            <input required minlength="6" name="us_confirm_password" type="password"
+                                   class="form-control input-popup" placeholder="Nhập Lại Mật Khẩu Mới"
+                                   aria-describedby="sizing-addon1">
+                            <span class="input-group-addon"><i class="fa fa-unlock-alt"></i></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-5 ">
+                            <a onclick="myPage('userInfo','changePassForm');" href="javascript:;"
+                               class="btn-login-submit">Lưu Mật Khẩu</a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6 ">
+                            <a data-dismiss="modal" data-toggle="modal" data-target="#popupForgotPass"
+                               href="javascript:;"
+                               class="btn-forgot-pass">Quên mật khẩu ? </a>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                Bạn chưa có tài khoản ? <a data-dismiss="modal" data-toggle="modal" data-target="#popupRegister"
+                                           href="javascript:;">Đăng Ký ngay !</a>
+            </div>
+        </div>
+    </div>
+</div>
+<?php if (isset($coachs)) {
+    foreach ($coachs as $coach) { ?>
+        <div class="modal fade popupInfoHlv" id="popupInfoHlv-<?php echo $coach->hlv_id ?>" tabindex="-1" role="dialog"
+             aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+
+                <div class="modal-content popup-main">
+                    <a href="javascript:;" class="btn-close-popup" data-dismiss="modal" aria-label="Close">
+                        <img src="<?php echo $this->url->get("public/FrontendCore/") ?>images/icon-close.png" alt="">
+                    </a>
+                    <div
+                        style="background: url('<?php echo $coach->hlv_image_link ?>') no-repeat top center"
+                        class="left-popup-area">
+                    </div>
+                    <div class="right-popup-area">
+                        <p><span class="text-hlv-popup">Huấn luyện viên :</span> <?php echo $coach->hlv_name ?></p>
+                        <p><span class="text-hlv-popup">Tuổi :</span> <?php echo $coach->hlv_age ?></p>
+                        <p><span class="text-hlv-popup">Giới Tính :</span> <?php echo $coach->showGender() ?></p>
+                        <p><span class="text-hlv-popup">Kinh Nghiệm :</span> <?php echo $coach->hlv_experience ?></p>
+                        <div class="hlv-popup-description">
+                            <?php echo nl2br($coach->hlv_description) ?>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-xs-5 ">
+                                <a  data-dismiss="modal" data-toggle="modal" <?php if(!$user){ ?>  data-target="#popupLogin" <?php } ?> href="javascript:;" class="btn-hlv-area btn-hlvplay btn-playgame">Tham Gia Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="clear: both"></div>
+                </div>
+            </div>
+        </div>
+    <?php }
+} ?>
+<div class="modal fade popupPlaygame" id="popupPlay" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+
+        <div class="modal-content popup-main">
+            <div class="modal-header">
+
+                <h4 class="modal-title"><img src="<?php echo $this->url->get("public/FrontendCore/") ?>images/logo.png"
+                                             alt=""></h4>
+            </div>
+            <a href="javascript:;" class="btn-close-popup" data-dismiss="modal" aria-label="Close">
+                <img src="<?php echo $this->url->get("public/FrontendCore/") ?>images/icon-close.png" alt="">
+            </a>
+            <div
+                style="background: url('<?php echo isset($gallery) ? $gallery->ga_image_link : '' ?>') no-repeat top center"
+                class="left-popup-area">
+            </div>
+            <div class="right-popup-area">
+                <form id="postForm" onsubmit="return userPosts();return false;">
+                    <input name="hlv_id" type="hidden"  >
+                    <input name="ga_id" type="hidden" value="<?php echo isset($gallery) ? $gallery->ga_id : '' ?>" >
+                    <textarea required name="p_description" placeholder="Chia sẻ của bạn "></textarea>
+                    <label class="error" for="p_description"></label>
+                    <div class="col-md-12 ">
+                        <a onclick="userPosts();" href="javascript:;" class="btn-hlv-area btn-hlvplay">Chia Sẻ Trên Facebook</a>
+                    </div>
+                </form>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+    </div>
+</div>

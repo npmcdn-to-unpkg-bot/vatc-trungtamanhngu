@@ -1,0 +1,50 @@
+<!-- Main content -->
+<div class="content-wrapper">
+
+    <!-- Page header -->
+    <div class="page-header">
+        <div class="page-header-content">
+            <div class="page-title">
+                <h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold"><?php echo $header_title; ?></span></h4>
+            </div>
+        </div>
+
+        <div class="breadcrumb-line">
+            <ul class="breadcrumb">
+                <li><a href="<?php echo $urlModule; ?>"><i class="icon-home2 position-left"></i> Home</a></li>
+                <li><a href="javascript:;">User Admin Manager</a></li>
+                <li class="active"><?php echo $header_title; ?></li>
+            </ul>
+
+        </div>
+    </div>
+    <!-- /page header -->
+
+
+    <!-- Content area -->
+    <div class="content">
+
+
+
+
+        <!-- Custom button -->
+        <div class="panel panel-flat">
+            <div class="panel-heading">
+                <h5 class="panel-title"><?php echo $header_title; ?></h5>
+                <div class="heading-elements">
+                    <ul class="icons-list">
+                        <li><a data-action="collapse"></a></li>
+                        <li><a data-action="reload"></a></li>
+                        <li><a data-action="close"></a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <?php echo $this->partial('admin-role/neweditcontent') ?>
+        </div>
+        <!-- /custom button -->
+    </div>
+    <!-- /content area -->
+
+</div>
+<!-- /main content -->

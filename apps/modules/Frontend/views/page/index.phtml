@@ -1,0 +1,21 @@
+<div class="wrapper">
+    <div style="padding: 40px" class="blog-list-area">
+        <div style="width: 100%" class="main-blog-list">
+            <?php if (isset($news)) { ?>
+                <img style="display: block;margin: 0 auto" class="image-head"
+                     src="<?php echo isset($news) ? $news->p_image_link : '' ?>" alt="">
+            <?php } ?>
+            <h1 style="text-align: center" ><?php echo isset($news) ? $news->p_name : '' ?></h1>
+
+            <div style="width: 90%; margin: 0px auto;" class="content-news-detail">
+                <h2 class="init_content oh"><?php echo isset($news) ? $news->p_name : '' ?></h2>
+                <div class="clearfix">
+                </div>
+                <div id="ContentDetail">
+                    <?php echo isset($news) ? $news->p_description : '' ?>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>

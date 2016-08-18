@@ -1,0 +1,13 @@
+<?php if (count($posts) > 0) {
+    foreach ($posts as $po) { ?>
+        <div class="col-md-4 col-sm-4">
+            <div class="user-posts">
+                <h3 class="username-post">
+                    <?php echo $po->UserModel->us_name ?>
+                </h3>
+                <p>Bài Thi : <em><?php echo $po->p_description ?></em></p>
+                <p>Giáo Viên : <em><?php echo $po->ManagerHlvModel->hlv_name ?></em></p>
+            </div>
+        </div>
+    <?php }
+} ?>

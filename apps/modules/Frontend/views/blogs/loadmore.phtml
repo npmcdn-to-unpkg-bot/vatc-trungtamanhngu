@@ -1,0 +1,23 @@
+<?php if ($data) {
+    foreach ($data as $news) { ?>
+        <div class="col-md-4 col-sm-4">
+            <div class="hq-blog">
+                <div class="hq-img-blog">
+                    <img src="<?php echo $news->n_image_link ?>"
+                         alt="<?php echo  $news->n_name  ?>">
+                </div>
+                <div class="hq-content-blog">
+                    <a target="_blank" href="<?php echo $this->url->get("blogs/detail/").$news->n_seo_link ?>"><h3><?php echo  $news->n_name  ?></h3></a>
+                    <div class="hq-meta-blog">
+                        <?php echo  $news->showCreateDate()  ?>
+                    </div>
+                    <div class="short-description">
+                        <?php echo nl2br($news->n_short_description)    ?>
+                    </div>
+                    <a target="_blank" class="hq-readmore" href="<?php echo $this->url->get("blogs/detail/").$news->n_seo_link ?>">Xem Thêm <i
+                            class="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+        </div>
+    <?php }
+} ?>

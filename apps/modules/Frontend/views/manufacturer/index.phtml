@@ -1,0 +1,187 @@
+<div id="broad-category-main" class="category-page-content theme-red">
+    <div class="broad-category-fixed-nav" style="display: none;">
+        <div class="container">
+            <ul class="bc-fixed-nav-list bc-ul">
+                <?php $categoryParent = $manufacture->getCategory();
+                foreach ($categoryParent as $catePa) { ?>
+                    <li data-rel="<?php echo "#" . $catePa->ct_id ?>" class="bc-fixed-nav-available ">
+                        <a href="javascript:;"><?php echo $catePa->ct_name ?></a>
+                    </li>
+                <?php } ?>
+            </ul>
+        </div>
+    </div>
+
+    <div class="cate-broad-banner">
+        <div class="cate-broad-banner-title container">
+            <?php echo $manufacture->ma_name; ?>
+        </div>
+        <img src="<?php echo $this->url->get("public/FrontendCore/img/") ?>TB1kKlJIFXXXXcnXXXXnWyF3VXX-1920-80.png">
+        <!--ams-region-end 160-->
+
+    </div>
+
+    <div class="container">
+        <div id="aliGlobalCrumb" class="ui-breadcrumb">
+            <a href="<?php echo $this->url->get() ?>" rel="nofollow" title="Home">Home</a>
+            <span class="divider">&gt;</span>
+            <h1>
+                <span> <?php echo $manufacture->ma_name; ?></span>
+            </h1>
+        </div>
+    </div>
+
+    <div class="container bc-not-standard no-standard-more-eight">
+        <div class="bc-list-wrap" data-spm="3" data-single-page="8">
+            <h2 class="bc-list-title bc-title bc-nowrap-ellipsis" title="Categories">Categories</h2>
+            <ul class="bc-list bc-ul bc-list-not-standard">
+                <?php foreach ($categoryParent as $catePa) { ?>
+                    <li class="bc-cate-has-child">
+                        <div class="bc-cate-name bc-nowrap-ellipsis">
+                            <a href="<?php echo $this->url->get("category-product/show/").$catePa->ct_seo_link ?>" target="_blank"
+                               title="<?php echo $catePa->ct_name ?>"><?php echo $catePa->ct_name ?></a>
+                        </div>
+                        <div class="bc-sub-cate">
+                            <ul class="bc-sub-cate-list">
+                                <?php $categoryChild = $catePa->getCategoryChild();
+                                if ($categoryChild) {
+                                    foreach ($categoryChild as $child) { ?>
+                                        <li class="bc-nowrap-ellipsis">
+                                            <a href="<?php echo $this->url->get("category-product/show/").$child->ct_seo_link ?>" target="_blank"
+                                               title="<?php echo $child->ct_name ?>"><?php echo $child->ct_name ?></a>
+                                        </li>
+                                    <?php }
+                                } ?>
+                            </ul>
+                        </div>
+                    </li>
+                <?php } ?>
+            </ul>
+        </div>
+
+
+        <div class="bc-cate-slide" data-spm="4">
+            <div id="slidebox-col4" class="ui-slidebox ui-slidebox-horizontal util-clearfix" data-widget-cid="widget-3">
+                <div class="ui-slidebox-wrap">
+                    <div class="ui-slidebox-container">
+                        <div class="ui-slidebox-slider" data-role="slider" style="margin-left: -1px;">
+                            <ul>
+                                <li style="width: 901px; visibility: visible;">
+                                    <?php foreach ($categoryParent as $key => $catePa) {
+                                        if ($key < 8) { ?>
+                                            <div class="col-lg-15 col-md-20 col-sm-30 bc-cate-row bc-navy-cate-inner">
+                                                <div class="bc-row-wrap">
+                                                    <a href="<?php echo $this->url->get("category-product/show/").$catePa->ct_seo_link ?>" target="_blank">
+                                                        <img class="bc-not-standard-navy-image"
+                                                             src="<?php echo $catePa->ct_image ?>"
+                                                             alt="<?php echo $catePa->ct_name ?>"></a>
+                                                </div>
+                                                <p class="bc-main-name bc-nowrap-ellipsis">
+                                                    <a href="<?php echo $this->url->get("category-product/show/").$catePa->ct_seo_link ?>" target="_blank"
+                                                       title="<?php echo $catePa->ct_name ?>"><?php echo $catePa->ct_name ?></a>
+                                                </p>
+                                            </div>
+                                        <?php }
+                                    } ?>
+
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bc-floors-wrap" data-spm="7">
+        <?php foreach ($categoryParent as $key => $catePa) { ?>
+            <div id="<?php echo $catePa->ct_id ?>"
+                 class="container bc-category-floor <?php echo $key % 2 == 0 ? ' bc-layout-r-main ' : ' bc-layout-l-main ' ?> "
+                 style="display: block;">
+                <div class="bc-category-floor-title util-clearfix">
+                    <h2 class="bc-title col-lg-20 col-md-25 col-sm-30 bc-nowrap-ellipsis"
+                        title="<?php echo $catePa->ct_name ?>"><?php echo $catePa->ct_name ?></h2>
+                </div>
+                <div class="bc-category-floor-wrap">
+                    <div class="bc-floor-side-info bc-pos-side">
+                        <div class="bc-hot-tags">
+                            <h4 class="bc-title">What's&nbsp;hot&nbsp;now</h4>
+                            <ul class="bc-hot-tag-list bc-tags bc-ul util-clearfix">
+                                <li>
+                                    <a href="http://www.aliexpress.com/category/200003482/dresses.html?tagId=425016&amp;sdom=16.34.43.1_425016"
+                                       title="Tassels Dresses" target="_blank">Tassels Dresses</a></li>
+                                <li>
+                                    <a href="http://www.aliexpress.com/category/200003482/dresses.html?tagId=424481&amp;sdom=16.34.43.1_424481"
+                                       title="Cut out Dresses" target="_blank">Cut out Dresses</a></li>
+                                <li>
+                                    <a href="http://www.aliexpress.com/category/200003482/dresses.html?tagId=244049&amp;sdom=16.34.43.1_244049"
+                                       title="Print Dresses" target="_blank">Print Dresses</a></li>
+                                <li>
+                                    <a href="http://www.aliexpress.com/category/200003482/dresses.html?tagId=424732&amp;sdom=16.34.43.1_424732"
+                                       title="Bohemia Dresses" target="_blank">Bohemia Dresses</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="bc-hot-recommend">
+                            <h4 class="bc-title">What's&nbsp;popular&nbsp;now</h4>
+                            <ul class="bc-hot-recommend-list bc-ul">
+                                <li>
+                                    <a class="bc-hot-recommend-image-wrap"
+                                       href="http://www.aliexpress.com/category/200003482/dresses.html?tagId=243053&amp;sdom=16.34.43.1_243053"
+                                       target="_blank"><img class="bc-hot-recommend-image"
+                                                            src="Women&amp;%2339;s%20Clothing%20&amp;amp;%20Accessories%20Directory%20of%20Blouses%20&amp;amp;%20Shirts,%20Tops%20&amp;amp;%20Tees%20and%20more%20on%20Aliexpress.com_files/2015-New-Fashion-Women-Dress-Summer-Three-quarters-Sleeves-D.jpg"
+                                                            alt="Summer Dresses"></a>
+                                    <p class="bc-nowrap-ellipsis">
+                                        <a href="http://www.aliexpress.com/category/200003482/dresses.html?tagId=243053&amp;sdom=16.34.43.1_243053"
+                                           target="_blank" title="Summer Dresses">Summer Dresses</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <a class="bc-hot-recommend-image-wrap"
+                                       href="http://www.aliexpress.com/category/200003482/dresses.html?tagId=424733&amp;sdom=16.34.43.1_424733"
+                                       target="_blank"><img class="bc-hot-recommend-image"
+                                                            src="Women&amp;%2339;s%20Clothing%20&amp;amp;%20Accessories%20Directory%20of%20Blouses%20&amp;amp;%20Shirts,%20Tops%20&amp;amp;%20Tees%20and%20more%20on%20Aliexpress.com_files/wholesale-2015-new-top-quality-beige-mech-with-black-stripe-.jpg"
+                                                            alt="Stripe Dresses"></a>
+                                    <p class="bc-nowrap-ellipsis">
+                                        <a href="http://www.aliexpress.com/category/200003482/dresses.html?tagId=424733&amp;sdom=16.34.43.1_424733"
+                                           target="_blank" title="Stripe Dresses">Stripe Dresses</a>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bc-hot-image-wrap bc-pos-main">
+                        <?php $categoryChild = $catePa->getCategoryChild();
+                        if ($categoryChild) {
+                            foreach ($categoryChild as $key => $child) {
+                                if ($key < 8) { ?>
+                                    <div class="col-lg-15 col-md-20 col-sm-30 bc-hot-image-col">
+                                        <div class="bc-hot-image-info bc-shadow-wrap">
+                                            <div class="bc-hot-image">
+                                                <a href="<?php echo $this->url->get("category-product/show/").$child->ct_seo_link ?>" target="_blank">
+                                                    <img src="<?php echo $child->ct_image ?>"
+                                                         alt="<?php echo $child->ct_name ?>"></a>
+                                            </div>
+                                            <p class="bc-hot-image-title bc-nowrap-ellipsis">
+                                                <a href="<?php echo $this->url->get("category-product/show/").$child->ct_seo_link ?>" target="_blank"
+                                                   title="<?php echo $child->ct_name ?>"><strong><?php echo $child->ct_name ?></strong></a>
+                                            </p>
+                                            <span class="bc-hot-image-des"><?php echo $child->countProduct(); ?></span>
+                                        </div>
+                                    </div>
+                                <?php }
+                            }
+                        } ?>
+                        <div style="clear: both"></div>
+                    </div>
+                </div>
+            </div>
+        <?php } ?>
+
+    </div>
+
+
+</div>

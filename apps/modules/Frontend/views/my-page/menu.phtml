@@ -1,0 +1,17 @@
+<div class="navigation">
+    <ul class="util-clearfix">
+        <!-- menu begin 10.177.221.172-->
+        <li <?php echo $this->dispatcher->getActionName()=='index' ? 'class=" current "' : '' ?> >
+            <a id="headMenu_default" href="<?php echo $this->url->get("my-page") ?>">Thông Tin Tài Khoản</a>
+        </li>
+        <li <?php echo $this->dispatcher->getActionName()=='changepassword' ? 'class=" current "' : '' ?>>
+            <a id="headMenu_myaliexpress_message" href="<?php echo $this->url->get("my-page/change-password") ?>">Thay Đổi Mật Khẩu</a>
+        </li>
+        <li <?php echo $this->dispatcher->getActionName()=='order' ? 'class=" current "' : '' ?>>
+            <a id="headMenu_transactions" href="<?php echo $this->url->get("my-page/order") ?>">My Orders</a>
+        </li>
+
+
+        <!-- menu end -->
+    </ul>
+</div>

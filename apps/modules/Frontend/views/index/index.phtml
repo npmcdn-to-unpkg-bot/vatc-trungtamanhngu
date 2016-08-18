@@ -1,0 +1,218 @@
+<?php echo $this->partial('partial/menu_top_desktop') ?>
+<!-- Header -->
+<header id="myCarousel" class="carousel slide">
+    <div id="slider1" class="rev_slider" data-version="5.0">
+        <ul>
+            <li data-transition="random">
+                <img src="<?php echo $this->url->get("public/FrontendCore/") ?>images/bg-slide1.jpg" alt="Title 1">
+                <div class="over-lay-area1"></div>
+                <div class="carousel-caption">
+                    <h1>Cùng <span class="color-text-vatc">VATC</span> khởi động tương lai</h1>
+                    <p>Trang sẽ được thiết kế theo dạng cuộn, khi click vào menu tương ứng sẽ tua trang xuống nên team
+                        chú ý
+                        điểm này.</p>
+                </div>
+            </li>
+            <li data-transition="random">
+                <img src="<?php echo $this->url->get("public/FrontendCore/") ?>images/bg-slide1.jpg" alt="Title 1">
+                <div class="over-lay-area1"></div>
+                <div class="carousel-caption">
+                    <h1>Cùng <span class="color-text-vatc">VATC</span> khởi động tương lai</h1>
+                    <p>Trang sẽ được thiết kế theo dạng cuộn, khi click vào menu tương ứng sẽ tua trang xuống nên team
+                        chú ý
+                        điểm này.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<!-- Services Section -->
+<section id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Các huấn luyện viên </h2>
+            </div>
+        </div>
+        <div class="row text-center">
+            <?php if ($coachs) {
+                foreach ($coachs as $coach) { ?>
+                    <div class="col-md-4 col-sm-4 ">
+                        <div class="info-hlv">
+                            <div class="hlv-content">
+                                <div
+                                    style="background: url('<?php echo $coach->hlv_image_link ?>') no-repeat top center;"
+                                    class="img-hlv hlv1"></div>
+                                <h4 class="service-heading"><?php echo $coach->hlv_name ?></h4>
+                                <ul class="star-area">
+                                    <li>
+                                        <img
+                                            src="<?php echo $this->url->get("public/FrontendCore/") ?>images/icon-star.png"
+                                            alt="">
+                                    </li>
+                                    <li>
+                                        <img
+                                            src="<?php echo $this->url->get("public/FrontendCore/") ?>images/icon-star.png"
+                                            alt="">
+                                    </li>
+                                    <li>
+                                        <img
+                                            src="<?php echo $this->url->get("public/FrontendCore/") ?>images/icon-star.png"
+                                            alt="">
+                                    </li>
+                                    <li>
+                                        <img
+                                            src="<?php echo $this->url->get("public/FrontendCore/") ?>images/icon-star.png"
+                                            alt="">
+                                    </li>
+                                    <li>
+                                        <img
+                                            src="<?php echo $this->url->get("public/FrontendCore/") ?>images/icon-star.png"
+                                            alt="">
+                                    </li>
+                                </ul>
+                                <div class="hover-hlv-area">
+                                    <a data-rel="<?php echo $coach->hlv_id ?>" data-dismiss="modal"
+                                       data-toggle="modal" <?php if (!$user) { ?> data-target="#popupLogin" <?php } ?>
+                                       href="javascript:;"
+                                       class="animated fadeInUp btn-hlv-area btn-hlvplay btn-playgame">Tham gia
+                                        ngay</a>
+                                    <a data-dismiss="modal" data-toggle="modal"
+                                       data-target="#popupInfoHlv-<?php echo $coach->hlv_id ?>"
+                                       href="javascript:;"
+                                       class="animated fadeInUp btn-hlv-area btn-hlvinfo">Tìm hiểu</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <?php }
+            } ?>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Grid Section -->
+<section id="portfolio" class="bg-light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">thể lệ cuộc thi</h2>
+            </div>
+        </div>
+        <div class="row">
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading text-head-gallery">Thư viện bài thi</h2>
+            </div>
+        </div>
+        <div class="row search-gallery-area">
+            <form id="filter-kol" onsubmit="return false;">
+                <div class="col-md-4 col-sm-4">
+                    <input id="datepicker" class="filter-name" type="text" name="created_at" placeholder="Time"/>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="select2-wrapper">
+                        <select name="hlv_gender"
+                                class=" select-custom form-control select-2">
+                            <option value="1">Male</option>
+                            <option value="2">Female</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="form-button-wrapper">
+                        <button type="button" class="btn btn-search-kol">Tìm Kiếm</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="gallery-posts" class="row ">
+            <?php if (count($posts) > 0) {
+                foreach ($posts as $po) { ?>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="user-posts">
+                            <h3 class="username-post">
+                                <?php echo $po->UserModel->us_name ?>
+                            </h3>
+                            <p>Bài Thi : <em><?php echo  $po->p_description ?></em></p>
+                            <p>Giáo Viên : <em><?php echo  $po->ManagerHlvModel->hlv_name ?></em></p>
+                        </div>
+                    </div>
+                <?php }
+            } ?>
+        </div>
+        <div class="row text-center">
+            <nav id="kol-pagination" class="hq-kol-pagination" aria-label="Page navigation">
+                <ul class="pagination">
+                    <li>
+                        <a href="javascript:;" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li><a href="javascript:;">1</a></li>
+                    <li><a href="javascript:;">2</a></li>
+                    <li><a href="javascript:;">3</a></li>
+                    <li><a href="javascript:;">4</a></li>
+                    <li><a href="javascript:;">5</a></li>
+                    <li>
+                        <a href="javascript:;" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<!-- Team Section -->
+<section id="team" class="bg-light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading text-head-gallery">tin tức & sự kiện</h2>
+            </div>
+        </div>
+        <div class="row">
+            <?php if ($blogs) {
+                foreach ($blogs as $news) { ?>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="hq-blog">
+                            <div class="hq-img-blog">
+                                <img src="<?php echo $news->n_image_link ?>"
+                                     alt="<?php echo  $news->n_name  ?>">
+                            </div>
+                            <div class="hq-content-blog">
+                                <a target="_blank" href="<?php echo $this->url->get("blogs/detail/").$news->n_seo_link ?>"><h3><?php echo  $news->n_name  ?></h3></a>
+                                <div class="hq-meta-blog">
+                                    <?php echo  $news->showCreateDate()  ?>
+                                </div>
+                                <div class="short-description">
+                                    <?php echo nl2br($news->n_short_description)    ?>
+                                </div>
+                                <a target="_blank" class="hq-readmore" href="<?php echo $this->url->get("blogs/detail/").$news->n_seo_link ?>">Xem Thêm <i
+                                        class="fa fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                <?php }
+            } ?>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <a href="<?php echo $this->url->get("blogs") ?>" class="btn-loadmore">Xem Thêm</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<?php echo $this->partial('partial/footer') ?>

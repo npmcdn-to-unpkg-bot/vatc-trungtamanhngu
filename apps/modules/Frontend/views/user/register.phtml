@@ -1,0 +1,64 @@
+<div class="page">
+    <div class="container">
+        <form onsubmit=" registerUser(); return false; "  class="register-form" id="join-form">
+            <div class="left-form">
+                <div class="form-head">
+                    <h2>Tạo Tài Khoản Mới</h2>
+                    <div>Đã có tài khoản? <a href="<?php echo $this->url->get("user") ?>"
+                                              id="member-signin">Đăng Nhập</a></div>
+                    <div style="clear: both"></div>
+                </div>
+
+                <div class="facebook-login">
+                    <a id="btn-login-facebook" onclick="facebookLogin();" href="javascript:;" >
+                        <div class="facebook-logo"></div>
+                    </a>
+
+                </div>
+
+                <div class="form-detail">
+                    <div class="summary">Hoặc đăng ký bằng Email.</div>
+                    <dl>
+                        <dt>Email:</dt>
+                        <dd>
+                            <input id="email-ipt" name="us_email" required email="true" class="redborder" type="text">
+
+                        </dd>
+
+                        <dt>Tên Đăng Nhập:</dt>
+                        <dd>
+                            <input id="name-ipt" name="us_name" required minlength="6" class="redborder" type="text">
+
+                        </dd>
+
+                        <dt>Mật Khẩu:</dt>
+                        <dd>
+                            <input id="password-ipt" placeholder="Nhập Mật Khẩu" required minlength="6" name="us_password" type="password">
+                        </dd>
+
+                        <dt>Xác nhận Mật Khẩu:</dt>
+                        <dd>
+                            <input id="confirm-password-ipt" placeholder="Xác nhận Mật Khẩu" required minlength="6" name="us_confirm_password" type="password">
+
+                        </dd>
+                    </dl>
+
+<!--                    <div class="agreement-box">-->
+<!--                        <label>-->
+<!--                            <input id="agree-ckb" tabindex="7" checked="" type="checkbox">-->
+<!--                            I agree to the AliExpress.com Free Membership Agreement.-->
+<!--                        </label>-->
+<!--                        <a target="_blank"-->
+<!--                           href="http://news.alibaba.com/article/detail/help/100453670-1-alibaba.com-free-membership-agreement.html">View-->
+<!--                            Agreement</a>-->
+<!--                        <div id="agree-tipbox"></div>-->
+<!--                    </div>-->
+                    <div class="submit-box">
+                        <input id="submit-btn" class="ui-button ui-button-primary ui-button-large"
+                               value="Đăng Ký" tabindex="8" type="submit">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

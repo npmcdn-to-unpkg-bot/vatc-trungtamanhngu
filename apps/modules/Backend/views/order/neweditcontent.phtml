@@ -1,0 +1,93 @@
+
+<style>
+    .error{
+        color: red;
+    }
+</style>
+<!-- Horizontal form modal -->
+<div id="modal_form_horizontal" class="modal fade">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h5 class="modal-title"><?php echo $header_title; ?></h5>
+            </div>
+
+            <form enctype="multipart/form-data" method="post" onsubmit="return false;" class="form-horizontal ">
+                <div class="modal-body">
+                    <input type="hidden" name="or_id"  class="form-control">
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">Customer Name</label>
+                        <div class="col-sm-9">
+                            <input type="text"  name="or_name"  class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">Email</label>
+                        <div class="col-sm-9">
+                            <input type="text" email="true" required="true" name="or_email"  class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">Phone</label>
+                        <div class="col-sm-9">
+                            <input type="text" minlength="10" maxlength="11"  number="true" name="or_phone"  class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">Tỉnh/Thành Phố</label>
+                        <div class="col-sm-9">
+                            <select onchange="changeProvince()" id="province"  name="zp_id" class="select-search ">
+                                <option value="-1">Chose</option>
+                                <?php
+                                if (isset($province)) {
+                                    foreach ($province as $val) {
+                                        ?>
+                                        <option  value="<?php echo $val->zp_id ?>"><?php echo $val->zp_name ?></option>
+                                        <?php
+                                    }
+                                }
+                                ?>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">Quận/Huyện</label>
+                        <div class="col-sm-9">
+                            <select onchange="changeDistrict()" id="district" name="zd_id" class="select-search">
+                                <option value="0">Chose</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">Phường/Xã</label>
+                        <div class="col-sm-9">
+                            <select id="ward" name="zw_id" class="select-search">
+                                <option value="0">Chose</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">Address</label>
+                        <div class="col-sm-9">
+                            <textarea style="width: 500px; height: 110px;" rows="5" cols="5" class="form-control" name="or_address" ></textarea>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+                    <button  type="submit" class="btn btn-primary btn-submit-content">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<p id="demo"></p>
+<!-- /horizontal form modal -->
+<script type="text/javascript">
+    var columns = {'or_id': 'inputtext', 'or_name': 'inputtext', 'or_email': 'inputtext', 'or_phone': 'inputtext', 'or_address': 'textarea', 'zp_id': 'zone', 'zd_id': 'zone', 'zw_id': 'zone'};
+
+
+</script>

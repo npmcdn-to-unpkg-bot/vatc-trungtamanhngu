@@ -1,0 +1,94 @@
+<!-- Main content -->
+<div class="content-wrapper">
+
+    <!-- Page header -->
+    <div class="page-header">
+        <div class="page-header-content">
+            <div class="page-title">
+                <h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Home</span> - Dashboard</h4>
+            </div>
+
+
+        </div>
+
+        <div class="breadcrumb-line">
+            <ul class="breadcrumb">
+                <li><a href="index.html"><i class="icon-home2 position-left"></i> Home</a></li>
+                <li class="active">Dashboard</li>
+            </ul>
+
+            
+        </div>
+    </div>
+    <!-- /page header -->
+
+
+    <!-- Content area -->
+    <div class="content">
+        <!-- Main charts -->
+        <div class="row">
+            <div class="panel panel-flat">
+                <div class="panel-heading">
+                    <h5 class="panel-title">Charts Customers Statistic</h5>
+                    <div class="heading-elements">
+                        <form onsubmit="return false;" class="form-user-statistic-month">
+                            <div class="col-md-1">
+                                <label style="position: relative; top: 8px; left: -10px;">Month </label>
+                            </div>
+                            <div class="col-md-4">
+                                <select style="width: 50px"  name="month" class="select-search">
+                                    <option value="-1">Chose</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                            </div>
+                            <div class="col-md-1">
+                                <label style="position: relative; top: 8px;">Year </label>
+                            </div>
+                            <div class="col-md-4">
+                                <select  name="year" class="select-search">
+                                    <option value="-1">Chose</option>
+                                    <?php foreach ($year as $ye) { ?>
+                                        <option value="<?php echo $ye->time ?>" ><?php echo $ye->time ?></option>
+                                    <?php } ?>
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <button onclick="filterStatistic('form-user-statistic-month', 'get-month-user', 'customer-statistic-month');" style="width: 70px;" type="submit" class="btn btn-block btn-primary btn-statistic-order-month">Filter</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+                <div class="panel-body">
+                    <div class="chart-container">
+                        <div class="chart has-fixed-height" id="customer-statistic-month"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Footer -->
+<!--        <div class="footer text-muted">
+            &copy; 2015. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+        </div>-->
+        <!-- /footer -->
+
+    </div>
+    <!-- /content area -->
+
+</div>
+<!-- /main content -->

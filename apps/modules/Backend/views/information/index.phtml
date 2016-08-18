@@ -1,0 +1,81 @@
+<!-- Main content -->
+<div class="content-wrapper">
+
+    <!-- Page header -->
+    <div class="page-header">
+        <div class="page-header-content">
+            <div class="page-title">
+                <h4><i class="icon-arrow-left52 position-left"></i> <span
+                        class="text-semibold"><?php echo $header_title; ?></span></h4>
+            </div>
+        </div>
+
+        <div class="breadcrumb-line">
+            <ul class="breadcrumb">
+                <li><a href="<?php echo $urlModule; ?>"><i class="icon-home2 position-left"></i> Home</a></li>
+                <li class="active"><?php echo $header_title; ?></li>
+            </ul>
+
+        </div>
+    </div>
+    <!-- /page header -->
+
+
+    <!-- Content area -->
+    <div class="content">
+
+
+        <!-- Custom button -->
+        <div class="panel panel-flat">
+            <div class="panel-heading">
+                <h5 class="panel-title"><?php echo $header_title; ?></h5>
+                <div class="heading-elements">
+                    <ul class="icons-list">
+                        <li><a data-action="collapse"></a></li>
+                        <li><a data-action="reload"></a></li>
+                        <li><a data-action="close"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <table class="table table-bordered table-hover datatable-highlight">
+                <thead>
+                <tr class="success">
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Open Time</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                <?php if ($data) { ?>
+                    <?php foreach ($data as $key => $val) { ?>
+                        <tr>
+                            <td><?php echo $val->inf_name ?></td>
+                            <td><?php echo $val->inf_address ?></td>
+                            <td><?php echo $val->inf_phone ?></td>
+                            <td><?php echo $val->inf_mail ?></td>
+                            <td><?php echo $val->inf_open_time ?></td>
+                            <td>
+                                <button onclick="showPopup(<?php echo $val->inf_id ?>)" data-original-title="Edit"
+                                        data-toggle="modal" data-target="#modal_form_horizontal" data-popup="tooltip"
+                                        type="button" class="btn btn-info btn-icon btn-edit-content">
+                                    <i class="icon-pencil7"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <?php
+                    }
+                }
+                ?>
+                </tbody>
+            </table>
+            <?php echo $this->partial($this->dispatcher->getControllerName() . '/neweditcontent') ?>
+        </div>
+        <!-- /custom button -->
+    </div>
+    <!-- /content area -->
+
+</div>
+<!-- /main content -->

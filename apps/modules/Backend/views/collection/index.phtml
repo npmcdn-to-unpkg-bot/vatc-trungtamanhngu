@@ -1,0 +1,157 @@
+<!-- Main content -->
+<div class="content-wrapper">
+
+    <!-- Page header -->
+    <div class="page-header">
+        <div class="page-header-content">
+            <div class="page-title">
+                <h4><i class="icon-arrow-left52 position-left"></i> <span
+                        class="text-semibold"><?php echo $header_title; ?></span></h4>
+            </div>
+        </div>
+
+        <div class="breadcrumb-line">
+            <ul class="breadcrumb">
+                <li><a href="<?php echo $urlModule; ?>"><i class="icon-home2 position-left"></i> Home</a></li>
+                <li class="active"><?php echo $header_title; ?></li>
+            </ul>
+
+        </div>
+    </div>
+    <!-- /page header -->
+
+
+    <!-- Content area -->
+    <div class="content">
+
+
+        <!-- Custom button -->
+        <div class="panel panel-flat">
+            <div class="panel-heading">
+                <h5 class="panel-title"><?php echo $header_title; ?></h5>
+                <div class="heading-elements">
+                    <ul class="icons-list">
+                        <li><a data-action="collapse"></a></li>
+                        <li><a data-action="reload"></a></li>
+                        <li><a data-action="close"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div style="width: 95%;margin: 0 auto;background-color: rgb(249, 249, 249)">
+
+                <!-- Basic layout-->
+                <form class="search-form" action="<?php echo $this->url->get("backend/collection") ?>" method="post">
+                    <div style="background: none" class="panel panel-flat">
+                        <div style="background: none" class="panel-heading">
+                            <h5 class="panel-title">Filter</h5>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row" style="margin-bottom: 15px;">
+                                <div class="col-md-4">
+                                    <input type="hidden" name="method" value="search">
+                                    <select name="col_id" class="select-search">
+                                        <option value="-1">Chose Category Collection</option>
+                                        <?php if ($category_data) {
+                                            foreach ($category_data as $cate) { ?>
+                                                <option <?php echo isset($data_search) && $data_search == $cate->id ? " selected " : "" ?>
+                                                    value="<?php echo $cate->id ?>"><?php echo $cate->name_parent ?></option>
+                                            <?php }
+                                        } ?>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <button type="submit" class="btn btn-primary">Search<i
+                                            class="icon-search4 position-right"></i></button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </form>
+                <!-- /basic layout -->
+
+            </div>
+            <button onclick="showPopup()" data-toggle="modal" data-target="#modal_form_horizontal"
+                    style="margin-left: 20px;" type="button" class="btn btn-success btn-labeled"><b><i
+                        class="icon-plus3"></i></b> New Data
+            </button>
+
+            <table class="table table-bordered table-hover datatable-highlight">
+                <thead>
+                <tr class="success">
+                    <th>ID</th>
+                    <th>Category Collection</th>
+                    <th>Category</th>
+                    <th>ID Product</th>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Price Promotion</th>
+                    <th>Quantity</th>
+                    <th>Product Status</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                <?php if ($data) { ?>
+                    <?php foreach ($data as $key => $product) {
+                        if (count($product->ProductModel) > 0) {
+                            foreach ($product->ProductModel as $val) { ?>
+                                <tr>
+                                    <td><?php echo $val->pr_id ?></td>
+                                    <td><?php echo $product->CategoryCollectionModel->col_name ?></td>
+                                    <td><?php echo $val->CategoryModel->ct_name ?></td>
+                                    <td><?php echo $val->pr_public_id ?></td>
+                                    <td><img style="max-width: 100px;" src="<?php
+                                        $image = $val->ProductAvatarModel->getFirst();
+                                        echo $image->pa_image_link;
+                                        ?>" alt=""></td>
+                                    <td><?php echo $val->pr_name ?></td>
+                                    <td style="color:red">
+                                        <?php
+                                        if ($val->pr_price_promotion != 0) {
+                                            echo number_format($val->pr_price_promotion) . " VNĐ";
+                                        }
+                                        ?>
+                                    </td>
+                                    <td><?php echo $val->pr_quantity ?></td>
+                                    <td>
+                                        <?php if ($val->product_status == 1) { ?>
+                                            <span class="label label-success">Còn Hàng</span>
+                                        <?php } else { ?>
+                                            <span class="label label-danger">Hết Hàng</span>
+                                        <?php } ?>
+                                    </td>
+                                    <td>
+                                        <?php if ($val->pr_status == 1) { ?>
+                                            <span class="label label-success">Show</span>
+                                        <?php } else { ?>
+                                            <span class="label label-warning">Hide</span>
+                                        <?php } ?>
+                                    </td>
+                                    <td>
+                                        <button data-rel="<?php echo $val->pr_id ?>"
+                                                data-original-title="Remove"
+                                                data-popup="tooltip" type="button"
+                                                class="btn btn-danger btn-icon btn-delete-content">
+                                            <i class="icon-trash"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <?php
+                            }
+                        }
+                    }
+                }
+                ?>
+                </tbody>
+            </table>
+            <?php echo $this->partial($this->dispatcher->getControllerName() . '/neweditcontent') ?>
+        </div>
+        <!-- /custom button -->
+    </div>
+    <!-- /content area -->
+
+</div>
+<!-- /main content -->

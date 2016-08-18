@@ -1,0 +1,454 @@
+<!-- Main content -->
+<div class="content-wrapper">
+
+    <!-- Page header -->
+    <div class="page-header">
+        <div class="page-header-content">
+            <div class="page-title">
+                <h4><i class="icon-arrow-left52 position-left"></i> <span
+                        class="text-semibold"><?php echo $header_title; ?></span></h4>
+            </div>
+        </div>
+
+        <div class="breadcrumb-line">
+            <ul class="breadcrumb">
+                <li><a href="<?php echo $urlModule; ?>"><i class="icon-home2 position-left"></i> Home</a></li>
+                <li><a href="<?php echo $this->url->get("backend/product") ?>"><i class="icon-bag position-left"></i>
+                        Product</a></li>
+                <li class="active"><?php echo $header_title; ?></li>
+            </ul>
+
+        </div>
+    </div>
+    <!-- /page header -->
+
+
+    <!-- Content area -->
+    <div class="content">
+
+
+        <!-- Custom button -->
+        <div class="panel panel-flat">
+            <div class="panel-heading">
+                <h5 class="panel-title"><?php echo $header_title; ?></h5>
+                <div class="heading-elements">
+                    <ul class="icons-list">
+                        <li><a data-action="collapse"></a></li>
+                        <li><a data-action="reload"></a></li>
+                        <li><a data-action="close"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="panel-body">
+                <form onsubmit="return false" class="form-horizontal ">
+                    <div class="jui-tabs-basic">
+                        <ul>
+                            <li><a href="#tabs-basic-1"><i class="icon-database-add position-left"></i> Data</a></li>
+                            <li><a href="#tabs-basic-3"><i class="icon-database-add position-left"></i> Price</a></li>
+                            <li><a href="#tabs-basic-2"><i class="icon-files-empty position-right"></i> Attribute </a>
+                            </li>
+
+                        </ul>
+                        <div id="tabs-basic-1">
+                            <div class="modal-body">
+                                <input type="hidden" value="<?php echo isset($data) ? $data->pr_id : '' ?>" name="pr_id"
+                                       class="form-control">
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2">Category </label>
+                                    <div class="col-sm-10">
+                                        <select name="ct_id" class="select-search">
+                                            <option value="-1">Chose</option>
+                                            <?php
+                                            if ($category_product) {
+                                                foreach ($category_product as $val) {
+                                                    ?>
+                                                    <option <?php if (isset($data) && isset($data->ct_id) && $data->ct_id == $val['ct_id']) echo "selected"; ?>
+                                                        value="<?php echo $val['ct_id'] ?>"><?php echo $val['manufacturer_name'] . " > " . $val['name_parent'] ?></option>
+                                                    <?php
+                                                }
+                                            }
+                                            ?>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2">ID Product</label>
+                                    <div class="col-sm-10">
+
+                                        <input type="text" value="<?php echo isset($data) ? $data->pr_public_id : '' ?>"
+                                               name="pr_public_id" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2">Name</label>
+                                    <div class="col-sm-10">
+
+                                        <input type="text" value="<?php echo isset($data) ? $data->pr_name : '' ?>"
+                                               required="true" name="pr_name" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2">Seo Link<br>(*System auto create Seo Link
+                                        )</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" value="<?php echo isset($data) ? $data->pr_seo_link : '' ?>"
+                                               name="pr_seo_link" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2">Image</label>
+                                    <div class="col-sm-10">
+                                        <!--                                        <div class="col-sm-2">
+                                                                                    <select  name="select_ava" class="select-search">
+                                        <?php // foreach ($category_type as $val) { ?>
+                                                                                            <option value="<?php // echo $val->la_id                                           ?>"><?php // echo $val->la_name                                           ?></option>
+                                        <?php // }     ?>
+                                                                                    </select>
+                                                                                </div>-->
+                                        <div class="col-sm-10">
+                                            <button style="width: 70px; display: inline-block; vertical-align: top;"
+                                                    onclick="BrowseServer('ava_img_img', 'ava_img');"
+                                                    class="btn btn-block btn-primary ">Upload
+                                            </button>
+                                            <input name="ava_img_img" type="image" style="max-width: 200px;"
+                                                   src="<?php echo isset($image) ? $image->pa_image_link : '' ?>"
+                                                   alt="">
+                                            <input type="hidden" name="ava_img"
+                                                   value="<?php echo isset($image) ? $image->pa_image_link : '' ?>"
+                                                   class="form-control ">
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!--                                <div class="form-group">-->
+                                <!--                                    <label class="control-label col-sm-2">Image Hover</label>-->
+                                <!--                                    <div class="col-sm-10">-->
+                                <!--                                        <!--                                        <div class="col-sm-2">-->
+                                <!--                                                                                    <select  name="select_ava_hover" class="select-search">-->
+                                <!--                                        --><?php //// foreach ($category_type as $val) { ?>
+                                <!--                                                                                            <option value="-->
+                                <?php //// echo $val->la_id                                           ?><!--">-->
+                                <?php //// echo $val->la_name                                           ?><!--</option>-->
+                                <!--                                        --><?php //// }     ?>
+                                <!--                                                                                    </select>-->
+                                <!--                                                                                </div>-->
+                                <!--                                        <div class="col-sm-10">-->
+                                <!--                                            <button style="width: 70px; display: inline-block; vertical-align: top;"-->
+                                <!--                                                    onclick="BrowseServer('ava_img_hover_img', 'ava_img_hover');"-->
+                                <!--                                                    class="btn btn-block btn-primary ">Upload-->
+                                <!--                                            </button>-->
+                                <!--                                            <input name="ava_img_hover_img" type="image" style="max-width: 200px;"-->
+                                <!--                                                   src="-->
+                                <?php //echo isset($image_hover) ? $image_hover->pa_image_link : '' ?><!--"-->
+                                <!--                                                   alt="">-->
+                                <!--                                            <input type="hidden" name="ava_img_hover"-->
+                                <!--                                                   value="-->
+                                <?php //echo isset($image_hover) ? $image_hover->pa_image_link : '' ?><!--"-->
+                                <!--                                                   class="form-control ">-->
+                                <!--                                        </div>-->
+                                <!---->
+                                <!--                                    </div>-->
+                                <!--                                </div>-->
+                                <!--                                <div class="form-group">-->
+                                <!--                                    <label class="control-label col-sm-2">Image Size Guide</label>-->
+                                <!--                                    <div class="col-sm-10">-->
+                                <!--                                        <div class="col-sm-10">-->
+                                <!--                                            <button style="width: 70px; display: inline-block; vertical-align: top;"-->
+                                <!--                                                    onclick="BrowseServer('pr_image_sizeguide_img', 'pr_image_sizeguide');"-->
+                                <!--                                                    class="btn btn-block btn-primary ">Upload-->
+                                <!--                                            </button>-->
+                                <!--                                            <input name="pr_image_sizeguide_img" type="image" style="max-width: 200px;"-->
+                                <!--                                                   src="-->
+                                <?php //echo isset($data) ? $data->pr_image_sizeguide : '' ?><!--"-->
+                                <!--                                                   alt="">-->
+                                <!--                                            <input type="hidden" name="pr_image_sizeguide"-->
+                                <!--                                                   value="-->
+                                <?php //echo isset($data) ? $data->pr_image_sizeguide : '' ?><!--"-->
+                                <!--                                                   class="form-control ">-->
+                                <!--                                        </div>-->
+                                <!---->
+                                <!--                                    </div>-->
+                                <!--                                </div>-->
+                                                                <div class="form-group">
+                                                                    <label class="control-label col-sm-2">Quantity</label>
+                                                                    <div class="col-sm-10">
+
+                                                                        <input required type="text" number="true"
+                                                                               value="<?php echo isset($data) ? $data->pr_quantity : '' ?>"
+                                                                               name="pr_quantity" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                <!--                                <div class="form-group">-->
+                                <!--                                    <label class="control-label col-sm-2">Price</label>-->
+                                <!--                                    <div class="col-sm-10">-->
+
+                                <!--                                        <input type="text" required="true" number="true"-->
+                                <!--                                               value="<?php //echo isset($data) ? $data->pr_price : '' ?>" name="pr_price"
+<!--                                               class="form-control">-->
+                                <!--                                    </div>-->
+                                <!--                                </div>-->
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2">Price Promotion</label>
+                                    <div class="col-sm-10">
+
+                                        <input type="text" number="true"
+                                               value="<?php echo isset($data) ? $data->pr_price_promotion : '' ?>"
+                                               name="pr_price_promotion" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2">Date Promotion From</label>
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="icon-calendar22"></i></span>
+                                        <input name="pr_date_sale_from" class="form-control daterange-single"
+                                               value="<?php echo isset($data) && !is_null($data->pr_date_sale_from) ? $data->pr_date_sale_from : date("Y-m-d",strtotime ( '-1 month' , time())) ?>"
+                                               type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2">Date Promotion To</label>
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="icon-calendar22"></i></span>
+                                        <input name="pr_date_sale_to" class="form-control daterange-single"
+                                               value="<?php echo isset($data) && !is_null($data->pr_date_sale_to) ? $data->pr_date_sale_to : date("Y-m-d",strtotime ( '-1 month' , time())) ?>"
+                                               type="text">
+                                    </div>
+                                </div>
+                                <?php
+                                if ($category_option) {
+                                    foreach ($category_option as $op) {
+                                        ?>
+
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-2"><?php echo $op->po_name ?></label>
+                                            <div class="col-sm-10">
+
+                                                <select name="<?php echo $op->po_name ?>" multiple="multiple"
+                                                        data-placeholder="Enter tags" class="select-icons">
+                                                    <?php
+                                                    if ($op->ProductListOptionModel) {
+
+                                                        foreach ($op->ProductListOptionModel as $lis) {
+                                                            if (isset($data) && $data->ProductOptionDetailModel) {
+                                                                ?>
+
+                                                                <option <?php
+                                                                foreach ($data->ProductOptionDetailModel as $ava) {
+                                                                    if ($ava->plo_id == $lis->plo_id) {
+                                                                        echo "selected";
+                                                                    }
+                                                                }
+                                                                ?> value="<?php echo $lis->plo_id ?>" <?php if ($lis->plo_detail) { ?> data-icon="<?php echo $lis->plo_detail ?>" <?php } ?> >
+                                                                    <?php echo $lis->plo_name ?>
+                                                                </option>
+                                                                <?php
+                                                            } else {
+                                                                ?>
+                                                                <option
+                                                                    value="<?php echo $lis->plo_id ?>" <?php if ($lis->plo_detail) { ?> data-icon="<?php echo $lis->plo_detail ?>" <?php } ?> >
+                                                                    <?php echo $lis->plo_name ?>
+                                                                </option>
+                                                                <?php
+                                                            }
+                                                        }
+                                                    }
+                                                    ?>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <?php
+                                    }
+                                }
+                                ?>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2">Weight(Kg)</label>
+                                    <div class="col-sm-10">
+
+                                        <input type="text" number="true"
+                                               value="<?php echo isset($data) ? $data->pr_weight : '' ?>"
+                                               name="pr_weight" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2">Product Status</label>
+                                    <div class="col-sm-10">
+                                        <div class="checkbox checkbox-switch">
+                                            <label>
+                                                <input name="product_status" type="checkbox" data-on-color="success"
+                                                       data-off-color="danger" data-on-text="Còn" data-off-text="Hết"
+                                                       class="switch" checked="true">
+                                                Còn Hàng/Hết Hàng
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2">Status</label>
+                                    <div class="col-sm-10">
+                                        <div class="checkbox checkbox-switch">
+                                            <label>
+                                                <input name="pr_status" type="checkbox" data-on-color="success"
+                                                       data-off-color="warning" data-on-text="Show" data-off-text="Hide"
+                                                       class="switch" checked="true">
+                                                Show/hide
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2">Decription</label>
+                                    <div class="col-sm-10">
+                                        <textarea id="description_ckeditor" style="width: 500px; height: 110px;"
+                                                  rows="5" cols="5"
+                                                  class="form-control"><?php echo isset($data) ? $data->pr_decription : '' ?></textarea>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id="tabs-basic-2" class="product-attribute">
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <a href="javascript:;" onclick="createAttributeProduct();"
+                                       class="btn btn-info btn-labeled btn-xs btn-add-attribute"><b><i
+                                                class="icon-pin-alt"></i></b> Add Attribute</a>
+                                    <?php
+                                    if (isset($data) && isset($data->ProductAttributeModel)) {
+                                        foreach ($data->ProductAttributeModel as $attr) {
+                                            ?>
+                                            <div class="form-group attribute_<?php echo $attr->hpa_id ?>">
+                                                <div class="col-sm-3">
+                                                    <label>Title</label>
+                                                    <input type="text" value="<?php echo $attr->hpa_name ?>"
+                                                           name="hpa_name_<?php echo $attr->hpa_id ?>"
+                                                           class="form-control title-attribute">
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <label>Decription</label>
+                                                    <textarea data-rel="<?php echo $attr->hpa_id ?>"
+                                                              id="description_ckeditor_<?php echo $attr->hpa_id ?>"
+                                                              rows="5" cols="5"
+                                                              class="form-control ckeditor-text"><?php echo $attr->hpa_description ?></textarea>
+                                                </div>
+                                                <div class="col-sm-1">
+                                                    <button type="button"
+                                                            onclick="removeAttributeProduct($(this))"
+                                                            class="btn border-danger text-danger-600 btn-flat btn-icon btn-rounded btn-remove-attribute">
+                                                        <i class="icon-minus3"></i></button>
+                                                </div>
+                                                <script type="text/javascript">
+                                                    $(document).ready(function () {
+                                                        var editor<?php echo $attr->hpa_id ?> = CKEDITOR.replace("description_ckeditor_<?php echo $attr->hpa_id ?>", {
+                                                            height: "300px",
+                                                            extraPlugins: "forms"
+                                                        });
+                                                        CKFinder.setupCKEditor(editor<?php echo $attr->hpa_id ?>, rootUrl + "public/BackendMD/plugins/ckfinder/");
+                                                    });
+                                                </script>
+                                            </div>
+                                            <?php
+                                        }
+                                    }
+                                    ?>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tabs-basic-3" class="product-price">
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <a href="javascript:;" onclick="createPriceProduct();"
+                                       class="btn btn-info btn-labeled btn-xs btn-add-attribute"><b><i
+                                                class="icon-pin-alt"></i></b> Add Price</a>
+                                    <?php
+                                    if (isset($data) && isset($data->ProductPriceModel)) {
+                                        foreach ($data->ProductPriceModel as $attr) {
+                                            ?>
+                                            <div class="tab_price form-group attribute_">
+                                                <div class="col-sm-2">
+                                                    <label>Quantity From</label>
+                                                    <input number="true" type="text" value="<?php echo $attr->hqr_quantity_from  ?>"
+                                                           name="hqr_quantity_from"
+                                                           class="form-control title-attribute">
+                                                </div>
+                                                <div class="col-sm-2">
+                                                    <label>Quantity To</label>
+                                                    <input number="true" type="text" value="<?php echo $attr->hqr_quantity_to  ?>"
+                                                           name="hqr_quantity_to"
+                                                           class="form-control title-attribute">
+                                                </div>
+
+                                                <div class="col-sm-2">
+                                                    <label>Price</label>
+                                                    <input number="true" type="text" value="<?php echo $attr->hqr_price  ?>"
+                                                           name="hqr_price"
+                                                           class="form-control title-attribute">
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label>Decription</label>
+                                                    <textarea name="hqr_decription" data-rel="" rows="5" cols="5"
+                                                              class="form-control"><?php echo $attr->hqr_decription  ?></textarea>
+                                                </div>
+                                                <div class="col-sm-1">
+                                                    <button type="button"
+                                                            onclick="removeAttributeProduct($(this))"
+                                                            class="btn border-danger text-danger-600 btn-flat btn-icon btn-rounded btn-remove-attribute">
+                                                        <i class="icon-minus3"></i></button>
+                                                </div>
+                                            </div>
+                                            <?php
+                                        }
+                                    }
+                                    ?>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button onclick="window.close();" type="button" class="btn btn-link" data-dismiss="modal">
+                            Close
+                        </button>
+                        <button type="submit" class="btn btn-primary btn-submit-content-product">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- /custom button -->
+    </div>
+    <!-- /content area -->
+
+</div>
+<!-- /main content -->
+<script type="text/javascript">
+    <?php
+    if (!empty($data->ProductAttributeModel) && isset($data)) {
+    $lastIDattribute = $data->ProductAttributeModel->getLast();
+    ?>
+    var attr_id = <?php echo $lastIDattribute ? $lastIDattribute->hpa_id + 1 : 0; ?>;
+    <?php } else { ?>
+    var attr_id = 0;
+    <?php } ?>
+
+    var price = 0;
+    $(document).ready(function () {
+        $(".jui-tabs-basic").tabs();
+        <?php if (isset($data->product_status) && $data->product_status == 0 && isset($data)) { ?>
+        $('input[name="product_status"]').bootstrapSwitch('state', false);
+        <?php } else { ?>
+        $('input[name="product_status"]').bootstrapSwitch('state', true);
+        <?php } ?>
+        <?php if (isset($data->pr_status) && $data->pr_status == 0 && isset($data)) { ?>
+        $('input[name="pr_status"]').bootstrapSwitch('state', false);
+        <?php } else { ?>
+        $('input[name="pr_status"]').bootstrapSwitch('state', true);
+        <?php } ?>
+
+        $('.daterange-basic').daterangepicker({
+            applyClass: 'bg-slate-600',
+            cancelClass: 'btn-default',
+            defaultDate:' asasdasdasd',
+            setDate:'saa'
+        });
+    });
+
+</script>

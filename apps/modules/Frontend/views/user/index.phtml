@@ -1,0 +1,96 @@
+<div class="page page-bg-1">
+    <input id="login-home-new" value="new" type="hidden">
+
+    <div class="container">
+
+        <div id="signInField">
+
+
+            <div id="expressbuyerlogin" data-widget-cid="widget-0" class="iframe-show iframe-loaded">
+                <div id="login-wrap" class="login-static nc-outer-box">
+
+                    <form onsubmit="loginUser(); return false; " id="login-form" name="login-form" method="post"
+                          class="form clr style-type-auto lang-en_us auto-en_us form-horizontal">
+
+                        <div id="login-content" class="form clr">
+                            <dl>
+                                <dt class="fm-label">
+                                <div class="fm-label-wrap clr">
+                                    <label for="fm-login-id">Tài Khoản</label>
+                                </div>
+                                </dt>
+                                <dd id="fm-login-id-wrap" class="fm-field">
+                                    <div class="fm-field-wrap">
+                                        <input name="us_name" id="fm-login-id" class="fm-text" name="loginId" required  minlength="6"
+                                               placeholder="Nhập Email" value="" >
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt class="fm-label">
+                                <div class="fm-label-wrap clr">
+                                    <span class="fm-label-extra">
+                                        <a id="forgot-password-link"
+                                           href="<?php echo $this->url->get("user/forgot-password") ?>"
+                                           target="_blank" data-spm-protocol="i">Quên Mật Khẩu?</a>
+                                    </span>
+
+                                    <label for="fm-login-password">Mật Khẩu:</label>
+                                </div>
+                                </dt>
+                                <dd id="fm-login-password-wrap" class="fm-field">
+                                    <div class="fm-field-wrap">
+                                        <input name="us_password" id="fm-login-password" class="fm-text" name="password"  required minlength="6"
+                                               placeholder="Password"
+                                               type="password">
+                                    </div>
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <div id="login-submit">
+                            <input name="event_submit_do_login" value="submit" type="hidden">
+                            <input id="fm-login-submit" value="Đăng Nhập" class="fm-button fm-submit" tabindex="4"
+                                   name="submit-btn" type="submit">
+                        </div>
+                        <div id="login-other">
+                            <div class="login-login-links">
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="join-link">
+                <a id="join-link" class="util-right"
+                   href="<?php echo $this->url->get("user/register") ?>"
+                   title="join in" >Đăng Ký</a>
+            </div>
+            <div class="facebook">
+                Sign&nbsp;in&nbsp;with:
+                <a onclick="googleLogin();" href="javascript:;">
+                    <div class="google-icon"></div>
+                </a>
+                <a onclick="facebookLogin();" href="javascript:;">
+                    <div class="facebook-icon"></div>
+                </a>
+            </div>
+        </div>
+        <div id="login-sub">
+
+            <div class="banner-container">
+                <div class="banner banner-1" style="display: block;">
+                    <h3 class="banner-title">Smarter Shopping</h3>
+                    <h3 class="banner-title">Better Living!</h3>
+                    <ul class="banner-text">
+                        <li>Choose from over 40 different categories</li>
+                        <li>with millions of products</li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div style="clear:both;"></div>
+    </div>
+
+</div>

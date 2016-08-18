@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="1d3804c2-1eb1-46e4-9d83-9ae5df8c362c" name="vatc" url="http://vatc.hqsolu.com">
+        <fileTransfer host="vatc.hqsolu.com" port="21" rootFolder="/public_html" password="dfc4dfc1df9edfc5dfe8dfffdf9fdfebdfcbdf99" username="userweb_vatc">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

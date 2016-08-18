@@ -1,0 +1,59 @@
+<style>
+    .error{
+        color: red;
+    }
+</style>
+<!-- Page container -->
+<div class="page-container login-container">
+
+    <!-- Page content -->
+    <div class="page-content">
+
+        <!-- Main content -->
+        <div class="content-wrapper">
+
+            <!-- Content area -->
+            <div class="content">
+
+                <!-- Advanced login -->
+                <form class="form-login" enctype="multipart/form-data" method="post" onsubmit="return false;">
+                    <div class="panel panel-body login-form">
+                        <div class="text-center">
+                            <div class="icon-object border-warning-400 text-warning-400"><i class="icon-people"></i></div>
+                            <h5 class="content-group-lg">Login to your account <small class="display-block">Enter your credentials</small></h5>
+                        </div>
+
+                        <div class="form-group has-feedback has-feedback-left">
+                            <div class="form-control-feedback">
+                                <i class="icon-user text-muted"></i>
+                            </div>
+                            <input name="username" required="true" minlength="5" type="text" class="form-control" placeholder="Username">
+                        </div>
+
+                        <div class="form-group has-feedback has-feedback-left">
+                            <div class="form-control-feedback">
+                                <i class="icon-lock2 text-muted"></i>
+                            </div>
+                            <input name="password" required="true" minlength="6" type="password" class="form-control" placeholder="Password">
+                        </div>
+                        
+
+                        <div class="form-group">
+                            <button type="submit" class="btn bg-blue btn-block btn-login-access">Login <i class="icon-circle-right2 position-right"></i></button>
+                        </div>
+                    </div>
+                </form>
+                <!-- /advanced login -->
+
+
+            </div>
+            <!-- /content area -->
+
+        </div>
+        <!-- /main content -->
+
+    </div>
+    <!-- /page content -->
+
+</div>
+<!-- /page container -->

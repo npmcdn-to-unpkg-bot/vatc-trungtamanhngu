@@ -1,0 +1,365 @@
+[Sat, 13 Aug 16 18:02:27 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:02:27 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:02:27 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:02:42 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:02:42 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:02:42 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:02:42 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_user_admin' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:02:42 +0200][INFO] DESCRIBE `hq_user_admin`
+[Sat, 13 Aug 16 18:02:42 +0200][INFO] SELECT `hq_user_admin`.`usa_id`, `hq_user_admin`.`usa_username`, `hq_user_admin`.`usa_email`, `hq_user_admin`.`usa_password`, `hq_user_admin`.`usa_last_login`, `hq_user_admin`.`usa_create_date` FROM `hq_user_admin` WHERE `hq_user_admin`.`usa_username` = :userEmail AND `hq_user_admin`.`usa_password` = :userPassword LIMIT :APL0
+[Sat, 13 Aug 16 18:02:42 +0200][INFO] UPDATE `hq_user_admin` SET `usa_username` = ?, `usa_email` = ?, `usa_password` = ?, `usa_last_login` = ?, `usa_create_date` = ? WHERE `usa_id` = ?
+[Sat, 13 Aug 16 18:02:42 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_menu' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:02:42 +0200][INFO] DESCRIBE `hq_menu`
+[Sat, 13 Aug 16 18:02:43 +0200][INFO] SELECT `hq_menu`.`mn_id`, `hq_menu`.`mn_parent_id`, `hq_menu`.`mn_name`, `hq_menu`.`mn_link`, `hq_menu`.`mn_sort`, `hq_menu`.`mn_status`, `hq_menu`.`created_at`, `hq_menu`.`update_at` FROM `hq_menu` WHERE `hq_menu`.`mn_parent_id` = 0 AND `hq_menu`.`mn_status` = 1 ORDER BY `hq_menu`.`mn_sort` ASC
+[Sat, 13 Aug 16 18:02:43 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_manufacturer' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:02:43 +0200][INFO] DESCRIBE `hq_manufacturer`
+[Sat, 13 Aug 16 18:02:43 +0200][INFO] SELECT `hq_manufacturer`.`ma_id`, `hq_manufacturer`.`ma_name`, `hq_manufacturer`.`ma_description`, `hq_manufacturer`.`created_at`, `hq_manufacturer`.`update_at` FROM `hq_manufacturer`
+[Sat, 13 Aug 16 18:02:43 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_infomation' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:02:43 +0200][INFO] DESCRIBE `hq_infomation`
+[Sat, 13 Aug 16 18:02:43 +0200][INFO] SELECT `hq_infomation`.`inf_id`, `hq_infomation`.`inf_name`, `hq_infomation`.`inf_address`, `hq_infomation`.`inf_phone`, `hq_infomation`.`inf_mail`, `hq_infomation`.`inf_open_time` FROM `hq_infomation` LIMIT :APL0
+[Sat, 13 Aug 16 18:02:43 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_orther_page' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:02:43 +0200][INFO] DESCRIBE `hq_orther_page`
+[Sat, 13 Aug 16 18:02:43 +0200][INFO] SELECT `hq_orther_page`.`p_id`, `hq_orther_page`.`p_name`, `hq_orther_page`.`p_short_description`, `hq_orther_page`.`p_description`, `hq_orther_page`.`p_seo_link`, `hq_orther_page`.`p_image_link`, `hq_orther_page`.`p_status`, `hq_orther_page`.`update_at`, `hq_orther_page`.`created_at` FROM `hq_orther_page` WHERE `hq_orther_page`.`p_status` = 1
+[Sat, 13 Aug 16 18:02:43 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_menu' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:02:43 +0200][INFO] DESCRIBE `hq_menu`
+[Sat, 13 Aug 16 18:02:43 +0200][INFO] SELECT `hq_menu`.`mn_id`, `hq_menu`.`mn_parent_id`, `hq_menu`.`mn_name`, `hq_menu`.`mn_link`, `hq_menu`.`mn_sort`, `hq_menu`.`mn_status`, `hq_menu`.`created_at`, `hq_menu`.`update_at` FROM `hq_menu` WHERE `hq_menu`.`mn_parent_id` = 0 AND `hq_menu`.`mn_status` = 1 ORDER BY `hq_menu`.`mn_sort` ASC
+[Sat, 13 Aug 16 18:02:43 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_manufacturer' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:02:43 +0200][INFO] DESCRIBE `hq_manufacturer`
+[Sat, 13 Aug 16 18:02:43 +0200][INFO] SELECT `hq_manufacturer`.`ma_id`, `hq_manufacturer`.`ma_name`, `hq_manufacturer`.`ma_description`, `hq_manufacturer`.`created_at`, `hq_manufacturer`.`update_at` FROM `hq_manufacturer`
+[Sat, 13 Aug 16 18:02:43 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_infomation' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:02:43 +0200][INFO] DESCRIBE `hq_infomation`
+[Sat, 13 Aug 16 18:02:43 +0200][INFO] SELECT `hq_infomation`.`inf_id`, `hq_infomation`.`inf_name`, `hq_infomation`.`inf_address`, `hq_infomation`.`inf_phone`, `hq_infomation`.`inf_mail`, `hq_infomation`.`inf_open_time` FROM `hq_infomation` LIMIT :APL0
+[Sat, 13 Aug 16 18:02:43 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_orther_page' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:02:43 +0200][INFO] DESCRIBE `hq_orther_page`
+[Sat, 13 Aug 16 18:02:43 +0200][INFO] SELECT `hq_orther_page`.`p_id`, `hq_orther_page`.`p_name`, `hq_orther_page`.`p_short_description`, `hq_orther_page`.`p_description`, `hq_orther_page`.`p_seo_link`, `hq_orther_page`.`p_image_link`, `hq_orther_page`.`p_status`, `hq_orther_page`.`update_at`, `hq_orther_page`.`created_at` FROM `hq_orther_page` WHERE `hq_orther_page`.`p_status` = 1
+[Sat, 13 Aug 16 18:02:43 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_menu' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:02:43 +0200][INFO] DESCRIBE `hq_menu`
+[Sat, 13 Aug 16 18:02:43 +0200][INFO] SELECT `hq_menu`.`mn_id`, `hq_menu`.`mn_parent_id`, `hq_menu`.`mn_name`, `hq_menu`.`mn_link`, `hq_menu`.`mn_sort`, `hq_menu`.`mn_status`, `hq_menu`.`created_at`, `hq_menu`.`update_at` FROM `hq_menu` WHERE `hq_menu`.`mn_parent_id` = 0 AND `hq_menu`.`mn_status` = 1 ORDER BY `hq_menu`.`mn_sort` ASC
+[Sat, 13 Aug 16 18:02:43 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_manufacturer' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:02:43 +0200][INFO] DESCRIBE `hq_manufacturer`
+[Sat, 13 Aug 16 18:02:43 +0200][INFO] SELECT `hq_manufacturer`.`ma_id`, `hq_manufacturer`.`ma_name`, `hq_manufacturer`.`ma_description`, `hq_manufacturer`.`created_at`, `hq_manufacturer`.`update_at` FROM `hq_manufacturer`
+[Sat, 13 Aug 16 18:02:43 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_infomation' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:02:43 +0200][INFO] DESCRIBE `hq_infomation`
+[Sat, 13 Aug 16 18:02:43 +0200][INFO] SELECT `hq_infomation`.`inf_id`, `hq_infomation`.`inf_name`, `hq_infomation`.`inf_address`, `hq_infomation`.`inf_phone`, `hq_infomation`.`inf_mail`, `hq_infomation`.`inf_open_time` FROM `hq_infomation` LIMIT :APL0
+[Sat, 13 Aug 16 18:02:43 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_orther_page' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:02:43 +0200][INFO] DESCRIBE `hq_orther_page`
+[Sat, 13 Aug 16 18:02:43 +0200][INFO] SELECT `hq_orther_page`.`p_id`, `hq_orther_page`.`p_name`, `hq_orther_page`.`p_short_description`, `hq_orther_page`.`p_description`, `hq_orther_page`.`p_seo_link`, `hq_orther_page`.`p_image_link`, `hq_orther_page`.`p_status`, `hq_orther_page`.`update_at`, `hq_orther_page`.`created_at` FROM `hq_orther_page` WHERE `hq_orther_page`.`p_status` = 1
+[Sat, 13 Aug 16 18:02:44 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:02:44 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:02:44 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:02:44 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_user' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:02:44 +0200][INFO] DESCRIBE `hq_user`
+[Sat, 13 Aug 16 18:02:44 +0200][INFO] SELECT DISTINCT (YEAR(`hq_user`.`created_at`)) AS `time` FROM `hq_user`
+[Sat, 13 Aug 16 18:02:47 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:02:47 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:02:47 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:02:47 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_order' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:02:47 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:02:47 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:02:47 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:02:47 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_order' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:02:47 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:02:47 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:02:47 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:02:47 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_order' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:02:47 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:02:47 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:02:47 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:02:47 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_user' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:02:47 +0200][INFO] DESCRIBE `hq_user`
+[Sat, 13 Aug 16 18:02:47 +0200][INFO] SELECT count(`hq_user`.`us_id`) AS `value`, date(`hq_user`.`created_at`) AS `time` FROM `hq_user` WHERE YEAR(`hq_user`.`created_at`) = '2016' AND MONTH(`hq_user`.`created_at`) = '8' GROUP BY date(`hq_user`.`created_at`)
+[Sat, 13 Aug 16 18:03:17 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:03:17 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:03:17 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:03:17 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_order' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:03:47 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:03:47 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:03:47 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:03:47 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_order' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:04:17 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:04:17 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:04:17 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:04:17 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_order' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:04:47 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:04:47 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:04:47 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:04:47 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_order' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:05:17 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:05:17 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:05:17 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:05:17 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_order' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:05:47 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:05:47 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:05:47 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:05:47 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_order' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:06:17 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:06:17 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:06:17 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:06:17 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_order' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:06:47 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:06:47 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:06:47 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:06:47 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_order' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:07:17 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:07:17 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:07:17 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:07:17 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_order' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:07:47 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:07:47 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:07:47 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:07:47 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_order' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:08:17 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:08:17 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:08:17 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:08:17 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_order' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:08:52 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:08:52 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:08:52 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:08:52 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_order' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:09:17 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:09:17 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:09:17 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:09:17 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_order' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:09:47 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:09:47 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:09:47 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:09:47 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_order' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:10:17 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:10:17 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:10:17 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:10:17 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_order' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:10:47 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:10:47 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:10:47 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:10:47 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_order' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:11:01 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:11:01 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:11:01 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:11:01 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_user' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:11:01 +0200][INFO] DESCRIBE `hq_user`
+[Sat, 13 Aug 16 18:11:01 +0200][INFO] SELECT DISTINCT (YEAR(`hq_user`.`created_at`)) AS `time` FROM `hq_user`
+[Sat, 13 Aug 16 18:11:01 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:11:01 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:11:01 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:11:01 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_order' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:11:01 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:11:01 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:11:01 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:11:01 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_order' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:11:01 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:11:01 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:11:01 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:11:01 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_order' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:11:01 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:11:01 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:11:01 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:11:01 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_user' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:11:01 +0200][INFO] DESCRIBE `hq_user`
+[Sat, 13 Aug 16 18:11:01 +0200][INFO] SELECT count(`hq_user`.`us_id`) AS `value`, date(`hq_user`.`created_at`) AS `time` FROM `hq_user` WHERE YEAR(`hq_user`.`created_at`) = '2016' AND MONTH(`hq_user`.`created_at`) = '8' GROUP BY date(`hq_user`.`created_at`)
+[Sat, 13 Aug 16 18:11:03 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:11:03 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:11:03 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:11:03 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_manager_hlv' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:11:03 +0200][INFO] DESCRIBE `hq_manager_hlv`
+[Sat, 13 Aug 16 18:11:03 +0200][INFO] SELECT `hq_manager_hlv`.`hlv_id`, `hq_manager_hlv`.`hlv_name`, `hq_manager_hlv`.`hlv_description`, `hq_manager_hlv`.`hlv_image_link` FROM `hq_manager_hlv`
+[Sat, 13 Aug 16 18:12:05 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:12:05 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:12:05 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:12:05 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_manager_hlv' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:12:05 +0200][INFO] DESCRIBE `hq_manager_hlv`
+[Sat, 13 Aug 16 18:12:05 +0200][INFO] SELECT `hq_manager_hlv`.`hlv_id`, `hq_manager_hlv`.`hlv_name`, `hq_manager_hlv`.`hlv_description`, `hq_manager_hlv`.`hlv_image_link` FROM `hq_manager_hlv`
+[Sat, 13 Aug 16 18:12:15 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:12:15 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:12:15 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:12:15 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_manager_hlv' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:12:15 +0200][INFO] DESCRIBE `hq_manager_hlv`
+[Sat, 13 Aug 16 18:12:39 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:12:39 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:12:39 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:12:39 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_manager_hlv' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:12:39 +0200][INFO] DESCRIBE `hq_manager_hlv`
+[Sat, 13 Aug 16 18:12:39 +0200][INFO] SELECT `hq_manager_hlv`.`hlv_id`, `hq_manager_hlv`.`hlv_name`, `hq_manager_hlv`.`hlv_description`, `hq_manager_hlv`.`hlv_image_link` FROM `hq_manager_hlv`
+[Sat, 13 Aug 16 18:13:16 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:13:16 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:13:16 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:13:16 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_manager_hlv' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:13:16 +0200][INFO] DESCRIBE `hq_manager_hlv`
+[Sat, 13 Aug 16 18:13:16 +0200][INFO] INSERT INTO `hq_manager_hlv` (`hlv_name`, `hlv_description`, `hlv_image_link`) VALUES (?, ?, ?)
+[Sat, 13 Aug 16 18:13:16 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_menu' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:13:16 +0200][INFO] DESCRIBE `hq_menu`
+[Sat, 13 Aug 16 18:13:16 +0200][INFO] SELECT `hq_menu`.`mn_id`, `hq_menu`.`mn_parent_id`, `hq_menu`.`mn_name`, `hq_menu`.`mn_link`, `hq_menu`.`mn_sort`, `hq_menu`.`mn_status`, `hq_menu`.`created_at`, `hq_menu`.`update_at` FROM `hq_menu` WHERE `hq_menu`.`mn_parent_id` = 0 AND `hq_menu`.`mn_status` = 1 ORDER BY `hq_menu`.`mn_sort` ASC
+[Sat, 13 Aug 16 18:13:16 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_manufacturer' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:13:16 +0200][INFO] DESCRIBE `hq_manufacturer`
+[Sat, 13 Aug 16 18:13:16 +0200][INFO] SELECT `hq_manufacturer`.`ma_id`, `hq_manufacturer`.`ma_name`, `hq_manufacturer`.`ma_description`, `hq_manufacturer`.`created_at`, `hq_manufacturer`.`update_at` FROM `hq_manufacturer`
+[Sat, 13 Aug 16 18:13:16 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_infomation' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:13:16 +0200][INFO] DESCRIBE `hq_infomation`
+[Sat, 13 Aug 16 18:13:16 +0200][INFO] SELECT `hq_infomation`.`inf_id`, `hq_infomation`.`inf_name`, `hq_infomation`.`inf_address`, `hq_infomation`.`inf_phone`, `hq_infomation`.`inf_mail`, `hq_infomation`.`inf_open_time` FROM `hq_infomation` LIMIT :APL0
+[Sat, 13 Aug 16 18:13:16 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_orther_page' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:13:16 +0200][INFO] DESCRIBE `hq_orther_page`
+[Sat, 13 Aug 16 18:13:16 +0200][INFO] SELECT `hq_orther_page`.`p_id`, `hq_orther_page`.`p_name`, `hq_orther_page`.`p_short_description`, `hq_orther_page`.`p_description`, `hq_orther_page`.`p_seo_link`, `hq_orther_page`.`p_image_link`, `hq_orther_page`.`p_status`, `hq_orther_page`.`update_at`, `hq_orther_page`.`created_at` FROM `hq_orther_page` WHERE `hq_orther_page`.`p_status` = 1
+[Sat, 13 Aug 16 18:13:16 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_menu' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:13:16 +0200][INFO] DESCRIBE `hq_menu`
+[Sat, 13 Aug 16 18:13:16 +0200][INFO] SELECT `hq_menu`.`mn_id`, `hq_menu`.`mn_parent_id`, `hq_menu`.`mn_name`, `hq_menu`.`mn_link`, `hq_menu`.`mn_sort`, `hq_menu`.`mn_status`, `hq_menu`.`created_at`, `hq_menu`.`update_at` FROM `hq_menu` WHERE `hq_menu`.`mn_parent_id` = 0 AND `hq_menu`.`mn_status` = 1 ORDER BY `hq_menu`.`mn_sort` ASC
+[Sat, 13 Aug 16 18:13:16 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_manufacturer' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:13:16 +0200][INFO] DESCRIBE `hq_manufacturer`
+[Sat, 13 Aug 16 18:13:16 +0200][INFO] SELECT `hq_manufacturer`.`ma_id`, `hq_manufacturer`.`ma_name`, `hq_manufacturer`.`ma_description`, `hq_manufacturer`.`created_at`, `hq_manufacturer`.`update_at` FROM `hq_manufacturer`
+[Sat, 13 Aug 16 18:13:16 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_infomation' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:13:16 +0200][INFO] DESCRIBE `hq_infomation`
+[Sat, 13 Aug 16 18:13:16 +0200][INFO] SELECT `hq_infomation`.`inf_id`, `hq_infomation`.`inf_name`, `hq_infomation`.`inf_address`, `hq_infomation`.`inf_phone`, `hq_infomation`.`inf_mail`, `hq_infomation`.`inf_open_time` FROM `hq_infomation` LIMIT :APL0
+[Sat, 13 Aug 16 18:13:16 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_orther_page' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:13:16 +0200][INFO] DESCRIBE `hq_orther_page`
+[Sat, 13 Aug 16 18:13:17 +0200][INFO] SELECT `hq_orther_page`.`p_id`, `hq_orther_page`.`p_name`, `hq_orther_page`.`p_short_description`, `hq_orther_page`.`p_description`, `hq_orther_page`.`p_seo_link`, `hq_orther_page`.`p_image_link`, `hq_orther_page`.`p_status`, `hq_orther_page`.`update_at`, `hq_orther_page`.`created_at` FROM `hq_orther_page` WHERE `hq_orther_page`.`p_status` = 1
+[Sat, 13 Aug 16 18:13:17 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_menu' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:13:17 +0200][INFO] DESCRIBE `hq_menu`
+[Sat, 13 Aug 16 18:13:17 +0200][INFO] SELECT `hq_menu`.`mn_id`, `hq_menu`.`mn_parent_id`, `hq_menu`.`mn_name`, `hq_menu`.`mn_link`, `hq_menu`.`mn_sort`, `hq_menu`.`mn_status`, `hq_menu`.`created_at`, `hq_menu`.`update_at` FROM `hq_menu` WHERE `hq_menu`.`mn_parent_id` = 0 AND `hq_menu`.`mn_status` = 1 ORDER BY `hq_menu`.`mn_sort` ASC
+[Sat, 13 Aug 16 18:13:17 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_manufacturer' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:13:17 +0200][INFO] DESCRIBE `hq_manufacturer`
+[Sat, 13 Aug 16 18:13:17 +0200][INFO] SELECT `hq_manufacturer`.`ma_id`, `hq_manufacturer`.`ma_name`, `hq_manufacturer`.`ma_description`, `hq_manufacturer`.`created_at`, `hq_manufacturer`.`update_at` FROM `hq_manufacturer`
+[Sat, 13 Aug 16 18:13:17 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_infomation' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:13:17 +0200][INFO] DESCRIBE `hq_infomation`
+[Sat, 13 Aug 16 18:13:17 +0200][INFO] SELECT `hq_infomation`.`inf_id`, `hq_infomation`.`inf_name`, `hq_infomation`.`inf_address`, `hq_infomation`.`inf_phone`, `hq_infomation`.`inf_mail`, `hq_infomation`.`inf_open_time` FROM `hq_infomation` LIMIT :APL0
+[Sat, 13 Aug 16 18:13:17 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_orther_page' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:13:17 +0200][INFO] DESCRIBE `hq_orther_page`
+[Sat, 13 Aug 16 18:13:17 +0200][INFO] SELECT `hq_orther_page`.`p_id`, `hq_orther_page`.`p_name`, `hq_orther_page`.`p_short_description`, `hq_orther_page`.`p_description`, `hq_orther_page`.`p_seo_link`, `hq_orther_page`.`p_image_link`, `hq_orther_page`.`p_status`, `hq_orther_page`.`update_at`, `hq_orther_page`.`created_at` FROM `hq_orther_page` WHERE `hq_orther_page`.`p_status` = 1
+[Sat, 13 Aug 16 18:13:18 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:13:18 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:13:18 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:13:18 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_manager_hlv' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:13:18 +0200][INFO] DESCRIBE `hq_manager_hlv`
+[Sat, 13 Aug 16 18:13:18 +0200][INFO] SELECT `hq_manager_hlv`.`hlv_id`, `hq_manager_hlv`.`hlv_name`, `hq_manager_hlv`.`hlv_description`, `hq_manager_hlv`.`hlv_image_link` FROM `hq_manager_hlv`
+[Sat, 13 Aug 16 18:14:24 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:14:24 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:14:24 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:14:24 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_manager_hlv' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:14:24 +0200][INFO] DESCRIBE `hq_manager_hlv`
+[Sat, 13 Aug 16 18:14:24 +0200][INFO] INSERT INTO `hq_manager_hlv` (`hlv_name`, `hlv_description`, `hlv_image_link`) VALUES (?, ?, ?)
+[Sat, 13 Aug 16 18:14:24 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_menu' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:14:24 +0200][INFO] DESCRIBE `hq_menu`
+[Sat, 13 Aug 16 18:14:24 +0200][INFO] SELECT `hq_menu`.`mn_id`, `hq_menu`.`mn_parent_id`, `hq_menu`.`mn_name`, `hq_menu`.`mn_link`, `hq_menu`.`mn_sort`, `hq_menu`.`mn_status`, `hq_menu`.`created_at`, `hq_menu`.`update_at` FROM `hq_menu` WHERE `hq_menu`.`mn_parent_id` = 0 AND `hq_menu`.`mn_status` = 1 ORDER BY `hq_menu`.`mn_sort` ASC
+[Sat, 13 Aug 16 18:14:24 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_manufacturer' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:14:24 +0200][INFO] DESCRIBE `hq_manufacturer`
+[Sat, 13 Aug 16 18:14:24 +0200][INFO] SELECT `hq_manufacturer`.`ma_id`, `hq_manufacturer`.`ma_name`, `hq_manufacturer`.`ma_description`, `hq_manufacturer`.`created_at`, `hq_manufacturer`.`update_at` FROM `hq_manufacturer`
+[Sat, 13 Aug 16 18:14:24 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_infomation' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:14:24 +0200][INFO] DESCRIBE `hq_infomation`
+[Sat, 13 Aug 16 18:14:24 +0200][INFO] SELECT `hq_infomation`.`inf_id`, `hq_infomation`.`inf_name`, `hq_infomation`.`inf_address`, `hq_infomation`.`inf_phone`, `hq_infomation`.`inf_mail`, `hq_infomation`.`inf_open_time` FROM `hq_infomation` LIMIT :APL0
+[Sat, 13 Aug 16 18:14:24 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_orther_page' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:14:24 +0200][INFO] DESCRIBE `hq_orther_page`
+[Sat, 13 Aug 16 18:14:24 +0200][INFO] SELECT `hq_orther_page`.`p_id`, `hq_orther_page`.`p_name`, `hq_orther_page`.`p_short_description`, `hq_orther_page`.`p_description`, `hq_orther_page`.`p_seo_link`, `hq_orther_page`.`p_image_link`, `hq_orther_page`.`p_status`, `hq_orther_page`.`update_at`, `hq_orther_page`.`created_at` FROM `hq_orther_page` WHERE `hq_orther_page`.`p_status` = 1
+[Sat, 13 Aug 16 18:14:24 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_menu' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:14:24 +0200][INFO] DESCRIBE `hq_menu`
+[Sat, 13 Aug 16 18:14:24 +0200][INFO] SELECT `hq_menu`.`mn_id`, `hq_menu`.`mn_parent_id`, `hq_menu`.`mn_name`, `hq_menu`.`mn_link`, `hq_menu`.`mn_sort`, `hq_menu`.`mn_status`, `hq_menu`.`created_at`, `hq_menu`.`update_at` FROM `hq_menu` WHERE `hq_menu`.`mn_parent_id` = 0 AND `hq_menu`.`mn_status` = 1 ORDER BY `hq_menu`.`mn_sort` ASC
+[Sat, 13 Aug 16 18:14:24 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_manufacturer' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:14:24 +0200][INFO] DESCRIBE `hq_manufacturer`
+[Sat, 13 Aug 16 18:14:24 +0200][INFO] SELECT `hq_manufacturer`.`ma_id`, `hq_manufacturer`.`ma_name`, `hq_manufacturer`.`ma_description`, `hq_manufacturer`.`created_at`, `hq_manufacturer`.`update_at` FROM `hq_manufacturer`
+[Sat, 13 Aug 16 18:14:24 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_infomation' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:14:24 +0200][INFO] DESCRIBE `hq_infomation`
+[Sat, 13 Aug 16 18:14:24 +0200][INFO] SELECT `hq_infomation`.`inf_id`, `hq_infomation`.`inf_name`, `hq_infomation`.`inf_address`, `hq_infomation`.`inf_phone`, `hq_infomation`.`inf_mail`, `hq_infomation`.`inf_open_time` FROM `hq_infomation` LIMIT :APL0
+[Sat, 13 Aug 16 18:14:24 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_orther_page' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:14:24 +0200][INFO] DESCRIBE `hq_orther_page`
+[Sat, 13 Aug 16 18:14:24 +0200][INFO] SELECT `hq_orther_page`.`p_id`, `hq_orther_page`.`p_name`, `hq_orther_page`.`p_short_description`, `hq_orther_page`.`p_description`, `hq_orther_page`.`p_seo_link`, `hq_orther_page`.`p_image_link`, `hq_orther_page`.`p_status`, `hq_orther_page`.`update_at`, `hq_orther_page`.`created_at` FROM `hq_orther_page` WHERE `hq_orther_page`.`p_status` = 1
+[Sat, 13 Aug 16 18:14:25 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_menu' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:14:25 +0200][INFO] DESCRIBE `hq_menu`
+[Sat, 13 Aug 16 18:14:25 +0200][INFO] SELECT `hq_menu`.`mn_id`, `hq_menu`.`mn_parent_id`, `hq_menu`.`mn_name`, `hq_menu`.`mn_link`, `hq_menu`.`mn_sort`, `hq_menu`.`mn_status`, `hq_menu`.`created_at`, `hq_menu`.`update_at` FROM `hq_menu` WHERE `hq_menu`.`mn_parent_id` = 0 AND `hq_menu`.`mn_status` = 1 ORDER BY `hq_menu`.`mn_sort` ASC
+[Sat, 13 Aug 16 18:14:25 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_manufacturer' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:14:25 +0200][INFO] DESCRIBE `hq_manufacturer`
+[Sat, 13 Aug 16 18:14:25 +0200][INFO] SELECT `hq_manufacturer`.`ma_id`, `hq_manufacturer`.`ma_name`, `hq_manufacturer`.`ma_description`, `hq_manufacturer`.`created_at`, `hq_manufacturer`.`update_at` FROM `hq_manufacturer`
+[Sat, 13 Aug 16 18:14:25 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_infomation' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:14:25 +0200][INFO] DESCRIBE `hq_infomation`
+[Sat, 13 Aug 16 18:14:25 +0200][INFO] SELECT `hq_infomation`.`inf_id`, `hq_infomation`.`inf_name`, `hq_infomation`.`inf_address`, `hq_infomation`.`inf_phone`, `hq_infomation`.`inf_mail`, `hq_infomation`.`inf_open_time` FROM `hq_infomation` LIMIT :APL0
+[Sat, 13 Aug 16 18:14:25 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_orther_page' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:14:25 +0200][INFO] DESCRIBE `hq_orther_page`
+[Sat, 13 Aug 16 18:14:25 +0200][INFO] SELECT `hq_orther_page`.`p_id`, `hq_orther_page`.`p_name`, `hq_orther_page`.`p_short_description`, `hq_orther_page`.`p_description`, `hq_orther_page`.`p_seo_link`, `hq_orther_page`.`p_image_link`, `hq_orther_page`.`p_status`, `hq_orther_page`.`update_at`, `hq_orther_page`.`created_at` FROM `hq_orther_page` WHERE `hq_orther_page`.`p_status` = 1
+[Sat, 13 Aug 16 18:14:26 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:14:26 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:14:26 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:14:26 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_manager_hlv' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:14:26 +0200][INFO] DESCRIBE `hq_manager_hlv`
+[Sat, 13 Aug 16 18:14:26 +0200][INFO] SELECT `hq_manager_hlv`.`hlv_id`, `hq_manager_hlv`.`hlv_name`, `hq_manager_hlv`.`hlv_description`, `hq_manager_hlv`.`hlv_image_link` FROM `hq_manager_hlv`
+[Sat, 13 Aug 16 18:16:12 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:16:12 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:16:12 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:16:12 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_manager_hlv' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:16:12 +0200][INFO] DESCRIBE `hq_manager_hlv`
+[Sat, 13 Aug 16 18:16:12 +0200][INFO] INSERT INTO `hq_manager_hlv` (`hlv_name`, `hlv_description`, `hlv_image_link`) VALUES (?, ?, ?)
+[Sat, 13 Aug 16 18:16:34 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:16:34 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:16:34 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:16:34 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_manager_hlv' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:16:34 +0200][INFO] DESCRIBE `hq_manager_hlv`
+[Sat, 13 Aug 16 18:16:34 +0200][INFO] SELECT `hq_manager_hlv`.`hlv_id`, `hq_manager_hlv`.`hlv_name`, `hq_manager_hlv`.`hlv_description`, `hq_manager_hlv`.`hlv_image_link` FROM `hq_manager_hlv`
+[Sat, 13 Aug 16 18:16:41 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:16:41 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:16:41 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:17:30 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:17:30 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:17:30 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:17:30 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_manager_hlv' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:17:30 +0200][INFO] DESCRIBE `hq_manager_hlv`
+[Sat, 13 Aug 16 18:17:30 +0200][INFO] SELECT `hq_manager_hlv`.`hlv_id`, `hq_manager_hlv`.`hlv_name`, `hq_manager_hlv`.`hlv_description`, `hq_manager_hlv`.`hlv_image_link` FROM `hq_manager_hlv`
+[Sat, 13 Aug 16 18:17:37 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:17:37 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:17:37 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:17:37 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_manager_hlv' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:17:37 +0200][INFO] DESCRIBE `hq_manager_hlv`
+[Sat, 13 Aug 16 18:17:56 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:17:56 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:17:56 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:17:56 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_manager_hlv' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:17:56 +0200][INFO] DESCRIBE `hq_manager_hlv`
+[Sat, 13 Aug 16 18:17:56 +0200][INFO] SELECT `hq_manager_hlv`.`hlv_id`, `hq_manager_hlv`.`hlv_name`, `hq_manager_hlv`.`hlv_description`, `hq_manager_hlv`.`hlv_image_link` FROM `hq_manager_hlv`
+[Sat, 13 Aug 16 18:18:04 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:18:04 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:18:04 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:18:04 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_manager_hlv' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:18:04 +0200][INFO] DESCRIBE `hq_manager_hlv`
+[Sat, 13 Aug 16 18:18:04 +0200][INFO] INSERT INTO `hq_manager_hlv` (`hlv_name`, `hlv_description`, `hlv_image_link`) VALUES (?, ?, ?)
+[Sat, 13 Aug 16 18:18:48 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:18:48 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:18:48 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:18:48 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_manager_hlv' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:18:48 +0200][INFO] DESCRIBE `hq_manager_hlv`
+[Sat, 13 Aug 16 18:18:48 +0200][INFO] SELECT `hq_manager_hlv`.`hlv_id`, `hq_manager_hlv`.`hlv_name`, `hq_manager_hlv`.`hlv_description`, `hq_manager_hlv`.`hlv_image_link` FROM `hq_manager_hlv`
+[Sat, 13 Aug 16 18:18:58 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:18:58 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:18:58 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:18:58 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_manager_hlv' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:18:58 +0200][INFO] DESCRIBE `hq_manager_hlv`
+[Sat, 13 Aug 16 18:19:18 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:19:18 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:19:18 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:19:25 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:19:25 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:19:25 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:19:35 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:19:35 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:19:35 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:19:35 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_manager_hlv' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:19:35 +0200][INFO] DESCRIBE `hq_manager_hlv`
+[Sat, 13 Aug 16 18:19:35 +0200][INFO] SELECT `hq_manager_hlv`.`hlv_id`, `hq_manager_hlv`.`hlv_name`, `hq_manager_hlv`.`hlv_description`, `hq_manager_hlv`.`hlv_image_link` FROM `hq_manager_hlv`
+[Sat, 13 Aug 16 18:19:42 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:19:42 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:19:42 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:19:42 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_manager_hlv' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:19:42 +0200][INFO] DESCRIBE `hq_manager_hlv`
+[Sat, 13 Aug 16 18:21:41 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:21:41 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:21:41 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:21:41 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_manager_hlv' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:21:41 +0200][INFO] DESCRIBE `hq_manager_hlv`
+[Sat, 13 Aug 16 18:21:41 +0200][INFO] SELECT `hq_manager_hlv`.`hlv_id`, `hq_manager_hlv`.`hlv_name`, `hq_manager_hlv`.`hlv_description`, `hq_manager_hlv`.`hlv_image_link` FROM `hq_manager_hlv`
+[Sat, 13 Aug 16 18:23:04 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:23:04 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 18:23:04 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 18:23:04 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_manager_hlv' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 18:23:04 +0200][INFO] DESCRIBE `hq_manager_hlv`
+[Sat, 13 Aug 16 19:08:50 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 19:08:50 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 19:08:50 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 19:08:50 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_manager_hlv' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 19:08:50 +0200][INFO] DESCRIBE `hq_manager_hlv`
+[Sat, 13 Aug 16 19:08:50 +0200][INFO] SELECT `hq_manager_hlv`.`hlv_id`, `hq_manager_hlv`.`hlv_name`, `hq_manager_hlv`.`hlv_description`, `hq_manager_hlv`.`hlv_image_link` FROM `hq_manager_hlv`
+[Sat, 13 Aug 16 19:08:58 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 19:08:58 +0200][INFO] DESCRIBE `hq_admin_role`
+[Sat, 13 Aug 16 19:08:58 +0200][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`
+[Sat, 13 Aug 16 19:08:58 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_manager_hlv' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 13 Aug 16 19:08:58 +0200][INFO] DESCRIBE `hq_manager_hlv`

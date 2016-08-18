@@ -1,0 +1,141 @@
+<?php echo $this->partial('my-page/menu') ?>
+<div class="container me-body-container">
+    <div class="row">
+        <div class="col-xs-60">
+            <div class="row">
+                <div class="col-xs-60">
+                    <div class="grid-col-container" id="appeal-alert">
+                        <h3 class="page-title">Thông Tin Tài Khoản</h3>
+                    </div>
+                    <div class="grid-col-container">
+                        <div class="me-ui-box">
+                            <div id="main-panel" class="main-panel">
+                                <!--=====================SCREEN BEGIN==============================================================-->
+                                <div class="title-wrap">
+                                    <h1 class="guide">Cập nhật thông tin tài khoản</h1>
+                                </div>
+
+                                <div id="page960" class="main-box">
+                                    <form id="GroupListForm"  class="form-horizontal" onsubmit="return myPage('userInfo','GroupListForm');return false;">
+                                        <div align="right"><span class="required">required information</span></div>
+                                        <table class="tables V" width="100%" cellspacing="0" cellpadding="0" border="0">
+                                            <tbody>
+                                            <tr>
+                                                <th>
+                                                    <span class="required">Họ Và Tên:</span>
+                                                </th>
+                                                <td>
+                                                    <div class="column subHead">
+                                                        <input  required
+                                                               name="us_full_name"
+                                                               value="<?php echo $user->us_full_name ?>">
+                                                    </div>
+                                                    <div style="clear:both;"></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <span class="required">Giới Tính:</span>
+                                                </th>
+                                                <td nowrap="">
+                                                    <input  value="2" <?php if ($user->us_gender == 2) echo " checked "; ?>  name="us_gender" id="mr" type="radio"> <label
+                                                        for="mr">Nam</label>
+                                                    <input  value="1" <?php if ($user->us_gender == 1) echo " checked "; ?> name="us_gender" id="ms" type="radio"> <label
+                                                        for="ms">Nữ</label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th><span class="required">Email :</span></th>
+                                                <td style="color: #E62E04" >
+                                                    asdasd890@yahoo.com
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th><span class="required">Địa Chỉ Liên Hệ:</span></th>
+                                                <td>
+                                                    <table class="contact-address" width="100%" cellspacing="0"
+                                                           cellpadding="0" border="0">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td class="subHead" width="23%" valign="top">Địa Chỉ:
+                                                            </td>
+                                                            <td>
+                                                                <input  name="us_address"
+                                                                       required value="<?php echo $user->us_address ?>" type="text">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="subHead" valign="top">Quận/Huyện:</td>
+                                                            <td nowrap="">
+
+                                                                <select id="districtOfUser" name="zd_id"
+                                                                        class="ProvinceList" >
+                                                                    <option value="-1">Quận</option>
+                                                                    <?php $userWard = \Backend\Models\UserModel::findFirst($user->us_id); ?>
+                                                                    <option selected value="<?php echo $user->zd_id ?>"><?php echo !empty($userWard->ZoneDistrictModel)? $userWard->ZoneDistrictModel->zd_name : '' ?></option>
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                        <tr id="provinceWrap" style="">
+                                                            <td class="subHead">Thành Phố/Tỉnh:</td>
+                                                            <td nowrap="">
+
+                                                                <select id="vnProvinceList" name="zp_id"
+                                                                        class="ProvinceList province_user" >
+                                                                    <option value="-1">Tỉnh/Thành Phố</option>
+                                                                    <?php foreach ($province as $provin) { ?>
+                                                                        <option <?php if ($user->zp_id == $provin->zp_id) {
+                                                                            echo " selected ";
+                                                                        } ?> value="<?php echo $provin->zp_id ?>"><?php echo $provin->zp_name ?></option>
+                                                                    <?php } ?>
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th >
+                                                    <span class="required">Điện Thoại:</span> </th>
+                                                <td>
+                                                    <input required  value="<?php echo $user->us_phone ?>" number="true"
+                                                           minlength="10" maxlength="11" name="us_phone">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th><span >Ngày Tạo :</span></th>
+                                                <td >
+                                                    <?php echo $user->setDate($user->created_at) ?>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th><span >Ngày Cập Nhật :</span></th>
+                                                <td >
+                                                    <?php echo $user->setDate($user->update_at) ?>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="button-wrap">
+                                                    <button onclick="myPage('userInfo','GroupListForm');" type="button" id="formSubmit" class="dpl-btn">Submit</button>
+                                                    <input style="visibility: hidden"  name="Submit" value=" Submit "
+                                                           class="dpl-btn" type="submit">
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </form>
+                                </div>
+
+                                <div style="clear:both;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

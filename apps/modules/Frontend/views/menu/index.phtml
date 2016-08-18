@@ -1,0 +1,20 @@
+<header class="ms-header mini ">
+    <div class="header-main">
+        <p style="line-height: 15px" class="title hide inline-block"><?php echo $categoryParent->ma_name ?></p>
+    </div>
+</header>
+<article style="display: block" class="categories categories-grid">
+    <section class="pop-categories">
+        <ul class="cate-list util-clearfix">
+            <?php if (count($categoryParent->CategoryModel) > 0) {
+                foreach ($categoryParent->CategoryModel as $cate) {
+                    if ($cate->ct_parent_id == 0) { ?>
+                        <li class="ms-rc-ripple ms-rc-custom">
+                            <a href="<?php echo $this->url->get("menu/child-category/").$cate->ct_id ?>"><?php echo $cate->ct_name ?></a>
+                        </li>
+                    <?php }
+                }
+            } ?>
+        </ul>
+    </section>
+</article>

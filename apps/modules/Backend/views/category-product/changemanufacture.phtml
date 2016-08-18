@@ -1,0 +1,16 @@
+<?php if ($category_data) { ?>
+    <select id="select-category-product" name="ct_parent_id" class="select-search">
+        <option value="0">Chose</option>
+        <?php
+        foreach ($category_data as $val) {
+            ?>
+            <option  value="<?php echo $val['id'] ?>"><?php echo $val['name_parent'] ?></option>
+        <?php }
+        ?>
+    </select>
+<?php } ?>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.select-search').select2();
+    });
+</script>

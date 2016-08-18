@@ -1,0 +1,70 @@
+<div  class="wrapper">
+    <div class="bloq-news-area">
+        <div class="last-news-area">
+            <h1 class="blog-news-title" >Tin Mới Nhất</h1>
+            <?php if (count($news) > 0) { ?>
+                <div class="blog-news-feature">
+                    <a href="<?php echo $this->url->get() . $news[0]->showSeoLink(); ?>">
+                        <img src="<?php echo $news[0]->n_image_link; ?>" alt="">
+                        <span class="category-news"><?php echo isset($news[0]->NewsCategoryModel) ? $news[0]->NewsCategoryModel->nc_name : ''; ?></span>
+                        <h2 class="news-title" ><?php echo $news[0]->n_name; ?></h2>
+                        <p class="news-time" >
+                            <i class="fa fa-clock-o  fa-2x" aria-hidden="true"></i>
+                            <?php echo $news[0]->showCreateDate(); ?>
+                        </p>
+                    </a>
+                </div>
+            <?php } ?>
+            <div class="news-right">
+                <?php
+                if (count($news) > 0) {
+                    foreach ($news as $key => $val) {
+                        if ($key > 0 && $key < 5) {
+                            ?>
+                            <div class="news-area">
+                                <a href="<?php echo $this->url->get() . $val->showSeoLink(); ?>">
+                                    <img src="<?php echo $val->n_image_link; ?>" alt="">
+                                    <span class="category-news"><?php echo isset($val->NewsCategoryModel) ? $val->NewsCategoryModel->nc_name : ''; ?></span>
+                                    <h2 class="news-title" ><?php echo $val->n_name; ?></h2>
+                                    <p class="news-time" >
+                                        <i class="fa fa-clock-o fa-2x" aria-hidden="true"></i>
+                                        <?php echo $val->showCreateDate(); ?>
+                                    </p>
+                                </a>
+                            </div>
+                            <?php
+                        }
+                    }
+                }
+                ?>
+
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="orther-news">
+            <h1 class="blog-news-title" >Tin Khác</h1>
+            <?php
+            if (count($news) > 0) {
+                foreach ($news as $key => $val) {
+                    if ($key > 5) {
+                        ?>
+                        <div class="news-area">
+                            <a href="<?php echo $this->url->get() . $val->showSeoLink(); ?>">
+                                <img src="<?php echo $val->n_image_link; ?>" alt="">
+                                <span class="category-news"><?php echo isset($val->NewsCategoryModel) ? $val->NewsCategoryModel->nc_name : ''; ?></span>
+                                <h2 class="news-title" ><?php echo $val->n_name; ?></h2>
+                                <p style="text-align: left" class="news-time" >
+                                    <i class="fa fa-clock-o fa-2x" aria-hidden="true"></i>
+                                    <?php echo $val->showCreateDate(); ?>
+                                </p>
+                            </a>
+                        </div>
+                        <?php
+                    }
+                }
+            }
+            ?>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,78 @@
+<style>
+    .error{
+        color: red;
+    }
+</style>
+<div class="modal-content">
+    <form enctype="multipart/form-data" method="post" onsubmit="return false;" class="form-horizontal ">
+        <div class="modal-body">
+            <?php foreach ($data as $val) { ?>
+                <div class="form-group">
+                    <label class="control-label col-sm-3"><?php echo $val->role_name ?></label>
+                    <div class="col-sm-9">
+                        <input type="text" name="<?php echo $val->role_id ?>" value="<?php echo $val->role_ar_user ?>" data-role="tagsinput" class="tagsinput-typeahead-<?php echo $val->role_id ?>">
+                    </div>
+                </div>
+            <?php } ?>
+
+        </div>
+
+
+        <div class="modal-footer">
+            <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+            <button  type="submit" class="btn btn-primary btn-submit-content">Save</button>
+        </div>
+    </form>
+</div>
+<p id="demo"></p>
+<!-- /horizontal form modal -->
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var states = <?php echo $listuser; ?>;
+        //user role
+        var substringMatcher = function (strs) {
+            return function findMatches(q, cb) {
+                var matches, substringRegex;
+
+                // an array that will be populated with substring matches
+                matches = [];
+
+                // regex used to determine if a string contains the substring `q`
+                substrRegex = new RegExp(q, 'i');
+
+                // iterate through the pool of strings and for any string that
+                // contains the substring `q`, add it to the `matches` array
+                $.each(strs, function (i, str) {
+                    if (substrRegex.test(str)) {
+
+                        // the typeahead jQuery plugin expects suggestions to a
+                        // JavaScript object, refer to typeahead docs for more info
+                        matches.push({value: str});
+                    }
+                });
+                cb(matches);
+            };
+        };
+<?php foreach ($data as $val) { ?>
+            var role_id = '<?php echo $val->role_id ?>';
+            $('.tagsinput-typeahead-' + role_id).tagsinput('input').typeahead(
+                    {
+                        hint: true,
+                        highlight: true,
+                        minLength: 1
+                    },
+            {
+                name: 'states',
+                displayKey: 'value',
+                source: substringMatcher(states)
+            }
+            ).bind('typeahead:selected', $.proxy(function (obj, datum) {
+                this.tagsinput('add', datum.value);
+                this.tagsinput('input').typeahead('val', '');
+            }, $('.tagsinput-typeahead-' + role_id)));
+<?php } ?>
+    });
+    
+</script>
+

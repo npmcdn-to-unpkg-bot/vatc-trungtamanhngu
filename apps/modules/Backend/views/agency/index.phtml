@@ -1,0 +1,83 @@
+<!-- Main content -->
+<div class="content-wrapper">
+
+    <!-- Page header -->
+    <div class="page-header">
+        <div class="page-header-content">
+            <div class="page-title">
+                <h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold"><?php echo $header_title; ?></span></h4>
+            </div>
+        </div>
+
+        <div class="breadcrumb-line">
+            <ul class="breadcrumb">
+                <li><a href="<?php echo $urlModule; ?>"><i class="icon-home2 position-left"></i> Home</a></li>
+                <li class="active"><?php echo $header_title; ?></li>
+            </ul>
+
+        </div>
+    </div>
+    <!-- /page header -->
+
+
+    <!-- Content area -->
+    <div class="content">
+
+
+
+
+        <!-- Custom button -->
+        <div class="panel panel-flat">
+            <div class="panel-heading">
+                <h5 class="panel-title"><?php echo $header_title; ?></h5>
+                <div class="heading-elements">
+                    <ul class="icons-list">
+                        <li><a data-action="collapse"></a></li>
+                        <li><a data-action="reload"></a></li>
+                        <li><a data-action="close"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <button onclick="showPopup()" data-toggle="modal" data-target="#modal_form_horizontal" style="margin-left: 20px;" type="button" class="btn btn-success btn-labeled"><b><i class="icon-plus3"></i></b> New Data</button>
+            <table class="table table-bordered table-hover datatable-highlight">
+                <thead>
+                    <tr class="success">
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>City</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php if ($data) { ?>
+                        <?php foreach ($data as $key => $val) { ?>
+                            <tr >
+                                <td><?php echo $val->ag_id ?></td>
+                                <td><?php echo $val->ag_name ?></td>
+                                <td><?php echo $val->ag_address ?></td>
+                                <td><?php echo $val->ZoneProvinceModel->zp_name ?></td>
+                                <td>
+                                    <button onclick="showPopup(<?php echo $val->ag_id ?>)" data-original-title="Edit" data-toggle="modal" data-target="#modal_form_horizontal" data-popup="tooltip" type="button" class="btn btn-info btn-icon btn-edit-content">
+                                        <i class="icon-pencil7"></i>
+                                    </button>
+
+                                    <button data-rel="<?php echo $val->ag_id ?>" data-original-title="Remove" data-popup="tooltip" type="button" class="btn btn-danger btn-icon btn-delete-content">
+                                        <i class="icon-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <?php
+                        }
+                    }
+                    ?>
+                </tbody>
+            </table>
+            <?php echo $this->partial($this->dispatcher->getControllerName() . '/neweditcontent') ?>
+        </div>
+        <!-- /custom button -->
+    </div>
+    <!-- /content area -->
+
+</div>
+<!-- /main content -->

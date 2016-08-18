@@ -1,0 +1,83 @@
+<style>
+    .error{
+        color: red;
+    }
+</style>
+<!-- Horizontal form modal -->
+<div id="modal_form_horizontal" class="modal fade">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h5 class="modal-title"><?php echo $header_title; ?></h5>
+            </div>
+
+            <form enctype="multipart/form-data" method="post" onsubmit="return false;" class="form-horizontal ">
+                <div class="modal-body">
+                    <input type="hidden" name="n_id"  class="form-control">
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">Title</label>
+                        <div class="col-sm-9">
+                            <input type="text" required="true" name="n_name"  class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">Seo Link <br>(* System auto create Seo Link )</label>
+                        <div class="col-sm-9">
+                            <input type="text"  name="n_seo_link"  class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">Image</label>
+                        <div class="col-sm-9">
+                            <button style="width: 70px; display: inline-block; vertical-align: top;" onclick="BrowseServer('n_image_link_img', 'n_image_link');" class="btn btn-block btn-primary " >Upload</button>
+                            <input  name="n_image_link_img" type="image" style="max-width: 200px;"  src="" alt="">
+                            <input type="hidden" name="n_image_link"   class="form-control ">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">Status</label>
+                        <div class="col-sm-9">
+                            <div class="checkbox checkbox-switch">
+                                <label>
+                                    <input name="n_status" value="0" type="checkbox" data-on-color="success" data-off-color="warning" data-on-text="Show" data-off-text="Hide" class="switch" checked="true">
+                                    Show/hide
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">Short Decription</label>
+                        <div class="col-sm-9">
+                            <textarea style="width: 500px; height: 110px;" rows="5" cols="5" class="form-control " name="n_short_description" ></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">Decription</label>
+                        <div class="col-sm-9">
+                            <textarea style="width: 500px; height: 110px;" rows="5" cols="5" class="form-control " id="description_ckeditor" name="n_description" ></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">Keywords <br>(* Cách nhau bằng dấu "," )</label>
+                        <div class="col-sm-9">
+                            <input type="text"  name="n_keywords"  class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+                    <button  type="submit" class="btn btn-primary btn-submit-content">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<p id="demo"></p>
+<!-- /horizontal form modal -->
+<script type="text/javascript">
+    var columns = {'n_id': 'inputtext', 'nc_id': 'select', 'ct_parent_id': 'select', 'n_name': 'inputtext', 'n_seo_link': 'inputtext',  'n_image_link': 'image', 'n_status': 'checkbox-switch', 'n_description': 'ckeditor', 'n_keywords': 'inputtext','n_short_description':'textarea'};
+   
+</script>

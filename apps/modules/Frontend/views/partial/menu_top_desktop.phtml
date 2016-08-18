@@ -1,0 +1,51 @@
+<!-- Hamburger Menu -->
+<div id="as-hamburger" class="as-hamburglar is-open">
+    <div id="top"></div>
+    <div id="middle"></div>
+    <div id="bottom"></div>
+    <div class="as-close-btn"></div>
+</div>
+<!-- Hamburger Menu / End -->
+
+<header id="hq-header-wrapper">
+    <div class="hq-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-4">
+                    <div class="hq-logo">
+                        <a class="#hq-header-wrapper" href="/">
+                            <img src="<?php echo $this->url->get("public/FrontendCore/") ?>images/logo.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-8 col-sm-8 col-xs-8">
+                    <ul class="hq-icon-social">
+                        <li class="hq-nav-hide"><a href="#section-1">Trang Chủ</a></li>
+                        <li class="hq-nav-hide"><a href="#services">Huấn Luyện Viên</a></li>
+                        <li class="hq-nav-hide"><a href="#portfolio">Thể Lệ</a></li>
+                        <li class="hq-nav-hide"><a href="#about">Thư Viện</a>
+                        <li class="hq-nav-hide"><a href="#team">Tin Tức</a></li>
+                        <li>
+                            <a class="hq-user" onclick="detailForm();" href="#">
+                                <i class="fa fa-user"></i>
+                            </a>
+                            <a onclick="detailForm();" href="javascript:;" class="hq-social-text">Hi, Nguyễn Thanh
+                                Hải</a> - <a href="/client/logout" class="hq-social-text">
+                                Thoát
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<nav class="as-nav-wrapper as-menu-roll">
+    <ul id="menu-main-menu" class="as-primary-nav">
+        <li><a href="#section-1">TRANG CHỦ</a></li>
+        <li><a href="#services">HUẤN LUYỆN VIÊN</a></li>
+        <li><a href="#portfolio">THỂ LỆ</a></li>
+        <li><a href="#about">THƯ VIỆN</a></li>
+        <li><a href="#team">TIN TỨC</a></li>
+    </ul>
+</nav>

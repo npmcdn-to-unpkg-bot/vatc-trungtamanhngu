@@ -1,0 +1,71 @@
+<style>
+    .error {
+        color: red;
+    }
+</style>
+<!-- Horizontal form modal -->
+<div id="modal_form_horizontal" class="modal fade">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h5 class="modal-title"><?php echo $header_title; ?></h5>
+            </div>
+
+            <form enctype="multipart/form-data" method="post" onsubmit="return false;" class="form-horizontal ">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">Category Collection</label>
+                        <div class="col-sm-9">
+                            <select name="col_id" class="select-search">
+                                <option value="-1">Chose</option>
+                                <?php if ($category_data) {
+                                    foreach ($category_data as $val) { ?>
+                                        <option
+                                            value="<?php echo $val->id ?>"><?php echo $val->name_parent ?></option>
+                                    <?php }
+                                } ?>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">Product</label>
+                        <div class="col-sm-9">
+                            <select name="pr_id" class="select-search chose-product-collection">
+                                <option value="-1">Chose</option>
+                                <?php if (isset($products)) {
+                                    foreach ($products as $val) { ?>
+                                        <option value="<?php echo $val->pr_id ?>"><?php echo $val->pr_name ?></option>
+                                    <?php }
+                                } ?>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="product-append">
+
+                    </div>
+
+                </div>
+
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary btn-submit-content">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<p id="demo"></p>
+<!-- /horizontal form modal -->
+<script type="text/javascript">
+    var columns = {
+        'ba_id': 'inputtext',
+        'col_id': 'select',
+        'ba_name': 'inputtext',
+        'ba_description': 'textarea',
+        'ba_image_link': 'image',
+        'ba_sort': 'inputtext',
+        'ba_link': 'inputtext'
+    };
+</script>

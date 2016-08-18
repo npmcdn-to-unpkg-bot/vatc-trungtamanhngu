@@ -1,0 +1,102 @@
+<!-- Main content -->
+<div class="content-wrapper">
+
+    <!-- Page header -->
+    <div class="page-header">
+        <div class="page-header-content">
+            <div class="page-title">
+                <h4><i class="icon-arrow-left52 position-left"></i> <span
+                        class="text-semibold"><?php echo $header_title; ?></span></h4>
+            </div>
+        </div>
+
+        <div class="breadcrumb-line">
+            <ul class="breadcrumb">
+                <li><a href="<?php echo $urlModule; ?>"><i class="icon-home2 position-left"></i> Home</a></li>
+                <li><a href="javascript:;">User Manager</a></li>
+                <li class="active"><?php echo $header_title; ?></li>
+            </ul>
+
+        </div>
+    </div>
+    <!-- /page header -->
+
+
+    <!-- Content area -->
+    <div class="content">
+
+
+        <!-- Custom button -->
+        <div class="panel panel-flat">
+            <div class="panel-heading">
+                <h5 class="panel-title"><?php echo $header_title; ?></h5>
+                <div class="heading-elements">
+                    <ul class="icons-list">
+                        <li><a data-action="collapse"></a></li>
+                        <li><a data-action="reload"></a></li>
+                        <li><a data-action="close"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div style="width: 95%;margin: 0 auto;background-color: rgb(249, 249, 249)">
+
+                <!-- Basic layout-->
+                <form class="search-form" onsubmit="return false;" method="post">
+                    <div style="background: none" class="panel panel-flat">
+                        <div style="background: none" class="panel-heading">
+                            <h5 class="panel-title">Filter</h5>
+
+                        </div>
+                        <div class="panel-body">
+                            <div class="col-md-3">
+                                <label>Email:</label>
+                                <input type="text" email="true" name="us_email" class="form-control"
+                                       placeholder="Email">
+                            </div>
+                            <div class="col-md-3">
+                                <label>User Name:</label>
+                                <input type="text" name="us_name" class="form-control" placeholder="User Name">
+                            </div>
+                            <div class="col-md-3">
+                                <label>Phone:</label>
+                                <input type="text" name="us_phone" number="true" class="form-control"
+                                       placeholder="Phone">
+                            </div>
+                            <div class="col-md-1" style="top: 25px;">
+                                <button onclick="searchFilter();" type="submit" class="btn btn-primary">Search<i
+                                        class="icon-search4 position-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- /basic layout -->
+
+            </div>
+            <div class="filter-search">
+                <table class="table table-bordered table-hover datatable-highlight">
+                    <thead>
+                    <tr class="success">
+                        <th>User ID</th>
+                        <th>Full Name</th>
+                        <th>User Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Create Date</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                    </thead>
+                    <tbody class="tbody-search">
+
+
+                    </tbody>
+                </table>
+            </div>
+            <?php echo $this->partial($this->dispatcher->getControllerName() . '/neweditcontent') ?>
+        </div>
+        <!-- /custom button -->
+    </div>
+    <!-- /content area -->
+
+</div>
+<!-- /main content -->

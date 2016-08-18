@@ -1,0 +1,22 @@
+<header class="ms-header mini ">
+    <div class="header-main">
+        <a href="<?php echo $this->url->get("menu/").$category->ManufacturerModel->ma_id ?>" class="ic-wp back ms-rc-ripple ms-rc-custom">
+            <i class="fa fa-arrow-left"></i>
+        </a>
+        <p style="line-height: 15px" class="title hide inline-block"><?php echo $category->ct_name ?></p>
+    </div>
+</header>
+<article style="display: block" class="categories categories-grid">
+    <section class="pop-categories">
+        <ul class="cate-list util-clearfix">
+            <?php if ($categoryChild) {
+                foreach ($categoryChild as $cate) {?>
+                        <li class="ms-rc-ripple ms-rc-custom">
+                            <a href="<?php echo $this->url->get("category-product/show/").$cate->ct_seo_link ?>"><?php echo $cate->ct_name ?></a>
+                        </li>
+                    <?php 
+                }
+            } ?>
+        </ul>
+    </section>
+</article>

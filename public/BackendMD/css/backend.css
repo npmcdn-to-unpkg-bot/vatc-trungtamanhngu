@@ -1,0 +1,23 @@
+.btn-new-content{
+    margin-left: 20px;
+}
+table tbody tr td svg{
+    width: 50px;
+}
+.error{
+    color: #dd4b39;
+    font-size: 11px;
+}
+input.error,textarea.error{
+    border: #dd4b39 solid 1px;
+    
+}
+.control-label {
+    font-weight: bold !important;
+}
+.AnyTime-win{
+    z-index: 9999;
+}
+.daterangepicker.dropdown-menu{
+    z-index: 1999;
+}
