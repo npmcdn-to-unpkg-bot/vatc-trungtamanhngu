@@ -26,13 +26,18 @@
                         <li class="hq-nav-hide"><a href="#about">Thư Viện</a>
                         <li class="hq-nav-hide"><a href="#team">Tin Tức</a></li>
                         <li>
-                            <a class="hq-user" onclick="detailForm();" href="#">
+                            <a class="hq-user" href="javascript:;" <?php if (!$user) { ?> data-toggle="modal"
+                                data-target="#popupLogin"  <?php } ?>>
                                 <i class="fa fa-user"></i>
                             </a>
-                            <a onclick="detailForm();" href="javascript:;" class="hq-social-text">Hi, Nguyễn Thanh
-                                Hải</a> - <a href="/client/logout" class="hq-social-text">
-                                Thoát
-                            </a></li>
+                            <?php if ($user) { ?>
+                                <a data-toggle="modal" data-target="#popupChangePass" href="javascript:;"
+                                   class="hq-social-text">Hi, <?php echo $user->us_name ?></a> - <a
+                                    href="<?php echo $this->url->get("user/logout") ?>" class="hq-social-text">
+                                    Thoát
+                                </a>
+                            <?php } ?>
+                        </li>
                     </ul>
                 </div>
             </div>

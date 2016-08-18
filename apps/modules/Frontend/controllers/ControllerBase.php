@@ -17,6 +17,16 @@ class ControllerBase extends Controller
         $this->view->setLayout("index");
         //session user login
         $this->user = $this->view->user = $this->getUser();
+        //Menu page
+       /* $menuModel = new \Backend\Models\MenuModel();
+        $this->view->menu_main = $menuModel::find(array("mn_parent_id=0 and mn_status=1", "order" => "mn_sort asc"));
+
+        //Information page
+        $informationModel = new InformationModel();
+        $this->view->information = $informationModel::findFirst();
+        //Orther Page
+        $ortherPageModel = new OrtherPageModel();
+        $this->view->orther_page = $ortherPageModel::find(array("p_status=1"));*/
 
 
     }

@@ -41,20 +41,15 @@ class IndexController extends ControllerBase
         if ($this->request->isPost()) {
             $data = $this->request->getPost();
             $postModel = new ManagerPostsModel();
-            $posts = $postModel::find();
+
             $result = array();
             if (!empty($data['created_at'])) {
                 $time = date("Y-m-d", strtotime($data['created_at']));
                 $posts = $postModel::find(array("DATE(created_at) = '{$time}'"));
+            }else{
+                $posts = $postModel::find(array("hlv_id = '{$data['hlv_id']}'"));
             }
-            if (count($posts) > 0) {
-                foreach ($posts as $po) {
-                    if ($po->ManagerHlvModel->hlv_gender == $data['hlv_gender']) {
-                        $result[]=$po;
-                    }
-                }
-            }
-            $this->view->posts=$result;
+            $this->view->posts=$posts;
             $this->view->setRenderLevel(\Phalcon\Mvc\View::LEVEL_ACTION_VIEW);
         }
     }

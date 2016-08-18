@@ -7,7 +7,7 @@ return array(
     'acl' => false,
     'profiler' => false,
     'baseUrl' => '/',
-    'rootUrl' => "http://" . $_SERVER["SERVER_NAME"] . "/",
+    'rootUrl' => "http://" . $_SERVER['HTTP_HOST'] . "/",
     'router' => array(
         "default_module" => "frontend"
     ),

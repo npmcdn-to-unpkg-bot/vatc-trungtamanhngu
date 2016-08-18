@@ -342,6 +342,12 @@ table, th, td {
 @media (max-width: 1200px) {
   #hq-header-wrapper .hq-icon-social li.hq-nav-hide {
     display: none; } }
+.hq-social-text {
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
 body {
   overflow-x: hidden;
   font-family: 'Roboto', sans-serif;
