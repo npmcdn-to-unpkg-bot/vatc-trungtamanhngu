@@ -27,16 +27,19 @@ class PostsController extends ControllerBase
             if ($this->user) {
                 $PostsModel = new ManagerPostsModel();
                 $galleryModel = new GalleryModel();
+                $bannerModel = new BannerModel();
                 $data = $this->request->getPost();
                 $data['us_id'] = $this->user->us_id;
                 $PostsModel->create($data);
                 $validation = $PostsModel->getMessages();
+
                 //Validation
                 if (empty($validation) || is_null($validation)) {
+
                     $respon['status'] = 1;
                     $respon['message'] = 'Thành Công';
                     $respon['description'] = $PostsModel->p_description;
-                    $respon['image'] = $galleryModel::findFirst($PostsModel->ga_id)->ga_image_link;
+                    $respon['image'] = $bannerModel::findFirst(array("bc_id =7"))->ba_image_link;
 
                 } else {
                     $respon['status'] = 0;
