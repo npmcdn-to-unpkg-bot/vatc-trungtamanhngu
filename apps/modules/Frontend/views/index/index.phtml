@@ -65,15 +65,16 @@
                                         </li>
                                     </ul>
                                     <div class="hover-hlv-area">
+
+                                        <a data-dismiss="modal" data-toggle="modal"
+                                           data-target="#popupInfoHlv-<?php echo $coach->hlv_id ?>"
+                                           href="javascript:;"
+                                           class="animated fadeInUp btn-hlv-area btn-hlvinfo">Tìm hiểu</a>
                                         <a data-rel="<?php echo $coach->hlv_id ?>" data-dismiss="modal"
                                            data-toggle="modal" <?php if (!$user) { ?> data-target="#popupLogin" <?php } ?>
                                            href="javascript:;"
                                            class="animated fadeInUp btn-hlv-area btn-hlvplay <?php if ($user) { ?> btn-playgame  <?php } ?>">Tham gia
                                             ngay</a>
-                                        <a data-dismiss="modal" data-toggle="modal"
-                                           data-target="#popupInfoHlv-<?php echo $coach->hlv_id ?>"
-                                           href="javascript:;"
-                                           class="animated fadeInUp btn-hlv-area btn-hlvinfo">Tìm hiểu</a>
                                     </div>
                                 </div>
                             </div>

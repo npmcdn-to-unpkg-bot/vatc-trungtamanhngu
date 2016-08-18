@@ -49,7 +49,7 @@ var loadmore = 1;
             },
             arrows: {
                 style: "",
-                enable: true,
+                enable: false,
                 rtl: false,
                 hide_onmobile: false,
                 hide_onleave: true,
@@ -72,6 +72,20 @@ var loadmore = 1;
                     h_offset: 20,
                     v_offset: 0
                 }
+            },
+            bullets: {
+                enable:true,
+                hide_onmobile:true,
+                hide_under:778,
+                style:"hermes",
+                hide_onleave:false,
+                direction:"horizontal",
+                h_align:"center",
+                v_align:"bottom",
+                h_offset:0,
+                v_offset:20,
+                space:5,
+                tmp:''
             }
         }
     });
