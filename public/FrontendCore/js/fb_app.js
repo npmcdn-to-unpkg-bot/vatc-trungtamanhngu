@@ -28,8 +28,10 @@ function callFBShare() {
         name: shareName
     }, function (response) {
         if (response.post_id) {
+            window.location.reload();
             // callback(urlCallBackShare, 'PUT', userFBID, 'share');
         } else {
+            window.location.reload();
             //alert("Bạn phải share để có thể nhận được Giftcode");
         }
     });
