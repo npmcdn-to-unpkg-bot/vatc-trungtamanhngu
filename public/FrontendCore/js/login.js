@@ -349,7 +349,7 @@ function showMessageWhenWrong(array_errors) {
             $("label[for='" + key + "']").show();
         }
     } else {
-        $("label[for='message_error']").text(array_errors);
+        $("label[for='message_error']").html(array_errors);
         $("label[for='message_error']").show();
     }
 }
