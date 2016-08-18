@@ -29,7 +29,10 @@ class IndexController extends ControllerBase
         $managerHlvModel = new ManagerHlvModel();
         $postModel = new ManagerPostsModel();
         $newsModel = new NewsModel();
-        $this->view->blogs = $newsModel::find(array("n_status=1", "order" => "n_id desc", "limit"=> 3));
+        $bannerModel = new BannerModel();
+        $this->view->sliders = $bannerModel::find(array("bc_id =2"));
+        $this->view->infographic = $bannerModel::findFirst(array("bc_id =3"));
+        $this->view->blogs = $newsModel::find(array("n_status=1", "order" => "n_id desc", "limit" => 3));
         $this->view->posts = $postModel::find(array("order" => "p_id desc"));
         $this->view->gallery = $galleryModel::findFirst(array("order" => "RAND()"));
         $this->view->coachs = $managerHlvModel::find(array("order" => "hlv_id asc", "limit" => 3));
@@ -46,10 +49,10 @@ class IndexController extends ControllerBase
             if (!empty($data['created_at'])) {
                 $time = date("Y-m-d", strtotime($data['created_at']));
                 $posts = $postModel::find(array("DATE(created_at) = '{$time}'"));
-            }else{
+            } else {
                 $posts = $postModel::find(array("hlv_id = '{$data['hlv_id']}'"));
             }
-            $this->view->posts=$posts;
+            $this->view->posts = $posts;
             $this->view->setRenderLevel(\Phalcon\Mvc\View::LEVEL_ACTION_VIEW);
         }
     }

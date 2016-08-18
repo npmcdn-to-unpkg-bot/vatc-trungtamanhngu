@@ -55,11 +55,11 @@ class BannerController extends ControllerBase {
             return $respon;
         }
         $buildingModel = new \Backend\Models\BannerModel();
-        $check_title = $buildingModel::findFirst(array("ba_name='{$data['ba_name']}' and ba_id!='{$data['ba_id']}'"));
-        if ($check_title) {
-            $respon['message'] = 'Title đã tồn tại';
-            return $respon;
-        }
+//        $check_title = $buildingModel::findFirst(array("ba_name='{$data['ba_name']}' and ba_id!='{$data['ba_id']}'"));
+//        if ($check_title) {
+//            $respon['message'] = 'Title đã tồn tại';
+//            return $respon;
+//        }
         if (empty($data['ba_id']) || $data['ba_id'] == NULL) {
             //insert
             unset($data['ba_id']);

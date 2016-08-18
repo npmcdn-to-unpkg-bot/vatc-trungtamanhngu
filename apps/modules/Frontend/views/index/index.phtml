@@ -3,28 +3,19 @@
     <header id="myCarousel" class="carousel slide">
         <div id="slider1" class="rev_slider" data-version="5.0">
             <ul>
-                <li data-transition="random">
-                    <img src="<?php echo $this->url->get("public/FrontendCore/") ?>images/bg-slide1.jpg" alt="Title 1">
-                    <div class="over-lay-area1"></div>
-                    <div class="carousel-caption">
-                        <h1>Cùng <span class="color-text-vatc">VATC</span> khởi động tương lai</h1>
-                        <p>Trang sẽ được thiết kế theo dạng cuộn, khi click vào menu tương ứng sẽ tua trang xuống nên
-                            team
-                            chú ý
-                            điểm này.</p>
-                    </div>
-                </li>
-                <li data-transition="random">
-                    <img src="<?php echo $this->url->get("public/FrontendCore/") ?>images/bg-slide1.jpg" alt="Title 1">
-                    <div class="over-lay-area1"></div>
-                    <div class="carousel-caption">
-                        <h1>Cùng <span class="color-text-vatc">VATC</span> khởi động tương lai</h1>
-                        <p>Trang sẽ được thiết kế theo dạng cuộn, khi click vào menu tương ứng sẽ tua trang xuống nên
-                            team
-                            chú ý
-                            điểm này.</p>
-                    </div>
-                </li>
+                <?php if ($sliders) {
+                    foreach ($sliders as $slider) { ?>
+                        <li data-transition="random">
+                            <img src="<?php echo $slider->ba_image_link ?>"
+                                 alt="<?php echo $slider->ba_name ?>">
+                            <div class="over-lay-area1"></div>
+                            <div class="carousel-caption">
+                                <h1><?php echo $slider->ba_name ?></h1>
+                                <p><?php echo $slider->ba_description ?></p>
+                            </div>
+                        </li>
+                    <?php }
+                } ?>
             </ul>
         </div>
     </header>
@@ -103,6 +94,11 @@
                 </div>
             </div>
             <div class="row">
+                <div class="col-md-12">
+                    <?php if ($infographic) { ?>
+                        <img style="margin: 0 auto" class="img-responsive" src="<?php echo $infographic->ba_image_link ?>" alt="<?php echo $infographic->ba_name ?>">
+                    <?php } ?>
+                </div>
             </div>
         </div>
     </section>
