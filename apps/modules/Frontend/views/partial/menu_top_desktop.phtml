@@ -20,11 +20,11 @@
                 </div>
                 <div class="col-md-8 col-sm-8 col-xs-8">
                     <ul class="hq-icon-social">
-                        <li class="hq-nav-hide"><a href="#section-1">Trang Chủ</a></li>
-                        <li class="hq-nav-hide"><a href="#services">Huấn Luyện Viên</a></li>
-                        <li class="hq-nav-hide"><a href="#portfolio">Thể Lệ</a></li>
-                        <li class="hq-nav-hide"><a href="#about">Thư Viện</a>
-                        <li class="hq-nav-hide"><a href="#team">Tin Tức</a></li>
+                        <li class="hq-nav-hide"><a <?php if ($this->dispatcher->getControllerName() == 'blogs') { ?> href="<?php echo $this->url->get(); ?>" <?php }else{ ?> href="#section-1" <?php } ?> >Trang Chủ</a></li>
+                        <li class="hq-nav-hide"><a <?php if ($this->dispatcher->getControllerName() == 'blogs') { ?> href="<?php echo $this->url->get(); ?>" <?php }else{ ?> href="#services" <?php } ?> >Huấn Luyện Viên</a></li>
+                        <li class="hq-nav-hide"><a <?php if ($this->dispatcher->getControllerName() == 'blogs') { ?> href="<?php echo $this->url->get(); ?>" <?php }else{ ?> href="#portfolio" <?php } ?> >Thể Lệ</a></li>
+                        <li class="hq-nav-hide"><a <?php if ($this->dispatcher->getControllerName() == 'blogs') { ?> href="<?php echo $this->url->get(); ?>" <?php }else{ ?> href="#about" <?php } ?> >Thư Viện</a>
+                        <li class="hq-nav-hide"><a <?php if ($this->dispatcher->getControllerName() == 'blogs') { ?> href="<?php echo $this->url->get(); ?>" <?php }else{ ?> href="#team" <?php } ?> >Tin Tức</a></li>
                         <li>
                             <a class="hq-user" href="javascript:;" <?php if (!$user) { ?> data-toggle="modal"
                                 data-target="#popupLogin"  <?php } ?>>
@@ -47,10 +47,10 @@
 
 <nav class="as-nav-wrapper as-menu-roll">
     <ul id="menu-main-menu" class="as-primary-nav">
-        <li><a href="#section-1">TRANG CHỦ</a></li>
-        <li><a href="#services">HUẤN LUYỆN VIÊN</a></li>
-        <li><a href="#portfolio">THỂ LỆ</a></li>
-        <li><a href="#about">THƯ VIỆN</a></li>
-        <li><a href="#team">TIN TỨC</a></li>
+        <li><a <?php if ($this->dispatcher->getControllerName() == 'blogs') { ?> href="<?php echo $this->url->get(); ?>" <?php }else{ ?> href="#section-1" <?php } ?> >TRANG CHỦ</a></li>
+        <li><a <?php if ($this->dispatcher->getControllerName() == 'blogs') { ?> href="<?php echo $this->url->get(); ?>" <?php }else{ ?> href="#services" <?php } ?> >HUẤN LUYỆN VIÊN</a></li>
+        <li><a <?php if ($this->dispatcher->getControllerName() == 'blogs') { ?> href="<?php echo $this->url->get(); ?>" <?php }else{ ?> href="#portfolio" <?php } ?> >THỂ LỆ</a></li>
+        <li><a <?php if ($this->dispatcher->getControllerName() == 'blogs') { ?> href="<?php echo $this->url->get(); ?>" <?php }else{ ?> href="#about" <?php } ?> >THƯ VIỆN</a></li>
+        <li><a <?php if ($this->dispatcher->getControllerName() == 'blogs') { ?> href="<?php echo $this->url->get("blogs"); ?>" <?php }else{ ?> href="#team" <?php } ?> >TIN TỨC</a></li>
     </ul>
 </nav>

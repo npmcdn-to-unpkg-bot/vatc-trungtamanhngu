@@ -310,13 +310,13 @@
                 <img src="<?php echo $this->url->get("public/FrontendCore/") ?>images/icon-close.png" alt="">
             </a>
             <div
-                style="background: url('<?php echo isset($gallery) && $gallery>0 ? $gallery->ga_image_link : '' ?>') no-repeat top center"
+                style="background: url('<?php echo isset($gallery) && count($gallery)>0 ? $gallery->ba_image_link : '' ?>') no-repeat top center;background-size: cover !important;"
                 class="left-popup-area">
             </div>
             <div class="right-popup-area">
                 <form id="postForm" onsubmit="return userPosts();return false;">
                     <input name="hlv_id" type="hidden"  >
-                    <input name="ga_id" type="hidden" value="<?php echo isset($gallery) && $gallery>0 ? $gallery->ga_id : '' ?>" >
+                    <input name="ga_id" type="hidden" value="<?php echo isset($gallery) && count($gallery)>0 ? $gallery->ba_id : '' ?>" >
                     <textarea required name="p_description" placeholder="Chia sẻ của bạn "></textarea>
                     <label class="error" for="p_description"></label>
                     <div class="col-md-12 ">

@@ -1,72 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bdd71783-08c5-417f-8306-754d5fd368c5" name="Default" comment="fix faceboob">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_javascript--113428153.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_javascript--1165905849.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_javascript--1235332900.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_javascript--1272696706.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_javascript--1509846798.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_javascript--1576775702.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_javascript--1611016238.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_javascript--161198172.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_javascript--1631716568.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_javascript--1709772476.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_javascript--1831649860.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_javascript--1838875769.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_javascript--1908980761.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_javascript--2059783861.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_javascript--234427285.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_javascript--4230463.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_javascript--615532305.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_javascript-1215588607.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_javascript-1295031954.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_javascript-1300117643.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_javascript-1481619060.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_javascript-1511189718.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_javascript-1550454519.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_javascript-1609856020.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_javascript-1712740205.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_javascript-1723352430.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_javascript-1815410813.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_javascript-215880372.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_javascript-2385986535.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_javascript-2423850902.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_javascript-275666153.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_javascript-299908457.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_javascript-637514996.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_javascript-775663721.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_style--1416153744.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_style--1568927704.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_style--1602128224.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_style--1740164759.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_style--1847727180.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_style--1978274788.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_style--2141616956.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_style--331061284.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_style--421419088.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_style--501698174.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_style--541875264.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_style--557197990.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_style--638514949.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_style--849316236.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_style--991268249.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_style--994619687.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_style-1006630986.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_style-1619061593.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_style-1731332679.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_style-2692839072.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_style-2726039592.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_style-285524276.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_style-2878813552.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_style-311901150.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_style-698160332.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_style-713383431.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_style-821419275.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/data/cache/data/hq_style-854020836.css" afterPath="" />
+    <list default="true" id="bdd71783-08c5-417f-8306-754d5fd368c5" name="Default" comment="no cache js css config">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/data/logs/db/db_2016_08_18.log" afterPath="$PROJECT_DIR$/apps/data/logs/db/db_2016_08_18.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/hqengine/HqAsset/HqAssetManager.php" afterPath="$PROJECT_DIR$/apps/hqengine/HqAsset/HqAssetManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Backend/views/partial/core-backend/leftbar.phtml" afterPath="$PROJECT_DIR$/apps/modules/Backend/views/partial/core-backend/leftbar.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/controllers/IndexController.php" afterPath="$PROJECT_DIR$/apps/modules/Frontend/controllers/IndexController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/views/index/index.phtml" afterPath="$PROJECT_DIR$/apps/modules/Frontend/views/index/index.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/views/partial/menu_top_desktop.phtml" afterPath="$PROJECT_DIR$/apps/modules/Frontend/views/partial/menu_top_desktop.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/views/partial/popup.phtml" afterPath="$PROJECT_DIR$/apps/modules/Frontend/views/partial/popup.phtml" />
     </list>
     <ignored path="vatc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -95,26 +37,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="style.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/FrontendCore/scss/style.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.127907">
-              <caret line="600" column="10" selection-start-line="600" selection-start-column="1" selection-end-line="600" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ControllerBase.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/controllers/ControllerBase.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.2105262">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/config/config.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -128,11 +50,21 @@
       <file leaf-file-name="index.phtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/views/index/index.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.9473684">
-              <caret line="8" column="75" selection-start-line="8" selection-start-column="75" selection-end-line="8" selection-end-column="75" />
+            <state vertical-scroll-proportion="-23.947369">
+              <caret line="65" column="41" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
               <folding>
-                <element signature="e#5095#5117#0#HTML" expanded="true" />
+                <element signature="e#5129#5151#0#HTML" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu_top_desktop.phtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/views/partial/menu_top_desktop.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.754386">
+              <caret line="53" column="120" selection-start-line="53" selection-start-column="120" selection-end-line="53" selection-end-column="120" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -160,10 +92,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HqConfig.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HqConfig.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/hqengine/HqConfig.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32577565">
+            <state vertical-scroll-proportion="-4.7894735">
               <caret line="82" column="8" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
               <folding />
             </state>
@@ -183,8 +115,30 @@
       <file leaf-file-name="IndexController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/controllers/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.017544">
-              <caret line="33" column="32" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="32" />
+            <state vertical-scroll-proportion="-6.122807">
+              <caret line="36" column="74" selection-start-line="36" selection-start-column="74" selection-end-line="36" selection-end-column="74" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="popup.phtml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/views/partial/popup.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5417661">
+              <caret line="312" column="179" selection-start-line="312" selection-start-column="179" selection-end-line="312" selection-end-column="179" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#5;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="leftbar.phtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/modules/Backend/views/partial/core-backend/leftbar.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.3157895">
+              <caret line="80" column="33" selection-start-line="80" selection-start-column="35" selection-end-line="87" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -210,7 +164,6 @@
         <option value="$PROJECT_DIR$/apps/modules/Backend/controllers/GalleryController.php" />
         <option value="$PROJECT_DIR$/apps/modules/Backend/views/gallery/detailcontent.phtml" />
         <option value="$PROJECT_DIR$/apps/modules/Frontend/controllers/ControllerBase.php" />
-        <option value="$PROJECT_DIR$/apps/modules/Frontend/views/partial/menu_top_desktop.phtml" />
         <option value="$PROJECT_DIR$/apps/modules/Frontend/views/layouts/sub/include_header.phtml" />
         <option value="$PROJECT_DIR$/apps/config/config.php" />
         <option value="$PROJECT_DIR$/public/FrontendCore/scss/_navbar.scss" />
@@ -219,18 +172,19 @@
         <option value="$PROJECT_DIR$/public/FrontendCore/js/agency.js" />
         <option value="$PROJECT_DIR$/public/FrontendCore/js/login.js" />
         <option value="$PROJECT_DIR$/public/FrontendCore/scss/style.scss" />
-        <option value="$PROJECT_DIR$/apps/modules/Frontend/views/partial/popup.phtml" />
         <option value="$PROJECT_DIR$/apps/modules/Frontend/controllers/UserController.php" />
-        <option value="$PROJECT_DIR$/apps/modules/Backend/views/partial/core-backend/leftbar.phtml" />
         <option value="$PROJECT_DIR$/apps/modules/Backend/views/layouts/sub/include_page.phtml" />
         <option value="$PROJECT_DIR$/apps/modules/Backend/views/banner/neweditcontent.phtml" />
         <option value="$PROJECT_DIR$/apps/modules/Backend/controllers/BannerController.php" />
-        <option value="$PROJECT_DIR$/apps/modules/Frontend/controllers/IndexController.php" />
         <option value="$PROJECT_DIR$/apps/modules/Frontend/config/config.php" />
-        <option value="$PROJECT_DIR$/apps/modules/Frontend/views/index/index.phtml" />
         <option value="$PROJECT_DIR$/public/FrontendCore/js/fb_app.js" />
         <option value="$PROJECT_DIR$/apps/hqengine/HqAsset/HqAssetManager.php" />
         <option value="$PROJECT_DIR$/apps/data/logs/.main.log" />
+        <option value="$PROJECT_DIR$/apps/modules/Frontend/views/index/index.phtml" />
+        <option value="$PROJECT_DIR$/apps/modules/Frontend/views/partial/menu_top_desktop.phtml" />
+        <option value="$PROJECT_DIR$/apps/modules/Frontend/controllers/IndexController.php" />
+        <option value="$PROJECT_DIR$/apps/modules/Backend/views/partial/core-backend/leftbar.phtml" />
+        <option value="$PROJECT_DIR$/apps/modules/Frontend/views/partial/popup.phtml" />
       </list>
     </option>
   </component>
@@ -300,47 +254,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vatc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vatc" />
+              <option name="myItemId" value="apps" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="FrontendCore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vatc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vatc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FrontendCore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="Frontend" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -361,18 +283,12 @@
               <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="vatc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vatc" />
+              <option name="myItemId" value="Frontend" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="apps" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -390,7 +306,19 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="hqengine" />
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partial" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -408,11 +336,141 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="hqengine" />
+              <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="HqAsset" />
+              <option name="myItemId" value="Frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="index" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vatc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vatc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vatc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vatc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vatc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vatc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vatc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vatc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core-backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vatc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vatc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apps" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -539,7 +597,13 @@
       <option name="project" value="LOCAL" />
       <updated>1471493620235</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="no cache js css config">
+      <created>1471494100380</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1471494100380</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -576,7 +640,8 @@
     <MESSAGE value="fix loadding css" />
     <MESSAGE value="fix slider" />
     <MESSAGE value="fix faceboob" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix faceboob" />
+    <MESSAGE value="no cache js css config" />
+    <option name="LAST_COMMIT_MESSAGE" value="no cache js css config" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -816,14 +881,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/views/partial/menu_top_desktop.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.964912">
-          <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/FrontendCore/scss/_navbar.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.175439">
@@ -872,29 +929,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/views/partial/popup.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.070175">
-          <caret line="315" column="42" selection-start-line="315" selection-start-column="42" selection-end-line="315" selection-end-column="42" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#4;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#5;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/controllers/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.157895">
           <caret line="303" column="28" selection-start-line="303" selection-start-column="28" selection-end-line="303" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/modules/Backend/views/partial/core-backend/leftbar.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.263158">
-          <caret line="45" column="211" selection-start-line="45" selection-start-column="211" selection-end-line="45" selection-end-column="211" />
           <folding />
         </state>
       </provider>
@@ -923,14 +961,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/controllers/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.017544">
-          <caret line="33" column="32" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/FrontendCore/scss/style.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.127907">
@@ -952,16 +982,6 @@
         <state vertical-scroll-proportion="-5.5263157">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/views/index/index.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.9473684">
-          <caret line="8" column="75" selection-start-line="8" selection-start-column="75" selection-end-line="8" selection-end-column="75" />
-          <folding>
-            <element signature="e#5095#5117#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1010,9 +1030,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/hqengine/HqConfig.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32577565">
+        <state vertical-scroll-proportion="-4.7894735">
           <caret line="82" column="8" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/views/index/index.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-23.947369">
+          <caret line="65" column="41" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
+          <folding>
+            <element signature="e#5129#5151#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/views/partial/menu_top_desktop.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.754386">
+          <caret line="53" column="120" selection-start-line="53" selection-start-column="120" selection-end-line="53" selection-end-column="120" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/modules/Backend/views/partial/core-backend/leftbar.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.3157895">
+          <caret line="80" column="33" selection-start-line="80" selection-start-column="35" selection-end-line="87" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/controllers/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.122807">
+          <caret line="36" column="74" selection-start-line="36" selection-start-column="74" selection-end-line="36" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/views/partial/popup.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5417661">
+          <caret line="312" column="179" selection-start-line="312" selection-start-column="179" selection-end-line="312" selection-end-column="179" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#5;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
