@@ -263,7 +263,7 @@ class HqAssetManager extends AssetManager {
                 return Tag::javascriptInclude($collection->getTargetUri());
             }
             $res = parent::outputJs($collectionName);
-            $this->_cache->save($filename, true, $lifetime);
+//            $this->_cache->save($filename, true, $lifetime);
             return $res;
         }
         return parent::outputJs($collectionName);
@@ -308,7 +308,7 @@ class HqAssetManager extends AssetManager {
                 return Tag::stylesheetLink($collection->getTargetUri());
             }
             $res = parent::outputCss($collectionName);
-            $this->_cache->save($filename, true, $lifetime);
+//            $this->_cache->save($filename, true, $lifetime);
             return $res;
         }
         return parent::outputCss($collectionName);
