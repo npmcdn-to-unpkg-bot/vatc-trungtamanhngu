@@ -148,8 +148,11 @@ function userPosts() {
 
     var forgotvalidator = $("#postForm").validate();
     if (forgotvalidator.form()) {
-        showLoading();
+        //showLoading();
         var data = $("#postForm").serialize();
+        sharePicture=$(".image-share").attr("src");
+        shareDescription=$("textarea[name='p_description']").val();
+        callFBShare();
         $.ajax({
             type: "POST",
             url: rootUrl + 'posts',
@@ -158,9 +161,9 @@ function userPosts() {
                 hideLoading();
                 var result = $.parseJSON(response);
                 if (result.status == 1) {
-                    shareDescription = result.description;
-                    sharePicture = result.image;
-                    callFBShare();
+                    //shareDescription = result.description;
+                    //sharePicture = result.image;
+                    //callFBShare();
                 } else {
                     var error = result.message;
                     showMessageWhenWrong(error);

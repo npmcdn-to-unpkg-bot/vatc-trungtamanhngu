@@ -286,7 +286,9 @@
                         </div>
                         <div class="row">
                             <div class="col-md-6 col-sm-6 col-xs-5 ">
-                                <a  data-dismiss="modal" data-toggle="modal" <?php if(!$user){ ?>  data-target="#popupLogin" <?php } ?> href="javascript:;" class="btn-hlv-area btn-hlvplay btn-playgame">Tham Gia Ngay</a>
+                                <a data-dismiss="modal"
+                                   data-toggle="modal" <?php if (!$user) { ?>  data-target="#popupLogin" <?php } ?>
+                                   href="javascript:;" class="btn-hlv-area btn-hlvplay btn-playgame">Tham Gia Ngay</a>
                             </div>
                         </div>
                     </div>
@@ -307,20 +309,23 @@
                                              alt=""></h4>
             </div>
             <a href="javascript:;" class="btn-close-popup" data-dismiss="modal" aria-label="Close">
-                <img src="<?php echo $this->url->get("public/FrontendCore/") ?>images/icon-close.png" alt="">
+                <img  src="<?php echo $this->url->get("public/FrontendCore/") ?>images/icon-close.png" alt="">
             </a>
-            <div
-                style="background: url('<?php echo isset($gallery) && count($gallery)>0 ? $gallery->ba_image_link : '' ?>') no-repeat top center;background-size: cover !important;"
-                class="left-popup-area">
+            <div class="left-popup-area">
+                <?php if (isset($gallery) && count($gallery) > 0) { ?>
+                    <img class="image-share" style="width: 100%" src="<?php echo $this->config['rootUrl'] . $gallery->ba_image_link ?>" alt="">
+                <?php } ?>
             </div>
             <div class="right-popup-area">
                 <form id="postForm" onsubmit="return userPosts();return false;">
-                    <input name="hlv_id" type="hidden"  >
-                    <input name="ga_id" type="hidden" value="<?php echo isset($gallery) && count($gallery)>0 ? $gallery->ba_id : '' ?>" >
+                    <input name="hlv_id" type="hidden">
+                    <input name="ga_id" type="hidden"
+                           value="<?php echo isset($gallery) && count($gallery) > 0 ? $gallery->ba_id : '' ?>">
                     <textarea required name="p_description" placeholder="Chia sẻ của bạn "></textarea>
                     <label class="error" for="p_description"></label>
                     <div class="col-md-12 ">
-                        <a onclick="userPosts();" href="javascript:;" class="btn-hlv-area btn-hlvplay">Chia Sẻ Trên Facebook</a>
+                        <a onclick="userPosts();" href="javascript:;" class="btn-hlv-area btn-hlvplay">Chia Sẻ Trên
+                            Facebook</a>
                     </div>
                 </form>
             </div>
