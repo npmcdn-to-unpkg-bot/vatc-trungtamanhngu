@@ -16,7 +16,7 @@ if (!defined('PUBLIC_PATH'))
     define('PUBLIC_PATH', dirname(__FILE__));
 }
 ini_set('display_errors', 1);
-define("APPLICATION_DEBUG", true);
+define("APPLICATION_DEBUG", false);
 error_reporting(E_ALL);
 try
 {
