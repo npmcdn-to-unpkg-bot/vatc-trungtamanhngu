@@ -103,12 +103,14 @@ $(document).ready(function () {
     });
     $("#datepicker").datepicker();
     $("body").on("click", ".btn-search-kol", function () {
+        showLoading();
         var data = $("#filter-kol").serialize();
         $.ajax({
             type: "POST",
             url: rootUrl + 'search',
             data: data,
             success: function (response) {
+                hideLoading();
                 $("#gallery-posts").html(response);
                 $("#kol-pagination").jPages({
                     containerID: "gallery-posts",
@@ -124,11 +126,13 @@ $(document).ready(function () {
         });
     })
     $("body").on("click", ".btn-loadmore-blogs", function () {
+        showLoading();
         $.ajax({
             type: "POST",
             url: rootUrl + 'blogs/loadmore',
             data: {page: loadmore},
             success: function (response) {
+                hideLoading();
                 loadmore++;
                 $(".blogs-list-area").append(response);
                 if (!response) {
@@ -141,14 +145,17 @@ $(document).ready(function () {
     })
 });
 function userPosts() {
+
     var forgotvalidator = $("#postForm").validate();
     if (forgotvalidator.form()) {
+        showLoading();
         var data = $("#postForm").serialize();
         $.ajax({
             type: "POST",
             url: rootUrl + 'posts',
             data: data,
             success: function (response) {
+                hideLoading();
                 var result = $.parseJSON(response);
                 if (result.status == 1) {
                     shareDescription = result.description;
@@ -164,4 +171,10 @@ function userPosts() {
             }
         });
     }
+}
+function showLoading(){
+    $(".loadding-area").show();
+}
+function hideLoading(){
+    $(".loadding-area").hide();
 }

@@ -24,6 +24,7 @@ $(document).ready(function () {
 function registerUser() {
     var regietrvalidator = $(".register-form").validate();
     if (regietrvalidator.form()) {
+        showLoading();
         var data = $(".register-form").serializeArray();
         var x;
         var temArray = {};
@@ -35,6 +36,7 @@ function registerUser() {
             url: rootUrl + 'user/handle',
             data: {method: "register", data: JSON.stringify(temArray)},
             success: function (response) {
+                hideLoading();
                 var result = $.parseJSON(response);
 
                 if (result.status == 1) {
@@ -63,6 +65,7 @@ function registerUser() {
 }
 function loginUser() {
     if (validator.form()) {
+        showLoading();
         var data = $("#login-form").serializeArray();
         var x;
         var temArray = {};
@@ -74,6 +77,7 @@ function loginUser() {
             url: rootUrl + 'user/handle',
             data: {method: "login", data: JSON.stringify(temArray)},
             success: function (response) {
+                hideLoading();
                 var result = $.parseJSON(response);
 
                 if (result.status == 1) {
@@ -119,11 +123,13 @@ function facebookLogin() {
 }
 function submitLoginFacebook(response) {
     if (typeof (response.authResponse) != null) {
+        showLoading();
         $.ajax({
             type: "POST",
             url: rootUrl + "user/login-facebook",
             data: {accesstoken: response.authResponse.accessToken}
         }).done(function (msg) {
+            hideLoading();
             var result = $.parseJSON(msg);
             if (result.status === 1) {
                 showPopup('success', 'Thành Công', result.message);
@@ -136,6 +142,7 @@ function submitLoginFacebook(response) {
                 showMessageWhenWrong(error);
             }
         }).error(function (err) {
+            hideLoading();
             showPopup('error', 'Thất Bại', "Đăng Nhập Facebook Không Thành Công");
         });
     }
@@ -172,11 +179,13 @@ function makeApiCall() {
     });
 }
 function submitLoginGoogle(response) {
+    showLoading();
     $.ajax({
         type: "POST",
         url: rootUrl + "user/google-callback",
         data: {code: response.code}
     }).done(function (msg) {
+        hideLoading();
         var result = $.parseJSON(msg);
         if (result.status === 1) {
             setTimeout(function () {
@@ -188,6 +197,7 @@ function submitLoginGoogle(response) {
             showMessageWhenWrong(error);
         }
     }).error(function (err) {
+        hideLoading();
         showPopup('error', 'Thất Bại', "Đăng Nhập Google Không Thành Công");
     });
 }
@@ -195,6 +205,7 @@ function submitLoginGoogle(response) {
 function forgotPasswordUser() {
     var forgotvalidator = $("#forgot-form").validate();
     if (forgotvalidator.form()) {
+        showLoading();
         var data = $("#forgot-form").serializeArray();
         var x;
         var temArray = {};
@@ -206,6 +217,7 @@ function forgotPasswordUser() {
             url: rootUrl + 'user/handle',
             data: {method: "forgotPassword", data: JSON.stringify(temArray)},
             success: function (response) {
+                hideLoading();
                 var result = $.parseJSON(response);
                 var error = result.message;
                 showMessageWhenWrong(error);
@@ -297,6 +309,7 @@ function getUrlVars() {
 function myPage($method, $id) {
     var changePassValidator=$("#"+$id).validate();
     if (changePassValidator.form()) {
+        showLoading();
         var data = $("#" + $id).serializeArray();
         var x;
         var temArray = {};
@@ -308,6 +321,7 @@ function myPage($method, $id) {
             url: rootUrl + 'user/handle',
             data: {method: $method, data: JSON.stringify(temArray)},
             success: function (response) {
+                hideLoading();
                 var result = $.parseJSON(response);
 
                 if (result.status == 1) {

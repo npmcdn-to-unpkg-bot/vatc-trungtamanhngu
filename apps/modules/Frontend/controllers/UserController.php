@@ -265,6 +265,7 @@ class UserController extends ControllerBase
 
     public function forgotPassword($request)
     {
+        $name_company = 'VATC';
         $respon['status'] = 0;
         if (empty($request['data'])) {
             $respon['message'] = 'Không có dữ liệu';
@@ -280,13 +281,13 @@ class UserController extends ControllerBase
             return $respon;
         }
         $newPass = rand(100000, 999999);
-        $respon = array("status" => 0, "message" => "Gửi mail không thành công. Vui lòng liên hệ sieugiasix để được hỗ trợ !!!");
+        $respon = array("status" => 0, "message" => "Gửi mail không thành công. Vui lòng liên hệ ".$name_company." để được hỗ trợ !!!");
         $body = "Chào " . $user->us_name . ",<br><br>";
         $body .= "Đây là mật khẩu mới của bạn.<br>";
         $body .= "Mật Khẩu : $newPass <br><br>";
         $body .= "- Lưu ý: Sau khi đăng nhập bạn nên đổi lại mật khẩu mới. <br><br><br>";
         $body .= "Thân,<br>";
-        $body .= "sieugiasix";
+        $body .= $name_company;
         $mail = new \PHPMailer;
         $mail->isSMTP();
         $mail->IsHTML(true);
@@ -297,11 +298,10 @@ class UserController extends ControllerBase
         $mail->Password = "Efp8+yY4(&H4+ubb";
         $mail->SMTPSecure = "ssl";
         $mail->Port = 465;
-        $mail->setFrom('no-reply@hoidapthutuchaiquan.vn', 'sieugiasi');
+        $mail->setFrom('no-reply@hoidapthutuchaiquan.vn', $name_company);
         $mail->addAddress($email, $user->us_full_name);
         $mail->Subject = "Khôi Phục Mật Khẩu";
         $mail->Body = $body;
-        $mail->send();
         if (!$mail->send()) {
             $respon['message'] = 'Không reset được mật khẩu .Xin vui lòng thử lại sau.';
         } else {
