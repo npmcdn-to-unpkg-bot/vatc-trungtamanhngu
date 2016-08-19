@@ -37,33 +37,7 @@
                                         style="background: url('<?php echo $coach->hlv_image_link ?>') no-repeat top center;"
                                         class="img-hlv hlv1"></div>
                                     <h4 class="service-heading"><?php echo $coach->hlv_name ?></h4>
-                                    <ul class="star-area">
-                                        <li>
-                                            <img
-                                                src="<?php echo $this->url->get("public/FrontendCore/") ?>images/icon-star.png"
-                                                alt="">
-                                        </li>
-                                        <li>
-                                            <img
-                                                src="<?php echo $this->url->get("public/FrontendCore/") ?>images/icon-star.png"
-                                                alt="">
-                                        </li>
-                                        <li>
-                                            <img
-                                                src="<?php echo $this->url->get("public/FrontendCore/") ?>images/icon-star.png"
-                                                alt="">
-                                        </li>
-                                        <li>
-                                            <img
-                                                src="<?php echo $this->url->get("public/FrontendCore/") ?>images/icon-star.png"
-                                                alt="">
-                                        </li>
-                                        <li>
-                                            <img
-                                                src="<?php echo $this->url->get("public/FrontendCore/") ?>images/icon-star.png"
-                                                alt="">
-                                        </li>
-                                    </ul>
+                                    <h5 style="color:#a7a9ac;text-transform: none;font-size: 15px" ><?php echo $coach->hlv_position ?></h5>
                                     <div class="hover-hlv-area">
 
                                         <a data-dismiss="modal" data-toggle="modal"
@@ -73,7 +47,8 @@
                                         <a data-rel="<?php echo $coach->hlv_id ?>" data-dismiss="modal"
                                            data-toggle="modal" <?php if (!$user) { ?> data-target="#popupLogin" <?php } ?>
                                            href="javascript:;"
-                                           class="animated fadeInUp btn-hlv-area btn-hlvplay <?php if ($user) { ?> btn-playgame  <?php } ?>">Tham gia
+                                           class="animated fadeInUp btn-hlv-area btn-hlvplay <?php if ($user) { ?> btn-playgame  <?php } ?>">Tham
+                                            gia
                                             ngay</a>
                                     </div>
                                 </div>
@@ -96,8 +71,53 @@
             <div class="row">
                 <div class="col-md-12">
                     <?php if ($infographic) { ?>
-                        <img style="margin: 0 auto" class="img-responsive" src="<?php echo $infographic->ba_image_link ?>" alt="<?php echo $infographic->ba_name ?>">
+                        <img style="margin: 0 auto;max-height: 345px" class="img-responsive"
+                             src="<?php echo $infographic->ba_image_link ?>" alt="<?php echo $infographic->ba_name ?>">
                     <?php } ?>
+                </div>
+            </div>
+            <div style="margin: 60px auto;" class="row ">
+                <div class="text-thele-area">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                    Where does it come from?
+
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                    classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
+                    professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
+                    consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical
+                    literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33
+                    of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This
+                    book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of
+                    Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
+                    Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in
+                    their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                    Where does it come from?
+
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                    classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
+                    professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
+                    consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical
+                    literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33
+                    of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This
+                    book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of
+                    Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
+                    Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in
+                    their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
                 </div>
             </div>
         </div>
@@ -114,7 +134,8 @@
             <div class="row search-gallery-area">
                 <form id="filter-kol" onsubmit="return false;">
                     <div class="col-md-4 col-sm-4">
-                        <input id="datepicker" class="filter-name" type="text" name="created_at" placeholder="Ngày Đăng"/>
+                        <input id="datepicker" class="filter-name" type="text" name="created_at"
+                               placeholder="Ngày Đăng"/>
                     </div>
                     <div class="col-md-4 col-sm-4">
                         <div class="select2-wrapper">

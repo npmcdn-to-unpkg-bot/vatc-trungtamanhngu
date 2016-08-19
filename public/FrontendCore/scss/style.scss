@@ -69,14 +69,14 @@
   h1 {
     font-size: 44px;
     margin-bottom: 25px;
-    &:after {
-      content: "";
-      display: block;
-      height: 3px;
-      width: 18%;
-      margin: 12px auto;
-      background-color: $colorTextVatc;
-    }
+    //&:after {
+    //  content: "";
+    //  display: block;
+    //  height: 3px;
+    //  width: 18%;
+    //  margin: 12px auto;
+    //  background-color: $colorTextVatc;
+    //}
   }
   .color-text-vatc {
     color: $colorTextVatc;
@@ -87,7 +87,16 @@
     margin: 0 auto;
   }
 }
+.tp-bullet {
+  position: relative;
+  border-radius: 50%;
+  background-color: #000;
+  display: inline-block;
+  &.selected,&:hover,&:focus{
+    background-color: $colorTextVatc;
+  }
 
+}
 
 .over-lay-area1 {
   position: absolute;
@@ -497,7 +506,8 @@
 /* Page 2 */
 /* ------------------------------------------------------------- */
 #services {
-  background: url("../images/bg-area2.jpg") no-repeat top center;
+  background-color: #fff;
+  //background: url("../images/bg-area2.jpg") no-repeat top center;
 }
 
 .info-hlv {
@@ -601,7 +611,22 @@
 #portfolio {
   background-color: #25366c;
 }
-
+.text-thele-area{
+  font-size: 15px;
+  color: #fff;
+  line-height: 25px;
+  max-height: 400px;
+  overflow: hidden;
+  padding: 0 15px;
+}
+.slimScrollBar{
+  opacity: 1 !important;
+}
+@media screen and (min-width: 768px){
+  .text-thele-area{
+    width: 80%;
+  }
+}
 /* ------------------------------------------------------------- */
 /* end Page 3 */
 /* ------------------------------------------------------------- */
@@ -834,7 +859,7 @@ input.filter-name {
   position: relative;
   .modal-header {
     border: none;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
     h4 {
       text-align: center;
     }
@@ -842,7 +867,7 @@ input.filter-name {
   .modal-body {
     padding: 0 67px;
     .input-group {
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
     p {
       color: #797979;

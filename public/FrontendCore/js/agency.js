@@ -156,7 +156,14 @@ $(document).ready(function () {
             error: function (xhr, ajaxOptions, thrownError) {
             }
         });
-    })
+    });
+    $('.text-thele-area').slimScroll({
+        height: '400px',
+        alwaysVisible: true,
+        color: '#b51218',
+        size: '5px',
+        distance: '10px',
+    });
 });
 function userPosts() {
 

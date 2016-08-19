@@ -33,39 +33,26 @@
 
                         </div>
                     </div>
-                    <div class="content-group">
-                        <ul class="list-inline social-buttons-login">
-                            <li>
-                                Đăng nhập bằng :
-                            </li>
-                            <li><a onclick="facebookLogin();" href="javascript:;">
-                                    <img src="<?php echo $this->url->get("public/FrontendCore/") ?>images/icon-fb.png"
-                                         alt="">
-                                </a>
-                            </li>
-                            <li><a onclick="googleLogin();" href="javascript:;">
-                                    <img src="<?php echo $this->url->get("public/FrontendCore/") ?>images/icon-gg.png"
-                                         alt="">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
                     <div class="row">
                         <div class="col-md-6 col-sm-6 col-xs-5 ">
                             <input name="event_submit_do_login" value="submit" type="hidden">
                             <a onclick="loginUser()" href="javascript:;" class="btn-login-submit">Đăng Nhập</a>
                         </div>
                         <div class="col-md-6 col-sm-6 col-xs-6 ">
-                            <a data-dismiss="modal" data-toggle="modal" data-target="#popupForgotPass"
-                               href="javascript:;"
-                               class="btn-forgot-pass">Quên mật khẩu ? </a>
+                            <a style="width: auto;font-size: 13px" onclick="facebookLogin();" href="javascript:;"
+                               class="btn-login-submit">Đăng Nhập Bằng
+                                Facebook</a>
+                        </div>
+                        <div class="col-md-12">
+                            <a style="margin: 0 auto;margin-bottom: 20px" data-dismiss="modal" data-toggle="modal" data-target="#popupRegister"
+                               href="javascript:;" class="btn-login-submit">Đăng Ký ngay !</a>
                         </div>
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
-                Bạn chưa có tài khoản ? <a data-dismiss="modal" data-toggle="modal" data-target="#popupRegister"
-                                           href="javascript:;">Đăng Ký ngay !</a>
+                <a data-dismiss="modal" data-toggle="modal" data-target="#popupForgotPass"
+                   href="javascript:;">Quên mật khẩu ? </a>
             </div>
         </div>
     </div>
@@ -104,6 +91,18 @@
                                    aria-describedby="sizing-addon1">
 
                             <span class="input-group-addon"><i class="fa fa-envelope-o"></i></span>
+
+                        </div>
+                    </div>
+                    <div class="content-popup">
+                        <label class="error" for="us_phone"></label>
+                        <div class="input-group input-group-lg">
+                            <input name="us_phone" required number="true" minlength="10" maxlength="11"
+                                   class="form-control input-popup"
+                                   placeholder="Số Điện Thoại"
+                                   aria-describedby="sizing-addon1">
+
+                            <span class="input-group-addon"><i class="fa fa-mobile fa-2x"></i></span>
 
                         </div>
                     </div>
@@ -309,11 +308,12 @@
                                              alt=""></h4>
             </div>
             <a href="javascript:;" class="btn-close-popup" data-dismiss="modal" aria-label="Close">
-                <img  src="<?php echo $this->url->get("public/FrontendCore/") ?>images/icon-close.png" alt="">
+                <img src="<?php echo $this->url->get("public/FrontendCore/") ?>images/icon-close.png" alt="">
             </a>
             <div class="left-popup-area">
                 <?php if (isset($gallery) && count($gallery) > 0) { ?>
-                    <img class="image-share" style="width: 100%" src="<?php echo $this->config['rootUrl'] . $gallery->ba_image_link ?>" alt="">
+                    <img class="image-share" style="width: 100%"
+                         src="<?php echo $this->config['rootUrl'] . $gallery->ba_image_link ?>" alt="">
                 <?php } ?>
             </div>
             <div class="right-popup-area">
@@ -324,8 +324,7 @@
                     <textarea required name="p_description" placeholder="Chia sẻ của bạn "></textarea>
                     <label class="error" for="p_description"></label>
                     <div class="col-md-12 ">
-                        <a onclick="userPosts();" href="javascript:;" class="btn-hlv-area btn-hlvplay">Chia Sẻ Trên
-                            Facebook</a>
+                        <a onclick="userPosts();" href="javascript:;" class="btn-hlv-area btn-hlvplay">Hoàn Tất</a>
                     </div>
                 </form>
             </div>
