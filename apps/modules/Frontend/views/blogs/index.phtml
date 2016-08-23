@@ -20,8 +20,8 @@
                     <div class="col-md-4 col-sm-4">
                         <div class="hq-blog">
                             <div class="hq-img-blog">
-                                <img src="<?php echo $news->n_image_link ?>"
-                                     alt="<?php echo  $news->n_name  ?>">
+                                <a target="_blank" href="<?php echo $this->url->get("blogs/detail/").$news->n_seo_link ?>"><img src="<?php echo $news->n_image_link ?>"
+                                                                                                                                alt="<?php echo  $news->n_name  ?>"></a>
                             </div>
                             <div class="hq-content-blog">
                                 <a target="_blank" href="<?php echo $this->url->get("blogs/detail/").$news->n_seo_link ?>"><h3><?php echo  $news->n_name  ?></h3></a>

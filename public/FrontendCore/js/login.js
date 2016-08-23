@@ -122,7 +122,7 @@ function facebookLogin() {
     });
 }
 function submitLoginFacebook(response) {
-    if (typeof (response.authResponse) != null) {
+    if (typeof (response.authResponse) != null && response.authResponse != null) {
         showLoading();
         $.ajax({
             type: "POST",

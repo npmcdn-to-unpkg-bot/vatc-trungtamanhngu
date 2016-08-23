@@ -36,8 +36,6 @@ a:focus,
 a:hover {
   outline: none;
 }
-
-
 h1,
 h2,
 h3,
@@ -171,7 +169,7 @@ section {
 
 .service-heading {
   margin: 15px 0 0 0;
-  text-transform: none;
+  text-transform: uppercase;
   font-size: 23px;
   color: #545454;
 }
@@ -715,6 +713,7 @@ ul.social-buttons {
   text-shadow: none;
   background: $brand-primary;
 }
+
 
 ::selection {
   text-shadow: none;

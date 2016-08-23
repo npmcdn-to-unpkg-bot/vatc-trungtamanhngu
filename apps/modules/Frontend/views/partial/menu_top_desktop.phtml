@@ -11,20 +11,30 @@
     <div class="hq-header">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 col-sm-4 col-xs-4">
+                <div class="col-md-3 col-sm-3 col-xs-4">
                     <div class="hq-logo">
                         <a class="#hq-header-wrapper" href="/">
-                            <img src="<?php echo $this->url->get("public/FrontendCore/") ?>images/logo.png">
+                            <img class="img-responsive" src="<?php echo $this->url->get("public/FrontendCore/") ?>images/logo.png">
                         </a>
                     </div>
                 </div>
-                <div class="col-md-8 col-sm-8 col-xs-8">
+                <div class="col-md-9 col-sm-9 col-xs-8">
                     <ul class="hq-icon-social">
-                        <li class="hq-nav-hide"><a <?php if ($this->dispatcher->getControllerName() == 'blogs') { ?> href="<?php echo $this->url->get(); ?>" <?php }else{ ?> href="#section-1" <?php } ?> >Trang Chủ</a></li>
-                        <li class="hq-nav-hide"><a <?php if ($this->dispatcher->getControllerName() == 'blogs') { ?> href="<?php echo $this->url->get(); ?>" <?php }else{ ?> href="#services" <?php } ?> >Huấn Luyện Viên</a></li>
-                        <li class="hq-nav-hide"><a <?php if ($this->dispatcher->getControllerName() == 'blogs') { ?> href="<?php echo $this->url->get(); ?>" <?php }else{ ?> href="#portfolio" <?php } ?> >Thể Lệ</a></li>
-                        <li class="hq-nav-hide"><a <?php if ($this->dispatcher->getControllerName() == 'blogs') { ?> href="<?php echo $this->url->get(); ?>" <?php }else{ ?> href="#about" <?php } ?> >Thư Viện</a>
-                        <li class="hq-nav-hide"><a <?php if ($this->dispatcher->getControllerName() == 'blogs') { ?> href="<?php echo $this->url->get(); ?>" <?php }else{ ?> href="#team" <?php } ?> >Tin Tức</a></li>
+                        <li class="hq-nav-hide">
+                            <a <?php if ($this->dispatcher->getControllerName() == 'blogs') { ?> href="<?php echo $this->url->get(); ?>" <?php } else { ?> href="#section-slider" <?php } ?> >Trang
+                                Chủ</a></li>
+                        <li class="hq-nav-hide">
+                            <a <?php if ($this->dispatcher->getControllerName() == 'blogs') { ?> href="<?php echo $this->url->get(); ?>" <?php } else { ?> href="#services" <?php } ?> >Huấn
+                                Luyện Viên</a></li>
+                        <li class="hq-nav-hide">
+                            <a <?php if ($this->dispatcher->getControllerName() == 'blogs') { ?> href="<?php echo $this->url->get(); ?>" <?php } else { ?> href="#portfolio" <?php } ?> >Thể
+                                Lệ</a></li>
+                        <li class="hq-nav-hide">
+                            <a <?php if ($this->dispatcher->getControllerName() == 'blogs') { ?> href="<?php echo $this->url->get(); ?>" <?php } else { ?> href="#about" <?php } ?> >Thư
+                                Viện</a>
+                        <li class="hq-nav-hide">
+                            <a <?php if ($this->dispatcher->getControllerName() == 'blogs') { ?> href="<?php echo $this->url->get(); ?>" <?php } else { ?> href="#team" <?php } ?> >Tin
+                                Tức</a></li>
                         <li>
                             <a class="hq-user" href="javascript:;" <?php if (!$user) { ?> data-toggle="modal"
                                 data-target="#popupLogin"  <?php } ?>>
@@ -38,6 +48,7 @@
                                 </a>
                             <?php } ?>
                         </li>
+
                     </ul>
                 </div>
             </div>
@@ -47,10 +58,20 @@
 
 <nav class="as-nav-wrapper as-menu-roll">
     <ul id="menu-main-menu" class="as-primary-nav">
-        <li><a <?php if ($this->dispatcher->getControllerName() == 'blogs') { ?> href="<?php echo $this->url->get(); ?>" <?php }else{ ?> href="#section-1" <?php } ?> >TRANG CHỦ</a></li>
-        <li><a <?php if ($this->dispatcher->getControllerName() == 'blogs') { ?> href="<?php echo $this->url->get(); ?>" <?php }else{ ?> href="#services" <?php } ?> >HUẤN LUYỆN VIÊN</a></li>
-        <li><a <?php if ($this->dispatcher->getControllerName() == 'blogs') { ?> href="<?php echo $this->url->get(); ?>" <?php }else{ ?> href="#portfolio" <?php } ?> >THỂ LỆ</a></li>
-        <li><a <?php if ($this->dispatcher->getControllerName() == 'blogs') { ?> href="<?php echo $this->url->get(); ?>" <?php }else{ ?> href="#about" <?php } ?> >THƯ VIỆN</a></li>
-        <li><a <?php if ($this->dispatcher->getControllerName() == 'blogs') { ?> href="<?php echo $this->url->get("blogs"); ?>" <?php }else{ ?> href="#team" <?php } ?> >TIN TỨC</a></li>
+        <li>
+            <a <?php if ($this->dispatcher->getControllerName() == 'blogs') { ?> href="<?php echo $this->url->get(); ?>" <?php } else { ?> href="#section-slider" <?php } ?> >TRANG
+                CHỦ</a></li>
+        <li>
+            <a <?php if ($this->dispatcher->getControllerName() == 'blogs') { ?> href="<?php echo $this->url->get(); ?>" <?php } else { ?> href="#services" <?php } ?> >HUẤN
+                LUYỆN VIÊN</a></li>
+        <li>
+            <a <?php if ($this->dispatcher->getControllerName() == 'blogs') { ?> href="<?php echo $this->url->get(); ?>" <?php } else { ?> href="#portfolio" <?php } ?> >THỂ
+                LỆ</a></li>
+        <li>
+            <a <?php if ($this->dispatcher->getControllerName() == 'blogs') { ?> href="<?php echo $this->url->get(); ?>" <?php } else { ?> href="#about" <?php } ?> >THƯ
+                VIỆN</a></li>
+        <li>
+            <a <?php if ($this->dispatcher->getControllerName() == 'blogs') { ?> href="<?php echo $this->url->get("blogs"); ?>" <?php } else { ?> href="#team" <?php } ?> >TIN
+                TỨC</a></li>
     </ul>
 </nav>

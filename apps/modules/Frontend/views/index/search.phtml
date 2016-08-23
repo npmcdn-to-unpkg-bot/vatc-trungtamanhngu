@@ -1,12 +1,15 @@
 <?php if (count($posts) > 0) {
     foreach ($posts as $po) { ?>
         <div class="col-md-4 col-sm-4">
-            <div class="user-posts">
-                <h3 class="username-post">
-                    <?php echo $po->UserModel->us_name ?>
-                </h3>
-                <p>Bài Thi : <em><?php echo $po->p_description ?></em></p>
-                <p>Giáo Viên : <em><?php echo $po->ManagerHlvModel->hlv_name ?></em></p>
+            <div class="user-posts <?php echo $po->showClassHlv() ?>">
+                <div class="post-area">
+                    <h3 class="username-post">
+                        <?php echo $po->UserModel->us_name ?>
+                    </h3>
+                    <p>Bài Thi : <span><?php echo $po->p_description ?></span></p>
+                    <p>Giáo Viên : <span><?php echo $po->ManagerHlvModel->hlv_name ?></span></p>
+                </div>
+                <img class="icon-hlv" src="<?php echo $po->showImageIconHlv() ?>" alt="">
             </div>
         </div>
     <?php }

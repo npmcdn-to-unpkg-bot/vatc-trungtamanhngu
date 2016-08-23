@@ -8,11 +8,10 @@
     min-height: 70px;
     display: block;
     width: 100%;
-    position: absolute;
     z-index: 90;
     padding: 20px 0;
-    margin-bottom: 30px;
-    background: transparent;
+
+    background: rgba(255, 255, 255, 0.8);
     &.hq-bg-sticky {
       background: #3E69DC;
       z-index: 999;
@@ -42,6 +41,7 @@
           display: inline-block;
           vertical-align: middle;
           @include transition();
+          padding: 10px 20px;
           .fa {
             color: #fff;
           }
@@ -49,21 +49,16 @@
             color: $main-color-1;
             border: none;
             text-decoration: none;
-            &:after {
-              width: 100%;
-            }
-          }
-          &:after {
-            @include transition();
-            left: 0;
-            content: "";
-            width: 0%;
-            position: absolute;
-            bottom: -5px;
-            background: $main-color-1;
-            border-radius: 5px;
-            height: 2px;
 
+          }
+        }
+        &.hq-nav-hide {
+          a {
+            @include border-radius(20px);
+            &:hover {
+              background: $main-color-2;
+              color: #FFF;
+            }
           }
         }
 
@@ -158,14 +153,15 @@
 }
 
 #as-hamburger {
-  width: 60px;
+  background: rgba(63, 63, 63, 0.8) none repeat scroll 0 0;
+  border-radius: 50%;
+  cursor: pointer;
   height: 60px;
   position: fixed;
+  right: 3%;
+  top: 140px;
+  width: 60px;
   z-index: 99;
-  right: 5%;
-  cursor: pointer;
-  background: rgba(63, 63, 63, 0.7);
-  top: 120px;
   @include border-radius(50%);
   #top,
   #middle,
@@ -263,9 +259,16 @@
     }
   }
 }
-.hq-social-text{
+
+.hq-social-text {
   max-width: 150px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+@media screen and (max-width: 750px) {
+  .hq-social-text {
+    max-width: 100px;
+    font-size: 10px;
+  }
 }

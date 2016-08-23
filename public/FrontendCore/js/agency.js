@@ -35,7 +35,8 @@ var loadmore = 1;
     $('select').select2();
     $("#slider1").revolution({
         sliderType: "standard",
-        sliderLayout: "fullscreen",
+        sliderLayout: "fullwidth",
+        autoHeight: "on",
         delay: 9000,
         onHoverStop: 'on',
         navigation: {
@@ -74,18 +75,18 @@ var loadmore = 1;
                 }
             },
             bullets: {
-                enable:true,
-                hide_onmobile:true,
-                hide_under:778,
-                style:"hermes",
-                hide_onleave:false,
-                direction:"horizontal",
-                h_align:"center",
-                v_align:"bottom",
-                h_offset:0,
-                v_offset:20,
-                space:5,
-                tmp:''
+                enable: true,
+                hide_onmobile: true,
+                hide_under: 778,
+                style: "hermes",
+                hide_onleave: false,
+                direction: "horizontal",
+                h_align: "center",
+                v_align: "bottom",
+                h_offset: 0,
+                v_offset: 20,
+                space: 5,
+                tmp: ''
             }
         }
     });
@@ -104,8 +105,8 @@ $(document).ready(function () {
     });
     $(".btn-playgame").click(function () {
         var hlv_id = $(this).attr("data-rel");
-        $("#popupPlay").modal();
-        $("#popupPlay").find("input[name='hlv_id']").val(hlv_id);
+        $("#popupPlay-" + hlv_id).modal();
+        $("#popupPlay-" + hlv_id).find("input[name='hlv_id']").val(hlv_id);
     });
     $("#kol-pagination").jPages({
         containerID: "gallery-posts",
@@ -171,8 +172,8 @@ function userPosts() {
     if (forgotvalidator.form()) {
         //showLoading();
         var data = $("#postForm").serialize();
-        sharePicture=$(".image-share").attr("src");
-        shareDescription=$("textarea[name='p_description']").val();
+        sharePicture = $(".image-share").attr("src");
+        shareDescription = $("textarea[name='p_description']").val();
         callFBShare();
         $.ajax({
             type: "POST",
@@ -196,9 +197,9 @@ function userPosts() {
         });
     }
 }
-function showLoading(){
+function showLoading() {
     $(".loadding-area").show();
 }
-function hideLoading(){
+function hideLoading() {
     $(".loadding-area").hide();
 }

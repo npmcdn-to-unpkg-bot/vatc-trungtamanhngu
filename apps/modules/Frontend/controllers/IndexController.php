@@ -10,6 +10,8 @@ use Backend\Models\ManagerHlvModel;
 use Backend\Models\ManagerPostsModel;
 use Backend\Models\ManufacturerModel;
 use Backend\Models\NewsModel;
+use Backend\Models\OrderModel;
+use Backend\Models\OrtherPageModel;
 use Backend\Models\ProductModel;
 use Backend\Models\CollectionModel;
 use Phalcon\Paginator\Adapter\Model as PaginatorModel;
@@ -30,6 +32,26 @@ class IndexController extends ControllerBase
         $postModel = new ManagerPostsModel();
         $newsModel = new NewsModel();
         $bannerModel = new BannerModel();
+        $ortherpageModel = new OrtherPageModel();
+        $this->view->thele = $ortherpageModel::findFirst();
+        $this->view->sliders = $bannerModel::find(array("bc_id =2"));
+        $this->view->infographic = $bannerModel::findFirst(array("bc_id =3"));
+        $this->view->blogs = $newsModel::find(array("n_status=1", "order" => "n_id desc", "limit" => 3));
+        $this->view->posts = $postModel::find(array("order" => "p_id desc"));
+        $this->view->gallery = $bannerModel::findFirst(array("bc_id =7"));
+        $this->view->coachs = $managerHlvModel::find(array("order" => "hlv_id asc", "limit" => 3));
+        $this->view->header_title = "Anh Ngữ Việt Mỹ";
+    }
+
+    public function index2Action()
+    {
+        $galleryModel = new GalleryModel();
+        $managerHlvModel = new ManagerHlvModel();
+        $postModel = new ManagerPostsModel();
+        $newsModel = new NewsModel();
+        $bannerModel = new BannerModel();
+        $ortherpageModel = new OrtherPageModel();
+        $this->view->thele = $ortherpageModel::findFirst();
         $this->view->sliders = $bannerModel::find(array("bc_id =2"));
         $this->view->infographic = $bannerModel::findFirst(array("bc_id =3"));
         $this->view->blogs = $newsModel::find(array("n_status=1", "order" => "n_id desc", "limit" => 3));
@@ -49,7 +71,8 @@ class IndexController extends ControllerBase
             if (!empty($data['created_at'])) {
                 $time = date("Y-m-d", strtotime($data['created_at']));
                 $posts = $postModel::find(array("DATE(created_at) = '{$time}'"));
-            } else {
+            }
+            else {
                 $posts = $postModel::find(array("hlv_id = '{$data['hlv_id']}'"));
             }
             $this->view->posts = $posts;
