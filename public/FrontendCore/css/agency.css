@@ -71,7 +71,6 @@ table, th, td {
       #hq-header-wrapper .hq-header .hq-icon-social li {
         display: inline-block;
         vertical-align: middle;
-        margin-left: 20px;
         font-size: 15px;
         position: relative; }
         #hq-header-wrapper .hq-header .hq-icon-social li a {
@@ -1443,7 +1442,8 @@ input.filter-name, .select2-container .select2-selection--single, .input-popup {
   margin: 0 auto;
   margin-bottom: 35px;
   border-radius: 10px;
-  position: relative; }
+  position: relative;
+  cursor: pointer; }
   .user-posts.hlv1 {
     background-color: #f6e3db; }
   .user-posts.hlv2 {

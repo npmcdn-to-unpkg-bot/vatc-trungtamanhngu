@@ -71,12 +71,27 @@ class IndexController extends ControllerBase
             if (!empty($data['created_at'])) {
                 $time = date("Y-m-d", strtotime($data['created_at']));
                 $posts = $postModel::find(array("DATE(created_at) = '{$time}'"));
-            }
-            else {
+            } else {
                 $posts = $postModel::find(array("hlv_id = '{$data['hlv_id']}'"));
             }
             $this->view->posts = $posts;
             $this->view->setRenderLevel(\Phalcon\Mvc\View::LEVEL_ACTION_VIEW);
+        }
+    }
+
+    public function searchPostAction()
+    {
+        if ($this->request->isPost()) {
+            $id = $this->request->getPost("id");
+            $postModel = new ManagerPostsModel();
+            $data = $postModel::findFirst($id);
+            $respon['status'] = 0;
+            if ($data) {
+                $respon['status'] = 1;
+                $respon['data'] = $data;
+            }
+            echo json_encode($respon);
+            die;
         }
     }
 }

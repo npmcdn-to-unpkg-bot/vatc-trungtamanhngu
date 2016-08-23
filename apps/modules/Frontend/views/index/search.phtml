@@ -1,7 +1,7 @@
 <?php if (count($posts) > 0) {
     foreach ($posts as $po) { ?>
         <div class="col-md-4 col-sm-4">
-            <div class="user-posts <?php echo $po->showClassHlv() ?>">
+            <div data-rel="<?php echo $po->p_id ?>" class="user-posts <?php echo $po->showClassHlv() ?>">
                 <div class="post-area">
                     <h3 class="username-post">
                         <?php echo $po->UserModel->us_name ?>
