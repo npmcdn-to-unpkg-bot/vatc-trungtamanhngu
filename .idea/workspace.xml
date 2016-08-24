@@ -1,295 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bdd71783-08c5-417f-8306-754d5fd368c5" name="Default" comment="fix 5">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/webServers.xml" afterPath="$PROJECT_DIR$/.idea/webServers.xml" />
+    <list default="true" id="bdd71783-08c5-417f-8306-754d5fd368c5" name="Default" comment="update source">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/FrontendCore/js/jquery.slimscroll.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/data/cache/main/config.php" afterPath="$PROJECT_DIR$/apps/data/cache/main/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/controllers/BlogsController.php" afterPath="$PROJECT_DIR$/apps/modules/Frontend/controllers/BlogsController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/controllers/IndexController.php" afterPath="$PROJECT_DIR$/apps/modules/Frontend/controllers/IndexController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/views/blogs/detail.phtml" afterPath="$PROJECT_DIR$/apps/modules/Frontend/views/blogs/detail.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/views/blogs/index.phtml" afterPath="$PROJECT_DIR$/apps/modules/Frontend/views/blogs/index.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/views/blogs/loadmore.phtml" afterPath="$PROJECT_DIR$/apps/modules/Frontend/views/blogs/loadmore.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/views/contact/index.phtml" afterPath="$PROJECT_DIR$/apps/modules/Frontend/views/contact/index.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/views/error/show404.phtml" afterPath="$PROJECT_DIR$/apps/modules/Frontend/views/error/show404.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/views/error/show500.phtml" afterPath="$PROJECT_DIR$/apps/modules/Frontend/views/error/show500.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/views/index.phtml" afterPath="$PROJECT_DIR$/apps/modules/Frontend/views/index.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/views/index/index.phtml" afterPath="$PROJECT_DIR$/apps/modules/Frontend/views/index/index.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/views/index/search.phtml" afterPath="$PROJECT_DIR$/apps/modules/Frontend/views/index/search.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/views/layouts/error.phtml" afterPath="$PROJECT_DIR$/apps/modules/Frontend/views/layouts/error.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/views/layouts/sub/gacode.phtml" afterPath="$PROJECT_DIR$/apps/modules/Frontend/views/layouts/sub/gacode.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/views/manufacturer/index.phtml" afterPath="$PROJECT_DIR$/apps/modules/Frontend/views/manufacturer/index.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/views/menu/childcategory.phtml" afterPath="$PROJECT_DIR$/apps/modules/Frontend/views/menu/childcategory.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/views/menu/index.phtml" afterPath="$PROJECT_DIR$/apps/modules/Frontend/views/menu/index.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/views/my-page/changepassword.phtml" afterPath="$PROJECT_DIR$/apps/modules/Frontend/views/my-page/changepassword.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/views/my-page/index.phtml" afterPath="$PROJECT_DIR$/apps/modules/Frontend/views/my-page/index.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/views/my-page/menu.phtml" afterPath="$PROJECT_DIR$/apps/modules/Frontend/views/my-page/menu.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/views/my-page/order.phtml" afterPath="$PROJECT_DIR$/apps/modules/Frontend/views/my-page/order.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/views/news/_menu_news.phtml" afterPath="$PROJECT_DIR$/apps/modules/Frontend/views/news/_menu_news.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/views/news/detail.phtml" afterPath="$PROJECT_DIR$/apps/modules/Frontend/views/news/detail.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/views/news/index.phtml" afterPath="$PROJECT_DIR$/apps/modules/Frontend/views/news/index.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/views/news/list.phtml" afterPath="$PROJECT_DIR$/apps/modules/Frontend/views/news/list.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/views/page/index.phtml" afterPath="$PROJECT_DIR$/apps/modules/Frontend/views/page/index.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/views/partial/footer.phtml" afterPath="$PROJECT_DIR$/apps/modules/Frontend/views/partial/footer.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/views/partial/loadding.phtml" afterPath="$PROJECT_DIR$/apps/modules/Frontend/views/partial/loadding.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/views/layouts/index.phtml" afterPath="$PROJECT_DIR$/apps/modules/Frontend/views/layouts/index.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/views/partial/menu_top_desktop.phtml" afterPath="$PROJECT_DIR$/apps/modules/Frontend/views/partial/menu_top_desktop.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/views/partial/popup.phtml" afterPath="$PROJECT_DIR$/apps/modules/Frontend/views/partial/popup.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/views/user/forgotpassword.phtml" afterPath="$PROJECT_DIR$/apps/modules/Frontend/views/user/forgotpassword.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/views/user/index.phtml" afterPath="$PROJECT_DIR$/apps/modules/Frontend/views/user/index.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/views/user/register.phtml" afterPath="$PROJECT_DIR$/apps/modules/Frontend/views/user/register.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/css/agency.css" afterPath="$PROJECT_DIR$/public/FrontendCore/css/agency.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/css/agency.css.map" afterPath="$PROJECT_DIR$/public/FrontendCore/css/agency.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/js/agency.js" afterPath="$PROJECT_DIR$/public/FrontendCore/js/agency.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/js/final.js" afterPath="$PROJECT_DIR$/public/FrontendCore/js/final.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/CONTRIBUTING.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/LICENSE.md" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/LICENSE.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/README.mdown" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/README.mdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower.json" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/.bower.json" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/bower.json" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/dist/jquery.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/dist/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/dist/jquery.min.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/dist/jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/ajax.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/ajax.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/ajax/jsonp.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/ajax/jsonp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/ajax/load.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/ajax/load.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/ajax/parseJSON.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/ajax/parseJSON.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/ajax/parseXML.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/ajax/parseXML.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/ajax/script.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/ajax/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/ajax/var/nonce.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/ajax/var/nonce.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/ajax/var/rquery.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/ajax/var/rquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/ajax/xhr.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/ajax/xhr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/attributes.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/attributes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/attributes/attr.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/attributes/attr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/attributes/classes.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/attributes/classes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/attributes/prop.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/attributes/prop.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/attributes/support.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/attributes/support.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/attributes/val.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/attributes/val.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/callbacks.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/callbacks.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/core.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/core.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/core/access.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/core/access.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/core/init.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/core/init.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/core/parseHTML.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/core/parseHTML.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/core/ready.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/core/ready.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/core/var/rsingleTag.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/core/var/rsingleTag.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/css.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/css.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/css/addGetHookIf.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/css/addGetHookIf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/css/curCSS.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/css/curCSS.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/css/defaultDisplay.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/css/defaultDisplay.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/css/hiddenVisibleSelectors.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/css/hiddenVisibleSelectors.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/css/support.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/css/support.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/css/swap.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/css/swap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/css/var/cssExpand.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/css/var/cssExpand.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/css/var/isHidden.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/css/var/isHidden.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/css/var/rmargin.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/css/var/rmargin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/css/var/rnumnonpx.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/css/var/rnumnonpx.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/data.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/data.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/data/accepts.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/data/accepts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/data/support.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/data/support.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/deferred.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/deferred.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/deprecated.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/deprecated.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/dimensions.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/dimensions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/effects.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/effects.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/effects/Tween.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/effects/Tween.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/effects/animatedSelector.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/effects/animatedSelector.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/effects/support.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/effects/support.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/event.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/event.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/event/ajax.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/event/ajax.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/event/alias.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/event/alias.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/event/support.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/event/support.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/exports/amd.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/exports/amd.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/exports/global.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/exports/global.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/intro.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/intro.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/jquery.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/manipulation.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/manipulation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/manipulation/_evalUrl.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/manipulation/_evalUrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/manipulation/support.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/manipulation/support.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/manipulation/var/rcheckableType.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/manipulation/var/rcheckableType.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/offset.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/offset.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/outro.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/outro.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/queue.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/queue.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/queue/delay.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/queue/delay.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/selector-sizzle.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/selector-sizzle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/selector.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/selector.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/serialize.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/serialize.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/sizzle/dist/sizzle.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/sizzle/dist/sizzle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/sizzle/dist/sizzle.min.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/sizzle/dist/sizzle.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/support.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/support.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/traversing.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/traversing.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/traversing/findFilter.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/traversing/findFilter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/traversing/var/rneedsContext.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/traversing/var/rneedsContext.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/var/class2type.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/var/class2type.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/var/concat.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/var/concat.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/var/deletedIds.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/var/deletedIds.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/var/hasOwn.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/var/hasOwn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/var/indexOf.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/var/indexOf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/var/pnum.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/var/pnum.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/var/push.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/var/push.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/var/rnotwhite.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/var/rnotwhite.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/var/slice.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/var/slice.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/var/strundefined.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/var/strundefined.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/var/support.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/var/support.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/var/toString.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/var/toString.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/wrap.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/bower_components/jquery/src/wrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/composer.json" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/css/base.less" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/css/base.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/css/font.less" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/css/font.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/css/mixins.less" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/css/mixins.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/css/resets.less" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/css/resets.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/css/responsive.less" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/css/responsive.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/css/theme.less" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/css/theme.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/css/variables.less" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/css/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/demo/fonts/webfonts/geo-medium/svg/1110FC_0.svg" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/demo/fonts/webfonts/geo-medium/svg/1110FC_0.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/demo/fonts/webfonts/geo-regular/svg/11014B_0.svg" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/demo/fonts/webfonts/geo-regular/svg/11014B_0.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/demo/fonts/webfonts/geo-semibold/svg/style_169898.svg" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/demo/fonts/webfonts/geo-semibold/svg/style_169898.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/demo/js/demo.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/demo/js/demo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/demo/js/froogaloop.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/demo/js/froogaloop.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/demo/js/jquery.easing.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/demo/js/jquery.easing.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/demo/js/jquery.fitvid.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/demo/js/jquery.fitvid.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/demo/js/jquery.mousewheel.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/demo/js/jquery.mousewheel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/demo/js/modernizr.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/demo/js/modernizr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/demo/js/shBrushCss.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/demo/js/shBrushCss.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/demo/js/shBrushJScript.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/demo/js/shBrushJScript.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/demo/js/shBrushXml.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/demo/js/shBrushXml.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/demo/js/shCore.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/demo/js/shCore.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/flexslider.less" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/flexslider.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/fonts/flexslider-icon.svg" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/fonts/flexslider-icon.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/jquery.flexslider-min.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/jquery.flexslider-min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/jquery.flexslider.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/jquery.flexslider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/.bowerrc" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/.bowerrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/.jscsrc" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/.jscsrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/.npmignore" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/.npmignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/CONTRIBUTING.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/README.md" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/bower.json" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/dist/jquery.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/dist/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/dist/jquery.min.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/dist/jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/package.json" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/ajax.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/ajax.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/ajax/jsonp.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/ajax/jsonp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/ajax/load.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/ajax/load.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/ajax/parseJSON.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/ajax/parseJSON.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/ajax/parseXML.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/ajax/parseXML.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/ajax/script.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/ajax/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/ajax/var/nonce.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/ajax/var/nonce.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/ajax/var/rquery.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/ajax/var/rquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/ajax/xhr.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/ajax/xhr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/attributes.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/attributes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/attributes/attr.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/attributes/attr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/attributes/classes.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/attributes/classes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/attributes/prop.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/attributes/prop.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/attributes/support.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/attributes/support.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/attributes/val.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/attributes/val.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/callbacks.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/callbacks.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/core.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/core.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/core/access.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/core/access.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/core/init.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/core/init.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/core/parseHTML.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/core/parseHTML.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/core/ready.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/core/ready.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/core/var/rsingleTag.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/core/var/rsingleTag.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/css.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/css.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/css/addGetHookIf.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/css/addGetHookIf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/css/curCSS.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/css/curCSS.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/css/defaultDisplay.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/css/defaultDisplay.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/css/hiddenVisibleSelectors.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/css/hiddenVisibleSelectors.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/css/support.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/css/support.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/css/swap.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/css/swap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/css/var/cssExpand.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/css/var/cssExpand.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/css/var/isHidden.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/css/var/isHidden.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/css/var/rmargin.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/css/var/rmargin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/css/var/rnumnonpx.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/css/var/rnumnonpx.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/data.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/data.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/data/accepts.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/data/accepts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/data/support.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/data/support.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/deferred.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/deferred.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/deprecated.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/deprecated.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/dimensions.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/dimensions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/effects.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/effects.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/effects/Tween.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/effects/Tween.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/effects/animatedSelector.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/effects/animatedSelector.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/effects/support.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/effects/support.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/event.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/event.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/event/ajax.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/event/ajax.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/event/alias.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/event/alias.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/event/support.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/event/support.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/exports/amd.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/exports/amd.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/exports/global.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/exports/global.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/intro.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/intro.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/jquery.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/manipulation.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/manipulation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/manipulation/_evalUrl.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/manipulation/_evalUrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/manipulation/support.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/manipulation/support.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/manipulation/var/rcheckableType.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/manipulation/var/rcheckableType.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/offset.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/offset.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/outro.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/outro.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/queue.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/queue.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/queue/delay.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/queue/delay.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/selector-sizzle.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/selector-sizzle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/selector.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/selector.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/serialize.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/serialize.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/sizzle/dist/sizzle.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/sizzle/dist/sizzle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/sizzle/dist/sizzle.min.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/sizzle/dist/sizzle.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/sizzle/test/data/testinit.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/sizzle/test/data/testinit.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/sizzle/test/jquery.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/sizzle/test/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/sizzle/test/unit/extending.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/sizzle/test/unit/extending.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/sizzle/test/unit/selector.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/sizzle/test/unit/selector.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/sizzle/test/unit/utilities.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/sizzle/test/unit/utilities.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/support.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/support.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/traversing.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/traversing.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/traversing/findFilter.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/traversing/findFilter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/traversing/var/rneedsContext.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/traversing/var/rneedsContext.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/var/class2type.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/var/class2type.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/var/concat.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/var/concat.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/var/deletedIds.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/var/deletedIds.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/var/hasOwn.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/var/hasOwn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/var/indexOf.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/var/indexOf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/var/pnum.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/var/pnum.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/var/push.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/var/push.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/var/rnotwhite.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/var/rnotwhite.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/var/slice.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/var/slice.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/var/strundefined.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/var/strundefined.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/var/support.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/var/support.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/var/toString.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/var/toString.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/wrap.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/node_modules/jquery/src/wrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/package.json" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/flexSlider/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/fonts/fontawesome-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/less/animated.less" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/less/animated.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/less/bordered-pulled.less" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/less/bordered-pulled.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/less/core.less" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/less/core.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/less/fixed-width.less" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/less/fixed-width.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/less/font-awesome.less" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/less/font-awesome.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/less/icons.less" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/less/icons.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/less/larger.less" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/less/larger.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/less/list.less" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/less/list.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/less/mixins.less" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/less/mixins.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/less/path.less" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/less/path.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/less/rotated-flipped.less" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/less/rotated-flipped.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/less/screen-reader.less" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/less/screen-reader.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/less/stacked.less" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/less/stacked.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/less/variables.less" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/less/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/scss/_animated.scss" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/scss/_animated.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/scss/_bordered-pulled.scss" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/scss/_bordered-pulled.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/scss/_core.scss" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/scss/_core.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/scss/_fixed-width.scss" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/scss/_fixed-width.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/scss/_icons.scss" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/scss/_icons.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/scss/_larger.scss" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/scss/_larger.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/scss/_list.scss" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/scss/_list.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/scss/_mixins.scss" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/scss/_mixins.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/scss/_path.scss" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/scss/_path.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/scss/_rotated-flipped.scss" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/scss/_rotated-flipped.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/scss/_screen-reader.scss" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/scss/_screen-reader.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/scss/_stacked.scss" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/scss/_stacked.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/scss/_variables.scss" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/scss/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/scss/font-awesome.scss" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/font-awesome-4.6.1/scss/font-awesome.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/jquery.countdown-2.1.0/jquery.countdown.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/jquery.countdown-2.1.0/jquery.countdown.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/jquery.countdown-2.1.0/jquery.countdown.min.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/jquery.countdown-2.1.0/jquery.countdown.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/pagination/jPages.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/pagination/jPages.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/pagination/jPages.min.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/pagination/jPages.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/revolution-slider/fonts/font-awesome/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/revolution-slider/fonts/font-awesome/fonts/fontawesome-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/plugins/revolution-slider/js/carousel.min.js" afterPath="$PROJECT_DIR$/public/FrontendCore/plugins/revolution-slider/js/carousel.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/scss/_mixin.scss" afterPath="$PROJECT_DIR$/public/FrontendCore/scss/_mixin.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/js/login.js" afterPath="$PROJECT_DIR$/public/FrontendCore/js/login.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/scss/_navbar.scss" afterPath="$PROJECT_DIR$/public/FrontendCore/scss/_navbar.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/scss/style.scss" afterPath="$PROJECT_DIR$/public/FrontendCore/scss/style.scss" />
     </list>
     <ignored path="vatc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -317,19 +39,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.phtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/views/blogs/index.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-              <folding>
-                <element signature="e#67#205#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/config/config.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -339,11 +49,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="detail.phtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/views/blogs/detail.phtml">
+      <file leaf-file-name="agency.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/FrontendCore/js/agency.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="125" selection-start-line="2" selection-start-column="125" selection-end-line="2" selection-end-column="149" />
+            <state relative-caret-position="-433">
+              <caret line="107" column="42" selection-start-line="107" selection-start-column="8" selection-end-line="107" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/FrontendCore/js/login.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="332" column="25" selection-start-line="332" selection-start-column="25" selection-end-line="332" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_navbar.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/FrontendCore/scss/_navbar.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="37" column="11" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -352,18 +82,8 @@
       <file leaf-file-name="IndexController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/controllers/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="69" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BlogsController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/controllers/BlogsController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="51" column="57" selection-start-line="51" selection-start-column="57" selection-end-line="51" selection-end-column="57" />
+            <state relative-caret-position="168">
+              <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -372,8 +92,48 @@
       <file leaf-file-name="index.phtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/views/index/index.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="34" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="34" />
+            <state relative-caret-position="392">
+              <caret line="211" column="0" selection-start-line="211" selection-start-column="0" selection-end-line="211" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.phtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/views/layouts/index.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu_top_desktop.phtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/views/partial/menu_top_desktop.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="popup.phtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/views/partial/popup.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="297" column="60" selection-start-line="297" selection-start-column="50" selection-end-line="297" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -399,7 +159,6 @@
         <option value="$PROJECT_DIR$/apps/modules/Backend/views/gallery/detailcontent.phtml" />
         <option value="$PROJECT_DIR$/apps/modules/Frontend/controllers/ControllerBase.php" />
         <option value="$PROJECT_DIR$/apps/modules/Frontend/views/layouts/sub/include_header.phtml" />
-        <option value="$PROJECT_DIR$/apps/modules/Frontend/views/layouts/index.phtml" />
         <option value="$PROJECT_DIR$/apps/modules/Frontend/views/partial/loadding.phtml" />
         <option value="$PROJECT_DIR$/apps/modules/Frontend/controllers/UserController.php" />
         <option value="$PROJECT_DIR$/apps/modules/Backend/views/layouts/sub/include_page.phtml" />
@@ -410,28 +169,29 @@
         <option value="$PROJECT_DIR$/apps/hqengine/HqAsset/HqAssetManager.php" />
         <option value="$PROJECT_DIR$/apps/data/logs/.main.log" />
         <option value="$PROJECT_DIR$/apps/modules/Frontend/views/partial/menu_top_desktop.phtml" />
-        <option value="$PROJECT_DIR$/apps/modules/Frontend/controllers/IndexController.php" />
-        <option value="$PROJECT_DIR$/public/FrontendCore/js/login.js" />
         <option value="$PROJECT_DIR$/apps/modules/Frontend/controllers/PostsController.php" />
         <option value="$PROJECT_DIR$/public/index.php" />
         <option value="$PROJECT_DIR$/apps/modules/Backend/views/partial/core-backend/leftbar.phtml" />
         <option value="$PROJECT_DIR$/public/FrontendCore/js/main.js" />
-        <option value="$PROJECT_DIR$/public/FrontendCore/js/agency.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/apps/modules/Backend/views/manager-hlv/neweditcontent.phtml" />
         <option value="$PROJECT_DIR$/public/FrontendCore/scss/agency.scss" />
-        <option value="$PROJECT_DIR$/apps/modules/Frontend/views/index/index.phtml" />
         <option value="&lt;1d3804c2-1eb1-46e4-9d83-9ae5df8c362c&gt;/apps/modules/Backend/views/manager-hlv/index.phtml" />
         <option value="&lt;1d3804c2-1eb1-46e4-9d83-9ae5df8c362c&gt;/apps/modules/Backend/views/orther-page/index.phtml" />
-        <option value="$PROJECT_DIR$/apps/modules/Frontend/views/partial/popup.phtml" />
         <option value="$PROJECT_DIR$/public/FrontendCore/scss/_blogs.scss" />
         <option value="&lt;1d3804c2-1eb1-46e4-9d83-9ae5df8c362c&gt;/apps/modules/Frontend/views/blogs/detail.phtml" />
-        <option value="$PROJECT_DIR$/public/FrontendCore/scss/_navbar.scss" />
         <option value="$PROJECT_DIR$/public/FrontendCore/scss/style.scss" />
         <option value="$PROJECT_DIR$/apps/config/config.php" />
         <option value="$PROJECT_DIR$/apps/modules/Frontend/controllers/BlogsController.php" />
         <option value="$PROJECT_DIR$/apps/modules/Frontend/views/blogs/detail.phtml" />
         <option value="$PROJECT_DIR$/apps/modules/Frontend/views/blogs/index.phtml" />
+        <option value="$PROJECT_DIR$/public/FrontendCore/js/agency.js" />
+        <option value="$PROJECT_DIR$/public/FrontendCore/js/login.js" />
+        <option value="$PROJECT_DIR$/public/FrontendCore/scss/_navbar.scss" />
+        <option value="$PROJECT_DIR$/apps/modules/Frontend/views/partial/popup.phtml" />
+        <option value="$PROJECT_DIR$/apps/modules/Frontend/controllers/IndexController.php" />
+        <option value="$PROJECT_DIR$/apps/modules/Frontend/views/index/index.phtml" />
+        <option value="$PROJECT_DIR$/apps/modules/Frontend/views/layouts/index.phtml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -476,8 +236,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -506,15 +264,105 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vatc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trungtamanhngu" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FrontendCore" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scss" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vatc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trungtamanhngu" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FrontendCore" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vatc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trungtamanhngu" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FrontendCore" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vatc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trungtamanhngu" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FrontendCore" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vatc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trungtamanhngu" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="apps" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Frontend" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -532,133 +380,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Frontend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vatc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trungtamanhngu" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apps" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Frontend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="index" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vatc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trungtamanhngu" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apps" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Frontend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blogs" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vatc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trungtamanhngu" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apps" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Frontend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vatc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trungtamanhngu" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apps" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vatc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trungtamanhngu" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apps" />
+              <option name="myItemId" value="data" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -682,6 +404,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -711,6 +435,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="968" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="last_opened_file_path" value="D:/Ruby23-x64/bin/scss.bat" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -782,7 +507,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1471409160403</updated>
-      <workItem from="1471969566738" duration="808000" />
+      <workItem from="1471969566738" duration="1560000" />
+      <workItem from="1472047644657" duration="1405000" />
     </task>
     <task id="LOCAL-00001" summary="fix bug">
       <created>1471488824687</created>
@@ -875,27 +601,33 @@
       <option name="project" value="LOCAL" />
       <updated>1471604277687</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="update source">
+      <created>1471970575540</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1471970575540</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="808000" />
+    <option name="totallyTimeSpent" value="2965000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22974414" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26928896" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22974414" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2655068" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -904,6 +636,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -930,7 +663,8 @@
     <MESSAGE value="disable APPLICATION_DEBUG" />
     <MESSAGE value="fix 4" />
     <MESSAGE value="fix 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix 5" />
+    <MESSAGE value="update source" />
+    <option name="LAST_COMMIT_MESSAGE" value="update source" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -952,7 +686,6 @@
     <entry file="file://$PROJECT_DIR$/apps/modules/Backend/views/gallery/detailcontent.phtml" />
     <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/views/layouts/sub/include_header.phtml" />
     <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/views/partial/footer.phtml" />
-    <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/views/layouts/index.phtml" />
     <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/views/partial/loadding.phtml" />
     <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/controllers/UserController.php" />
     <entry file="file://$PROJECT_DIR$/apps/modules/Backend/views/layouts/sub/include_page.phtml" />
@@ -963,8 +696,6 @@
     <entry file="file://$PROJECT_DIR$/apps/data/logs/.main.log" />
     <entry file="file://$PROJECT_DIR$/apps/data/logs/.main.log" />
     <entry file="file://$PROJECT_DIR$/apps/hqengine/HqConfig.php" />
-    <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/views/partial/menu_top_desktop.phtml" />
-    <entry file="file://$PROJECT_DIR$/public/FrontendCore/js/login.js" />
     <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/controllers/PostsController.php" />
     <entry file="file://$PROJECT_DIR$/apps/hqengine/HqApplication/HqApplicationInit.php" />
     <entry file="file://$PROJECT_DIR$/apps/hqengine/HqBoostrap/HqBootstrap.php" />
@@ -973,34 +704,14 @@
     <entry file="file://$PROJECT_DIR$/apps/modules/Backend/views/partial/core-backend/leftbar.phtml" />
     <entry file="file://$PROJECT_DIR$/apps/modules/Backend/controllers/BannerController.php" />
     <entry file="file://$PROJECT_DIR$/public/FrontendCore/js/main.js" />
-    <entry file="file://$PROJECT_DIR$/.gitignore" />
-    <entry file="file://$PROJECT_DIR$/public/FrontendCore/js/agency.js" />
     <entry file="file://$PROJECT_DIR$/apps/modules/Backend/views/manager-hlv/neweditcontent.phtml" />
     <entry file="file://$PROJECT_DIR$/public/FrontendCore/scss/agency.scss" />
     <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/views/index/index2.phtml" />
-    <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/views/partial/popup.phtml" />
     <entry file="file://$PROJECT_DIR$/public/FrontendCore/scss/_blogs.scss" />
-    <entry file="file://$PROJECT_DIR$/public/FrontendCore/scss/_navbar.scss" />
     <entry file="file://$PROJECT_DIR$/public/FrontendCore/scss/style.scss" />
-    <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/views/index/index.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/controllers/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/controllers/BlogsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
+        <state relative-caret-position="840">
           <caret line="51" column="57" selection-start-line="51" selection-start-column="57" selection-end-line="51" selection-end-column="57" />
           <folding />
         </state>
@@ -1018,9 +729,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-          <folding>
-            <element signature="e#67#205#0#HTML" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1028,6 +737,78 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/FrontendCore/scss/_navbar.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="37" column="11" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/FrontendCore/js/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="332" column="25" selection-start-line="332" selection-start-column="25" selection-end-line="332" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/views/partial/popup.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="297" column="60" selection-start-line="297" selection-start-column="50" selection-end-line="297" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/controllers/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/FrontendCore/js/agency.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-433">
+          <caret line="107" column="42" selection-start-line="107" selection-start-column="8" selection-end-line="107" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/views/index/index.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="211" column="0" selection-start-line="211" selection-start-column="0" selection-end-line="211" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/views/layouts/index.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/views/partial/menu_top_desktop.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
           <folding />
         </state>
       </provider>
