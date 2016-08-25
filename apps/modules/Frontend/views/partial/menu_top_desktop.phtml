@@ -14,7 +14,8 @@
                 <div class="col-md-3 col-sm-3 col-xs-4">
                     <div class="hq-logo">
                         <a class="#hq-header-wrapper" href="/">
-                            <img class="img-responsive" src="<?php echo $this->url->get("public/FrontendCore/") ?>images/logo.png">
+                            <img class="img-responsive"
+                                 src="<?php echo $this->url->get("public/FrontendCore/") ?>images/logo.png">
                         </a>
                     </div>
                 </div>
@@ -28,7 +29,7 @@
                                 Luyện Viên</a></li>
                         <li class="hq-nav-hide">
                             <a <?php if ($this->dispatcher->getControllerName() == 'blogs') { ?> href="<?php echo $this->url->get(); ?>" <?php } else { ?> href="#portfolio" <?php } ?> >Thể
-                                Lệ</a></li>
+                                Lệ Cuộc Thi</a></li>
                         <li class="hq-nav-hide">
                             <a <?php if ($this->dispatcher->getControllerName() == 'blogs') { ?> href="<?php echo $this->url->get(); ?>" <?php } else { ?> href="#about" <?php } ?> >Thư
                                 Viện</a>
@@ -40,14 +41,19 @@
                                 data-target="#popupLogin"  <?php } ?>>
                                 <i class="fa fa-user"></i>
                             </a>
-                            <?php if ($user) { ?>
+                        </li>
+                        <?php if ($user) { ?>
+                            <li>
                                 <a data-toggle="modal" data-target="#popupChangePass" href="javascript:;"
-                                   class="hq-social-text">Hi, <?php echo $user->us_name ?></a> - <a
+                                   class="hq-social-text">Hi, <?php echo $user->us_name ?></a>
+                            </li>
+                            <li>
+                                <a
                                     href="<?php echo $this->url->get("user/logout") ?>" class="hq-social-text">
                                     Thoát
                                 </a>
-                            <?php } ?>
-                        </li>
+                            </li>
+                        <?php } ?>
 
                     </ul>
                 </div>
@@ -66,7 +72,7 @@
                 LUYỆN VIÊN</a></li>
         <li>
             <a <?php if ($this->dispatcher->getControllerName() == 'blogs') { ?> href="<?php echo $this->url->get(); ?>" <?php } else { ?> href="#portfolio" <?php } ?> >THỂ
-                LỆ</a></li>
+                LỆ CUỘC THI</a></li>
         <li>
             <a <?php if ($this->dispatcher->getControllerName() == 'blogs') { ?> href="<?php echo $this->url->get(); ?>" <?php } else { ?> href="#about" <?php } ?> >THƯ
                 VIỆN</a></li>

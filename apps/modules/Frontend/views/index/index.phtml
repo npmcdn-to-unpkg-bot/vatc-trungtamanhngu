@@ -1,1 +1,213 @@
-<img width="100%" height="auto" src="<?php echo $this->url->get("public/FrontendCore/") ?>images/20160821_VATC_Banner_Teaser.png" />
+<?php echo $this->partial('partial/menu_top_desktop') ?>
+<!-- Header -->
+<section id="section-slider" class="carousel slide" style="padding:0;">
+    <a href="#services">
+        <div id="slider1" class="rev_slider" data-version="5.0">
+            <ul>
+                <?php if ($sliders) {
+                    foreach ($sliders as $slider) { ?>
+                        <li data-transition="random">
+                            <img data-bgfit="100% auto" data-bgrepeat="no-repeat"
+                                 data-bgposition="top center"
+                                 src="<?php echo $this->config['rootUrl'] . $slider->ba_image_link ?>">
+                        </li>
+                    <?php }
+                } ?>
+            </ul>
+        </div>
+    </a>
+</section>
+
+<!-- Services Section -->
+<section id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">huấn luyện viên </h2>
+            </div>
+        </div>
+        <div class="row text-center">
+            <?php if ($coachs) {
+                foreach ($coachs as $coach) { ?>
+                    <div class="col-md-4 col-sm-4 ">
+                        <div class="info-hlv">
+                            <div class="hlv-content">
+                                <div class="img-hlv hlv1">
+                                    <img src="<?php echo $this->url->get($coach->hlv_image_link); ?>"/>
+                                </div>
+                                <h4 class="service-heading"><?php echo $coach->hlv_name ?></h4>
+                                <h5 style="color:#a7a9ac;text-transform: none;font-size: 15px"><?php echo $coach->hlv_position ?></h5>
+                                <div class="hover-hlv-area">
+                                    <a data-dismiss="modal" data-toggle="modal"
+                                       data-target="#popupInfoHlv-<?php echo $coach->hlv_id ?>"
+                                       href="javascript:;"
+                                       class="animated fadeInUp btn-hlv-area btn-hlvinfo">Tìm hiểu</a>
+                                    <a data-rel="<?php echo $coach->hlv_id ?>" data-dismiss="modal"
+                                       data-toggle="modal" <?php if (!$user) { ?> data-target="#popupLogin" <?php } ?>
+                                       href="javascript:;"
+                                       class="animated fadeInUp btn-hlv-area btn-hlvplay <?php if ($user) { ?> btn-playgame  <?php } ?>">Tham
+                                        gia
+                                        ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <?php }
+            } ?>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Grid Section -->
+<section id="portfolio" style="padding: 51px 0px;" class="bg-light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 style="margin-bottom: 0px;" class="section-heading">thể lệ cuộc thi</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <?php if ($infographic) { ?>
+                    <img style="margin: 0 auto;max-height: 345px" class="img-responsive"
+                         src="<?php echo $infographic->ba_image_link ?>" alt="<?php echo $infographic->ba_name ?>">
+                <?php } ?>
+            </div>
+        </div>
+        <div style="margin: 60px auto;" class="row ">
+            <div class="text-thele-area">
+                <?php echo $thele->p_description; ?>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading text-head-gallery">Thư viện </h2>
+            </div>
+        </div>
+        <div class="row search-gallery-area">
+            <form id="filter-kol" onsubmit="return false;">
+                <div class="col-md-3 col-sm-3">
+                    <input id="datepicker" class="filter-name" type="text" name="created_at"
+                           placeholder="Ngày Đăng"/>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <input class="filter-name" type="text" name="us_name"
+                           placeholder="Thí Sinh"/>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <div class="select2-wrapper">
+                        <select name="hlv_id"
+                                class=" select-custom form-control select-2">
+                            <?php if ($coachs) {
+                                foreach ($coachs as $coach) { ?>
+                                    <option
+                                        value="<?php echo $coach->hlv_id ?>"><?php echo $coach->hlv_name ?></option>
+                                <?php }
+                            } ?>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <div class="form-button-wrapper">
+                        <button type="button" class="btn btn-search-kol">Tìm Kiếm</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="gallery-posts" class="row ">
+            <?php if (count($posts) > 0) {
+                foreach ($posts as $po) { ?>
+                    <div class="col-md-4 col-sm-4">
+                        <div data-rel="<?php echo $po->p_id ?>" class="user-posts <?php echo $po->showClassHlv() ?>">
+                            <div class="post-area">
+                                <h3 class="username-post">
+                                    <?php echo $po->UserModel->us_name ?>
+                                </h3>
+                                <p>Bài Thi: <span><?php echo $po->p_description ?></span></p>
+                                <p>Huấn Luyện Viên: <span><?php echo $po->ManagerHlvModel->hlv_name ?></span></p>
+                            </div>
+                            <img class="icon-hlv" src="<?php echo $po->showImageIconHlv() ?>" alt="">
+                        </div>
+                    </div>
+                <?php }
+            } ?>
+        </div>
+        <div class="row text-center">
+            <nav id="kol-pagination" class="hq-kol-pagination" aria-label="Page navigation">
+                <ul class="pagination">
+                    <li>
+                        <a href="javascript:;" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li><a href="javascript:;">1</a></li>
+                    <li><a href="javascript:;">2</a></li>
+                    <li><a href="javascript:;">3</a></li>
+                    <li><a href="javascript:;">4</a></li>
+                    <li><a href="javascript:;">5</a></li>
+                    <li>
+                        <a href="javascript:;" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<!-- Team Section -->
+<section id="team" class="bg-light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading text-head-gallery">tin tức</h2>
+            </div>
+        </div>
+        <div class="row">
+            <?php if ($blogs) {
+                foreach ($blogs as $news) { ?>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="hq-blog">
+                            <div class="hq-img-blog">
+                                <img src="<?php echo $news->n_image_link ?>"
+                                     alt="<?php echo $news->n_name ?>">
+                            </div>
+                            <div class="hq-content-blog">
+                                <a target="_blank"
+                                   href="<?php echo $this->url->get("blogs/detail/") . $news->n_seo_link ?>">
+                                    <h3><?php echo $news->n_name ?></h3></a>
+                                <div class="hq-meta-blog">
+                                    <?php echo $news->showCreateDate() ?>
+                                </div>
+                                <div class="short-description">
+                                    <?php echo nl2br($news->n_short_description) ?>
+                                </div>
+                                <a target="_blank" class="hq-readmore"
+                                   href="<?php echo $this->url->get("blogs/detail/") . $news->n_seo_link ?>">Xem
+                                    Thêm <i
+                                        class="fa fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                <?php }
+            } ?>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <a href="<?php echo $this->url->get("blogs") ?>" class="btn-loadmore">Xem Thêm</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<?php echo $this->partial('partial/footer') ?>
+

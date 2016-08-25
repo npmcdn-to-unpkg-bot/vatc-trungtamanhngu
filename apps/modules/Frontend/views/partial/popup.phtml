@@ -276,18 +276,22 @@
                         <img src="<?php echo $this->url->get("public/FrontendCore/") ?>images/icon-close.png" alt="">
                     </a>
                     <div class="right-popup-area">
-                        <p><span class="text-hlv-popup">Huấn luyện viên :</span> <?php echo $coach->hlv_name ?></p>
+                        <p><span class="text-hlv-popup"></span> <?php echo $coach->hlv_name ?></p>
                         <p><?php echo $coach->hlv_position ?></p>
                         <div class="hlv-popup-description">
                             <?php echo nl2br($coach->hlv_description) ?>
                         </div>
                         <div class="row">
                             <div class="col-md-6 col-sm-6 col-xs-5 ">
-                                <a data-dismiss="modal"
-                                   data-toggle="modal" <?php if (!$user) { ?>  data-target="#popupLogin-<?php echo $coach->hlv_id ?>" <?php } ?>
+                                <a data-rel="<?php echo $coach->hlv_id ?>" data-dismiss="modal"
+                                   data-toggle="modal" <?php if (!$user) { ?>  data-target="#popupLogin" <?php } ?>
                                    href="javascript:;"
                                    class="btn-hlv-area btn-hlvplay <?php if ($user) { ?> btn-playgame  <?php } ?>">Tham
                                     Gia Ngay</a>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-5 ">
+                                <a class="btn-hlv-area btn-hlvinfo" onclick="$('.modal').modal('hide');"
+                                   href="#portfolio">Xem Thể Lệ</a>
                             </div>
                         </div>
                     </div>
@@ -302,25 +306,29 @@
                 <div class="modal-content popup-main">
                     <div class="modal-header">
 
-                        <h4 class="modal-title"><img src="<?php echo $this->url->get("public/FrontendCore/") ?>images/logo.png" alt=""></h4>
+                        <h4 class="modal-title"><img
+                                src="<?php echo $this->url->get("public/FrontendCore/") ?>images/logo.png" alt=""></h4>
                     </div>
                     <a href="javascript:;" class="btn-close-popup" data-dismiss="modal" aria-label="Close">
                         <img src="<?php echo $this->url->get("public/FrontendCore/") ?>images/icon-close.png" alt="">
                     </a>
                     <div class="left-popup-area">
                         <?php if (isset($gallery) && count($gallery) > 0) { ?>
-                            <img class="image-share" src="<?php echo $this->config['rootUrl'] . $gallery->ba_image_link ?>" alt="">
+                            <img class="image-share"
+                                 src="<?php echo $this->config['rootUrl'] . $gallery->ba_image_link ?>" alt="">
                         <?php } ?>
                     </div>
-                    <div class="right-popup-area" >
+                    <div class="right-popup-area">
                         <form id="postForm" onsubmit="return userPosts();return false;">
                             <input name="hlv_id" type="hidden">
                             <input name="ga_id" type="hidden"
                                    value="<?php echo isset($gallery) && count($gallery) > 0 ? $gallery->ba_id : '' ?>">
-                            <textarea class="hq-hlv-post" required name="p_description" placeholder="Chia sẻ của bạn " style="background: #FFF url('<?php echo $this->url->get("public/FrontendCore/images/play_" . $coach->hlv_id . ".png") ?>') no-repeat top left;background-size:auto 100%;"></textarea>
+                            <textarea class="hq-hlv-post" required name="p_description" placeholder="Chia sẻ của bạn "
+                                      style="background: #FFF url('<?php echo $this->url->get("public/FrontendCore/images/play_" . $coach->hlv_id . ".png") ?>') no-repeat top left;background-size:auto 100%;"></textarea>
                             <label class="error" for="p_description"></label>
                             <div class="col-md-12 ">
-                                <a onclick="userPosts();" href="javascript:;" class="btn-hlv-area btn-hlvplay btn-hlvplay-done">ĐĂNG BÀI</a>
+                                <a onclick="userPosts();" href="javascript:;"
+                                   class="btn-hlv-area btn-hlvplay btn-hlvplay-done">ĐĂNG BÀI</a>
                             </div>
                         </form>
                     </div>
@@ -331,3 +339,32 @@
     <?php }
 } ?>
 
+<div class="modal fade popupPlaygame" id="popupGallery" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+
+        <div class="modal-content popup-main">
+            <div class="modal-header">
+
+                <h4 class="modal-title"><img src="<?php echo $this->url->get("public/FrontendCore/") ?>images/logo.png"
+                                             alt=""></h4>
+            </div>
+            <a href="javascript:;" class="btn-close-popup" data-dismiss="modal" aria-label="Close">
+                <img src="<?php echo $this->url->get("public/FrontendCore/") ?>images/icon-close.png" alt="">
+            </a>
+            <div class="left-popup-area">
+                <?php if (isset($gallery) && count($gallery) > 0) { ?>
+                    <img class="image-share" src="<?php echo $this->config['rootUrl'] . $gallery->ba_image_link ?>"
+                         alt="">
+                <?php } ?>
+            </div>
+            <div class="right-popup-area">
+                <form id="postForm" onsubmit="return userPosts();return false;">
+                            <textarea class="hq-hlv-post gallery-post" readonly required name="p_description"
+                                      style="background: #FFF url('<?php echo $this->url->get("public/FrontendCore/images/play_" . $coach->hlv_id . ".png") ?>') no-repeat top left;background-size:auto 100%;"></textarea>
+                </form>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+    </div>
+</div>

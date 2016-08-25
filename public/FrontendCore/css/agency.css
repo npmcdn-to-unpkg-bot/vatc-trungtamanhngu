@@ -71,7 +71,6 @@ table, th, td {
       #hq-header-wrapper .hq-header .hq-icon-social li {
         display: inline-block;
         vertical-align: middle;
-        margin-left: 20px;
         font-size: 15px;
         position: relative; }
         #hq-header-wrapper .hq-header .hq-icon-social li a {
@@ -85,7 +84,7 @@ table, th, td {
           -ms-transition: all 0.3s ease 0s;
           -o-transition: all 0.3s ease 0s;
           transition: all 0.3s ease 0s;
-          padding: 10px 20px; }
+          padding: 10px 15px; }
           #hq-header-wrapper .hq-header .hq-icon-social li a .fa {
             color: #fff; }
           #hq-header-wrapper .hq-header .hq-icon-social li a:hover {
@@ -185,6 +184,7 @@ table, th, td {
   top: 140px;
   width: 60px;
   z-index: 99;
+  display: none;
   -webkit-border-radius: 50%;
   -khtml-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1443,7 +1443,8 @@ input.filter-name, .select2-container .select2-selection--single, .input-popup {
   margin: 0 auto;
   margin-bottom: 35px;
   border-radius: 10px;
-  position: relative; }
+  position: relative;
+  cursor: pointer; }
   .user-posts.hlv1 {
     background-color: #f6e3db; }
   .user-posts.hlv2 {
@@ -1452,8 +1453,8 @@ input.filter-name, .select2-container .select2-selection--single, .input-popup {
     background-color: #d7d5d3; }
   .user-posts .icon-hlv {
     position: absolute;
-    bottom: -32px;
-    right: 0; }
+    bottom: -40px;
+    right: -40px; }
   .user-posts .post-area {
     height: 100px;
     width: 88%;

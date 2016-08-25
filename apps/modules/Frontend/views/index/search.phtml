@@ -1,13 +1,13 @@
 <?php if (count($posts) > 0) {
     foreach ($posts as $po) { ?>
         <div class="col-md-4 col-sm-4">
-            <div class="user-posts <?php echo $po->showClassHlv() ?>">
+            <div data-rel="<?php echo $po->p_id ?>" class="user-posts <?php echo $po->showClassHlv() ?>">
                 <div class="post-area">
                     <h3 class="username-post">
                         <?php echo $po->UserModel->us_name ?>
                     </h3>
-                    <p>Bài Thi : <span><?php echo $po->p_description ?></span></p>
-                    <p>Giáo Viên : <span><?php echo $po->ManagerHlvModel->hlv_name ?></span></p>
+                    <p>Bài Thi: <span><?php echo $po->p_description ?></span></p>
+                    <p>Huấn Luyện Viên: <span><?php echo $po->ManagerHlvModel->hlv_name ?></span></p>
                 </div>
                 <img class="icon-hlv" src="<?php echo $po->showImageIconHlv() ?>" alt="">
             </div>

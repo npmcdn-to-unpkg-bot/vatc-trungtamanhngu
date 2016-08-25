@@ -14,6 +14,7 @@ use Backend\Models\OrderModel;
 use Backend\Models\OrtherPageModel;
 use Backend\Models\ProductModel;
 use Backend\Models\CollectionModel;
+use Backend\Models\UserModel;
 use Phalcon\Paginator\Adapter\Model as PaginatorModel;
 use Phalcon\Mvc\Model\Query;
 
@@ -27,12 +28,14 @@ class IndexController extends ControllerBase
 
     public function indexAction()
     {
+
         $galleryModel = new GalleryModel();
         $managerHlvModel = new ManagerHlvModel();
         $postModel = new ManagerPostsModel();
         $newsModel = new NewsModel();
         $bannerModel = new BannerModel();
         $ortherpageModel = new OrtherPageModel();
+        $this->view->isPost = $this->request->getQuery('post');
         $this->view->thele = $ortherpageModel::findFirst();
         $this->view->sliders = $bannerModel::find(array("bc_id =2"));
         $this->view->infographic = $bannerModel::findFirst(array("bc_id =3"));
@@ -65,18 +68,50 @@ class IndexController extends ControllerBase
     {
         if ($this->request->isPost()) {
             $data = $this->request->getPost();
+
             $postModel = new ManagerPostsModel();
+            $userModel = new UserModel();
+            $query = "hlv_id = '{$data['hlv_id']}' and ";
 
             $result = array();
             if (!empty($data['created_at'])) {
                 $time = date("Y-m-d", strtotime($data['created_at']));
-                $posts = $postModel::find(array("DATE(created_at) = '{$time}'"));
+                $query .= "DATE(created_at) = '{$time}' and ";
             }
-            else {
-                $posts = $postModel::find(array("hlv_id = '{$data['hlv_id']}'"));
+            if (!empty($data['us_name'])) {
+                $users_id = array();
+                $users = $userModel::find(array("us_name LIKE '%{$data['us_name']}%' "));
+
+                if (count($users) > 0) {
+
+                    foreach ($users as $us) {
+                        $users_id[] = $us->us_id;
+                    }
+                    $query .= "us_id IN (" . implode(",", $users_id) . ") and ";
+                }
+
             }
+            $query = rtrim($query, "and ");
+
+            $posts = $postModel::find(array($query));
             $this->view->posts = $posts;
             $this->view->setRenderLevel(\Phalcon\Mvc\View::LEVEL_ACTION_VIEW);
+        }
+    }
+
+    public function searchPostAction()
+    {
+        if ($this->request->isPost()) {
+            $id = $this->request->getPost("id");
+            $postModel = new ManagerPostsModel();
+            $data = $postModel::findFirst($id);
+            $respon['status'] = 0;
+            if ($data) {
+                $respon['status'] = 1;
+                $respon['data'] = $data;
+            }
+            echo json_encode($respon);
+            die;
         }
     }
 }

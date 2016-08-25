@@ -672,6 +672,7 @@ input.filter-name {
   margin-bottom: 35px;
   border-radius: 10px;
   position: relative;
+  cursor: pointer;
   &.hlv1 {
     background-color: #f6e3db;
 
@@ -684,8 +685,8 @@ input.filter-name {
   }
   .icon-hlv {
     position: absolute;
-    bottom: -32px;
-    right: 0;
+    bottom: -40px;
+    right: -40px;
   }
   .post-area {
     height: 100px;

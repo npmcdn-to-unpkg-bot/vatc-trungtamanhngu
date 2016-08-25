@@ -32,7 +32,7 @@
       li {
         display: inline-block;
         vertical-align: middle;
-        margin-left: 20px;
+        //margin-left: 20px;
         font-size: 15px;
         position: relative;
         a {
@@ -41,7 +41,7 @@
           display: inline-block;
           vertical-align: middle;
           @include transition();
-          padding: 10px 20px;
+          padding: 10px 15px;
           .fa {
             color: #fff;
           }
@@ -162,6 +162,7 @@
   top: 140px;
   width: 60px;
   z-index: 99;
+  display: none;
   @include border-radius(50%);
   #top,
   #middle,

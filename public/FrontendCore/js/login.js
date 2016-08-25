@@ -42,13 +42,7 @@ function registerUser() {
                 if (result.status == 1) {
                     //redirect if has param redirect
                     var current_param = getUrlVars();
-                    setTimeout(function () {
-                        if (current_param['redirect'] != undefined) {
-                            document.location.href = rootUrl + current_param['redirect'];
-                        } else {
-                            document.location.href = rootUrl;
-                        }
-                    }, 1300);
+                    afterLogin();
                 }
                 else {
                     var error = result.message;
@@ -83,13 +77,7 @@ function loginUser() {
                 if (result.status == 1) {
                     //redirect if has param redirect
                     var current_param = getUrlVars();
-                    setTimeout(function () {
-                        if (current_param['redirect'] != undefined) {
-                            document.location.href = rootUrl + current_param['redirect'];
-                        } else {
-                            document.location.href = rootUrl;
-                        }
-                    }, 1300);
+                    afterLogin();
                 }
                 else {
                     var error = result.message;
@@ -133,9 +121,7 @@ function submitLoginFacebook(response) {
             var result = $.parseJSON(msg);
             if (result.status === 1) {
                 showPopup('success', 'Thành Công', result.message);
-                setTimeout(function () {
-                    document.location.href = rootUrl;
-                }, 1300);
+                afterLogin();
             }
             else {
                 var error = result.message;
@@ -188,9 +174,7 @@ function submitLoginGoogle(response) {
         hideLoading();
         var result = $.parseJSON(msg);
         if (result.status === 1) {
-            setTimeout(function () {
-                document.location.href = rootUrl;
-            }, 1300);
+            afterLogin();
         }
         else {
             var error = result.message;
@@ -352,4 +336,7 @@ function showMessageWhenWrong(array_errors) {
         $("label[for='message_error']").html(array_errors);
         $("label[for='message_error']").show();
     }
+}
+function afterLogin() {
+    window.location.href = rootUrl + "?post=1";
 }

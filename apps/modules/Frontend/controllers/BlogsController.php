@@ -26,6 +26,8 @@ class BlogsController extends ControllerBase
     public function indexAction()
     {
         $newsModel = new NewsModel();
+        $bannerModel = new BannerModel();
+        $this->view->sliders = $bannerModel::findFirst();
         $this->view->data = $newsModel::find(array("n_status=1", "order" => "n_id desc", "limit" => 6));
         $this->view->header_title = "Anh Ngữ Việt Mỹ";
     }
@@ -46,6 +48,8 @@ class BlogsController extends ControllerBase
             $this->response->redirect("blogs");
         }
         $newsModel = new NewsModel();
+        $bannerModel = new BannerModel();
+        $this->view->sliders = $bannerModel::findFirst();
         $this->view->relatedPosts=$newsModel::find(array("n_status=1", "order" => "n_id desc", "limit" => 6));
         $this->view->data=$newsModel::findFirst(array("n_seo_link = '{$seo}'"));
         $this->view->header_title = "Anh Ngữ Việt Mỹ";
