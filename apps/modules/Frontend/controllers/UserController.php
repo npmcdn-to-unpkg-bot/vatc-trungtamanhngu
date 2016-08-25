@@ -6,7 +6,7 @@ use Backend\Models\UserModel;
 
 require $_SERVER['DOCUMENT_ROOT'] . '/apps/libraries/Facebook/autoload.php';
 require $_SERVER['DOCUMENT_ROOT'] . '/apps/libraries/Google/autoload.php';
-require $_SERVER['DOCUMENT_ROOT'] . '/apps/libraries/PHPMailer/PHPMailerAutoload.php';
+//require $_SERVER['DOCUMENT_ROOT'] . '/apps/libraries/PHPMailer/PHPMailerAutoload.php';
 
 class UserController extends ControllerBase
 {

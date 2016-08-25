@@ -320,7 +320,7 @@
                     </div>
                     <div class="right-popup-area">
                         <form id="postForm" onsubmit="return userPosts();return false;">
-                            <input name="hlv_id" type="hidden">
+                            <input value="<?php echo $coach->hlv_id ?>" name="hlv_id" type="hidden">
                             <input name="ga_id" type="hidden"
                                    value="<?php echo isset($gallery) && count($gallery) > 0 ? $gallery->ba_id : '' ?>">
                             <textarea class="hq-hlv-post" required name="p_description" placeholder="Chia sẻ của bạn "

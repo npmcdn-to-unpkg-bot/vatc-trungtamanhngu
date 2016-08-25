@@ -7,6 +7,7 @@ use Backend\Models\OrtherPageModel;
 use Backend\Models\ProductModel;
 use Phalcon\Mvc\Controller;
 use Backend\Models\InformationModel;
+require $_SERVER['DOCUMENT_ROOT'] . '/apps/libraries/PHPMailer/PHPMailerAutoload.php';
 
 class ControllerBase extends Controller
 {
@@ -149,6 +150,23 @@ class ControllerBase extends Controller
             }
         }
         return $quantity;
+    }
+    public function sendMail($body,$title,$emailSend,$nameSend,$company){
+        $mail = new \PHPMailer;
+        $mail->isSMTP();
+        $mail->IsHTML(true);
+        $mail->CharSet = "UTF-8";
+        $mail->Host = "smtp.zoho.com";
+        $mail->SMTPAuth = true;
+        $mail->Username = "no-reply@hoidapthutuchaiquan.vn";
+        $mail->Password = "Efp8+yY4(&H4+ubb";
+        $mail->SMTPSecure = "ssl";
+        $mail->Port = 465;
+        $mail->setFrom('no-reply@hoidapthutuchaiquan.vn', $company);
+        $mail->addAddress($emailSend, $nameSend);
+        $mail->Subject = $title;
+        $mail->Body = $body;
+        $mail->send();
     }
 
 }
