@@ -12,6 +12,7 @@ use Backend\Models\ProductModel;
 use Backend\Models\CollectionModel;
 use Phalcon\Paginator\Adapter\Model as PaginatorModel;
 use Phalcon\Mvc\Model\Query;
+require $_SERVER['DOCUMENT_ROOT'] . '/apps/libraries/PHPMailer/PHPMailerAutoload.php';
 
 class PostsController extends ControllerBase
 {

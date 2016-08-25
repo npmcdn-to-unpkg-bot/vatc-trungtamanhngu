@@ -7,7 +7,8 @@ window.fbAsyncInit = function () {
         cookie: true, // enable cookies to allow the server to access the session
         xfbml: true, // parse XFBML
         frictionlessRequests: true,
-        oauth: true
+        oauth: true,
+        version: 'v2.7'
     });
     FB.getLoginStatus(function (response) {
         console.log(response);
@@ -20,10 +21,10 @@ window.fbAsyncInit = function () {
 function callFBShare() {
     FB.ui({
         method: "feed",
-        link: shareLink,
+        link: rootUrl + "blogs",
         caption: shareCaption,
         description: shareDescription,
-        picture: rootUrl + sharePicture,
+        picture: sharePicture,
         display: "dialog",
         name: shareName
     }, function (response) {
@@ -122,7 +123,7 @@ function facebookLoginApp() {
             //callFBShare();
         }
     }, {
-        scope: 'email,public_profile,user_friends,manage_pages,read_custom_friendlists,user_likes,publish_actions',
+        scope: 'email,public_profile,user_friends,publish_actions',
         return_scopes: true
     });
 }

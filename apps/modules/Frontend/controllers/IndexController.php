@@ -35,7 +35,7 @@ class IndexController extends ControllerBase
         $newsModel = new NewsModel();
         $bannerModel = new BannerModel();
         $ortherpageModel = new OrtherPageModel();
-        $this->view->isPost=$this->request->getQuery('post');
+        $this->view->isPost = $this->request->getQuery('post');
         $this->view->thele = $ortherpageModel::findFirst();
         $this->view->sliders = $bannerModel::find(array("bc_id =2"));
         $this->view->infographic = $bannerModel::findFirst(array("bc_id =3"));
@@ -71,8 +71,10 @@ class IndexController extends ControllerBase
 
             $postModel = new ManagerPostsModel();
             $userModel = new UserModel();
-            $query = "hlv_id = '{$data['hlv_id']}' and ";
-
+            $query = '';
+            if ($data['hlv_id'] != '-1') {
+                $query .= "hlv_id = '{$data['hlv_id']}' and ";
+            }
             $result = array();
             if (!empty($data['created_at'])) {
                 $time = date("Y-m-d", strtotime($data['created_at']));

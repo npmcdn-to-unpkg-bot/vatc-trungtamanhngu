@@ -34,6 +34,7 @@
                             <div class="hlv-content">
                                 <div class="img-hlv hlv1">
                                     <img src="<?php echo $this->url->get($coach->hlv_image_link); ?>"/>
+                                    <div class="hlv-content-mark"></div>
                                 </div>
                                 <h4 class="service-heading"><?php echo $coach->hlv_name ?></h4>
                                 <h5 style="color:#a7a9ac;text-transform: none;font-size: 15px"><?php echo $coach->hlv_position ?></h5>
@@ -80,6 +81,11 @@
 
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-12" style="text-align: center;">
+                <a class="btn-hlv-area btn-hlvplay " href="#services">Tham Gia Ngay</a>
+    </div>
+        </div>
     </div>
 </section>
 
@@ -105,6 +111,9 @@
                     <div class="select2-wrapper">
                         <select name="hlv_id"
                                 class=" select-custom form-control select-2">
+                            <option
+                                value="-1">Tất Cả
+                            </option>
                             <?php if ($coachs) {
                                 foreach ($coachs as $coach) { ?>
                                     <option
@@ -159,6 +168,11 @@
                     </li>
                 </ul>
             </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12" style="text-align: center;">
+            <a class="btn-hlv-area btn-hlvplay " href="#services">Tham Gia Ngay</a>
         </div>
     </div>
 </section>

@@ -360,8 +360,12 @@
             </div>
             <div class="right-popup-area">
                 <form id="postForm" onsubmit="return userPosts();return false;">
-                            <textarea class="hq-hlv-post gallery-post" readonly required name="p_description"
+                            <textarea class="hq-hlv-post gallery-post"
                                       style="background: #FFF url('<?php echo $this->url->get("public/FrontendCore/images/play_" . $coach->hlv_id . ".png") ?>') no-repeat top left;background-size:auto 100%;"></textarea>
+                    <div class="col-md-12 ">
+                        <a href="javascript:;"
+                           class="btn-hlv-area btn-hlvplay btn-share-post">Share Facebook</a>
+                    </div>
                 </form>
             </div>
             <div style="clear: both"></div>

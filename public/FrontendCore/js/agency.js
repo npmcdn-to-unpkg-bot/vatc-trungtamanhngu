@@ -202,6 +202,11 @@ $(document).ready(function () {
             active = true;
         }
     });
+    $("body").on("click", ".btn-share-post", function () {
+        shareDescription = $(".gallery-post").text();
+        sharePicture = $(".image-share").attr("src");
+        callFBShare();
+    });
 });
 function userPosts() {
 
@@ -209,8 +214,8 @@ function userPosts() {
     if (forgotvalidator.form()) {
         //showLoading();
         var data = $("#postForm").serialize();
-        sharePicture = $(".image-share").attr("src");
         shareDescription = $("textarea[name='p_description']").val();
+        sharePicture = $(".image-share").attr("src");
         callFBShare();
         $.ajax({
             type: "POST",
