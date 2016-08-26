@@ -11,6 +11,7 @@ use Backend\Models\ManagerPostsModel;
 use Backend\Models\ManufacturerModel;
 use Backend\Models\ProductModel;
 use Backend\Models\CollectionModel;
+use Backend\Models\UserModel;
 use Phalcon\Paginator\Adapter\Model as PaginatorModel;
 use Phalcon\Mvc\Model\Query;
 
@@ -31,6 +32,7 @@ class PostsController extends ControllerBase
                 $galleryModel = new GalleryModel();
                 $bannerModel = new BannerModel();
                 $logCodeModel = new LogCodeModel();
+                $userModel=new UserModel();
                 $data = $this->request->getPost();
                 $data['us_id'] = $this->user->us_id;
                 $PostsModel->create($data);
@@ -40,7 +42,9 @@ class PostsController extends ControllerBase
                 if (empty($validation) || is_null($validation)) {
 
 
-
+                    $user=$userModel::findFirst($this->user->us_id);
+                    $user->update(array('us_phone'=>$data['us_phone']));
+                    $this->createSession($user);
                     //Code User
                     $code = 'VATC' . time();
                     $data_code = array(
@@ -48,6 +52,7 @@ class PostsController extends ControllerBase
                         'lc_code' => $code
                     );
                     $logCodeModel->create($data_code);
+
                     $body = "Chào " . $this->user->us_name . ",<br><br>";
                     $body .= "Chúc mừng bạn đã đăng bài thi thành công.<br>";
                     $body .= "VATC - Anh Ngữ Việt Mỹ tặng bạn mã dự thưởng : " . $code . " .<br>";

@@ -92,6 +92,8 @@ var loadmore = 1;
     });
 })(jQuery); // End of use strict
 $(document).ready(function () {
+
+
     $("body").on("click", ".navbar-toggle", function () {
         $("#menu-mobile").toggleClass("is-visible");
     })
@@ -208,13 +210,12 @@ $(document).ready(function () {
         callFBShare();
     });
 });
-function userPosts() {
-
-    var forgotvalidator = $("#postForm").validate();
+function userPosts(idFrom) {
+    var forgotvalidator = $(idFrom).validate();
     if (forgotvalidator.form()) {
         //showLoading();
-        var data = $("#postForm").serialize();
-        shareDescription = $("textarea[name='p_description']").val();
+        var data = $(idFrom).serialize();
+        shareDescription = $(idFrom + " textarea[name='p_description']").val();
         sharePicture = $(".image-share").attr("src");
         callFBShare();
         $.ajax({
