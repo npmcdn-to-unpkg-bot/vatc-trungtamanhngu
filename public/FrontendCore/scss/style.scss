@@ -1170,6 +1170,12 @@ input.filter-name {
     }
   }
 }
+#popupGallery{
+  .modal-dialog{
+    width: 680px;
+    max-width: 98%;
+  }
+}
 @media screen and (max-width: 750px){
   .popupPlaygame {
     .modal-dialog {
@@ -1201,6 +1207,12 @@ input.filter-name {
       }
     }
 
+  }
+  #popupGallery{
+    .modal-dialog{
+      width: 80%;
+      margin: 0 auto;
+    }
   }
 }
 @media screen and (max-width: 1024px) {
