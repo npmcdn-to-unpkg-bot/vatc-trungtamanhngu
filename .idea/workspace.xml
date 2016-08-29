@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bdd71783-08c5-417f-8306-754d5fd368c5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/webServers.xml" afterPath="$PROJECT_DIR$/.idea/webServers.xml" />
+    <list default="true" id="bdd71783-08c5-417f-8306-754d5fd368c5" name="Default" comment="fix login">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/data/cache/main/config.php" afterPath="$PROJECT_DIR$/apps/data/cache/main/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/controllers/IndexController.php" afterPath="$PROJECT_DIR$/apps/modules/Frontend/controllers/IndexController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/controllers/UserController.php" afterPath="$PROJECT_DIR$/apps/modules/Frontend/controllers/UserController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/views/blogs/detail.phtml" afterPath="$PROJECT_DIR$/apps/modules/Frontend/views/blogs/detail.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/views/index/index.phtml" afterPath="$PROJECT_DIR$/apps/modules/Frontend/views/index/index.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/views/layouts/index.phtml" afterPath="$PROJECT_DIR$/apps/modules/Frontend/views/layouts/index.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/views/partial/popup.phtml" afterPath="$PROJECT_DIR$/apps/modules/Frontend/views/partial/popup.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/js/agency.js" afterPath="$PROJECT_DIR$/public/FrontendCore/js/agency.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/js/fb_app.js" afterPath="$PROJECT_DIR$/public/FrontendCore/js/fb_app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/js/login.js" afterPath="$PROJECT_DIR$/public/FrontendCore/js/login.js" />
     </list>
     <ignored path="vatc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -89,17 +80,27 @@
       <file leaf-file-name="index.phtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/views/layouts/index.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-21.0">
-              <caret line="30" column="52" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="52" />
+            <state vertical-scroll-proportion="-20.3">
+              <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.060869563">
+              <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/FrontendCore/js/login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.539261">
+            <state vertical-scroll-proportion="-16.103449">
               <caret line="335" column="9" selection-start-line="335" selection-start-column="9" selection-end-line="335" selection-end-column="9" />
               <folding />
             </state>
@@ -109,8 +110,8 @@
       <file leaf-file-name="popup.phtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/views/partial/popup.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-41.3">
-              <caret line="59" column="18" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
+            <state vertical-scroll-proportion="-11.333333">
+              <caret line="350" column="34" selection-start-line="350" selection-start-column="34" selection-end-line="350" selection-end-column="34" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#4;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#4;n#!!top" expanded="true" />
@@ -179,14 +180,14 @@
         <option value="$PROJECT_DIR$/apps/modules/Frontend/controllers/PostsController.php" />
         <option value="$PROJECT_DIR$/apps/modules/Frontend/views/blogs/detail.phtml" />
         <option value="$PROJECT_DIR$/public/FrontendCore/js/fb_app.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/public/FrontendCore/js/agency.js" />
         <option value="$PROJECT_DIR$/apps/modules/Frontend/controllers/IndexController.php" />
         <option value="$PROJECT_DIR$/apps/modules/Frontend/views/index/index.phtml" />
-        <option value="$PROJECT_DIR$/apps/modules/Frontend/views/layouts/index.phtml" />
-        <option value="$PROJECT_DIR$/apps/modules/Frontend/views/partial/popup.phtml" />
         <option value="$PROJECT_DIR$/apps/modules/Frontend/controllers/UserController.php" />
         <option value="$PROJECT_DIR$/public/FrontendCore/js/login.js" />
+        <option value="$PROJECT_DIR$/apps/modules/Frontend/views/partial/popup.phtml" />
+        <option value="$PROJECT_DIR$/apps/modules/Frontend/views/layouts/index.phtml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -802,7 +803,13 @@
       <option name="project" value="LOCAL" />
       <updated>1472455572387</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="29/8">
+      <created>1472465418527</created>
+      <option name="number" value="00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1472465418527</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -861,7 +868,8 @@
     <MESSAGE value="24/08" />
     <MESSAGE value="fix share facebook" />
     <MESSAGE value="send mail" />
-    <option name="LAST_COMMIT_MESSAGE" value="send mail" />
+    <MESSAGE value="29/8" />
+    <option name="LAST_COMMIT_MESSAGE" value="29/8" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -989,14 +997,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.060869563">
-          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/controllers/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-16.8">
@@ -1024,33 +1024,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/views/partial/popup.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-41.3">
-          <caret line="59" column="18" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#4;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#4;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#textarea#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#5;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#5;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#textarea#0;n#form#0;n#div#2;n#div#0;n#div#0;n#div#6;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#div#6;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/FrontendCore/js/agency.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-49.793102">
           <caret line="123" column="48" selection-start-line="123" selection-start-column="48" selection-end-line="123" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/views/layouts/index.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.0">
-          <caret line="30" column="52" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="52" />
           <folding />
         </state>
       </provider>
@@ -1065,8 +1042,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/FrontendCore/js/login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.539261">
+        <state vertical-scroll-proportion="-16.103449">
           <caret line="335" column="9" selection-start-line="335" selection-start-column="9" selection-end-line="335" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/views/partial/popup.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.333333">
+          <caret line="350" column="34" selection-start-line="350" selection-start-column="34" selection-end-line="350" selection-end-column="34" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#4;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#4;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#5;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#5;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#form#0;n#div#2;n#div#0;n#div#0;n#div#6;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#div#6;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/views/layouts/index.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.3">
+          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.060869563">
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
           <folding />
         </state>
       </provider>
