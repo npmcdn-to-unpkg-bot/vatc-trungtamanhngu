@@ -19,14 +19,20 @@ window.fbAsyncInit = function () {
     });
 };
 function callFBShare() {
+    FB.login(function (response) {
+    }, {
+        scope: 'email,public_profile,user_friends,publish_actions',
+        return_scopes: true
+    });
     FB.ui({
         method: "feed",
-        link: rootUrl + "blogs",
+        link: "http://vatc.edu.vn/",
         caption: shareCaption,
         description: shareDescription,
         picture: sharePicture,
         display: "dialog",
-        name: shareName
+        name: shareName,
+        message: shareDescription
     }, function (response) {
         if (response.post_id) {
             window.location.reload();

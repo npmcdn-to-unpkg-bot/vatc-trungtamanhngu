@@ -105,11 +105,11 @@ $(document).ready(function () {
     $('.modal').on('hidden.bs.modal', function (e) {
         $("label[for='message_error']").text('');
     });
-    $(".btn-playgame").click(function () {
-        var hlv_id = $(this).attr("data-rel");
-        $("#popupPlay-" + hlv_id).modal();
-        $("#popupPlay-" + hlv_id).find("input[name='hlv_id']").val(hlv_id);
-    });
+    //$(".btn-playgame").click(function () {
+    //    var hlv_id = $(this).attr("data-rel");
+    //    $("#popupPlay-" + hlv_id).modal();
+    //    $("#popupPlay-" + hlv_id).find("input[name='hlv_id']").val(hlv_id);
+    //});
     $("#kol-pagination").jPages({
         containerID: "gallery-posts",
         perPage: 6,

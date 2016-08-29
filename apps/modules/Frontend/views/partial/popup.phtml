@@ -12,6 +12,7 @@
             </div>
             <div class="modal-body">
                 <form onsubmit="loginUser(); return false; " id="login-form" name="login-form" class="form-horizontal">
+                    <input name="popupHlv" type="hidden">
                     <div class="content-popup">
                         <label class="error" for="message_error"></label>
                         <label class="error" for="us_name"></label>
@@ -74,6 +75,7 @@
             </div>
             <div class="modal-body">
                 <form onsubmit=" registerUser(); return false; " class="register-form" id="join-form">
+                    <input name="popupHlv" type="hidden">
                     <div class="content-popup">
                         <label class="error" for="message_error"></label>
                         <label class="error" for="us_name"></label>

@@ -2,11 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bdd71783-08c5-417f-8306-754d5fd368c5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/webServers.xml" afterPath="$PROJECT_DIR$/.idea/webServers.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/data/cache/main/config.php" afterPath="$PROJECT_DIR$/apps/data/cache/main/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/controllers/IndexController.php" afterPath="$PROJECT_DIR$/apps/modules/Frontend/controllers/IndexController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/controllers/UserController.php" afterPath="$PROJECT_DIR$/apps/modules/Frontend/controllers/UserController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/views/blogs/detail.phtml" afterPath="$PROJECT_DIR$/apps/modules/Frontend/views/blogs/detail.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/views/index/index.phtml" afterPath="$PROJECT_DIR$/apps/modules/Frontend/views/index/index.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/views/layouts/index.phtml" afterPath="$PROJECT_DIR$/apps/modules/Frontend/views/layouts/index.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/modules/Frontend/views/partial/popup.phtml" afterPath="$PROJECT_DIR$/apps/modules/Frontend/views/partial/popup.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/js/agency.js" afterPath="$PROJECT_DIR$/public/FrontendCore/js/agency.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/js/fb_app.js" afterPath="$PROJECT_DIR$/public/FrontendCore/js/fb_app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/FrontendCore/js/login.js" afterPath="$PROJECT_DIR$/public/FrontendCore/js/login.js" />
     </list>
     <ignored path="vatc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,11 +43,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="agency.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="agency.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/FrontendCore/js/agency.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.57621247">
-              <caret line="117" column="7" selection-start-line="117" selection-start-column="7" selection-end-line="117" selection-end-column="7" />
+            <state vertical-scroll-proportion="-49.793102">
+              <caret line="123" column="48" selection-start-line="123" selection-start-column="48" selection-end-line="123" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -51,8 +59,8 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
               <folding>
-                <marker date="1472204094000" expanded="true" signature="2048:2121" placeholder="..." />
-                <marker date="1472204094000" expanded="true" signature="2122:2373" placeholder="..." />
+                <marker date="1472455623100" expanded="true" signature="2048:2121" placeholder="..." />
+                <marker date="1472455623100" expanded="true" signature="2122:2373" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -61,8 +69,38 @@
       <file leaf-file-name="index.phtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/views/index/index.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-21.166666">
-              <caret line="230" column="38" selection-start-line="230" selection-start-column="38" selection-end-line="230" selection-end-column="38" />
+            <state vertical-scroll-proportion="-12.033334">
+              <caret line="45" column="78" selection-start-line="45" selection-start-column="78" selection-end-line="45" selection-end-column="78" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndexController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/controllers/IndexController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-16.8">
+              <caret line="38" column="26" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.phtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/views/layouts/index.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-21.0">
+              <caret line="30" column="52" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/FrontendCore/js/login.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.539261">
+              <caret line="335" column="9" selection-start-line="335" selection-start-column="9" selection-end-line="335" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -71,8 +109,25 @@
       <file leaf-file-name="popup.phtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/views/partial/popup.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.066667">
-              <caret line="275" column="103" selection-start-line="275" selection-start-column="103" selection-end-line="275" selection-end-column="103" />
+            <state vertical-scroll-proportion="-41.3">
+              <caret line="59" column="18" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#4;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#4;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#textarea#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#5;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#5;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#textarea#0;n#form#0;n#div#2;n#div#0;n#div#0;n#div#6;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#div#6;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/controllers/UserController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-21.0">
+              <caret line="162" column="39" selection-start-line="162" selection-start-column="39" selection-end-line="162" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -115,23 +170,23 @@
         <option value="$PROJECT_DIR$/apps/config/config.php" />
         <option value="$PROJECT_DIR$/apps/modules/Frontend/controllers/BlogsController.php" />
         <option value="$PROJECT_DIR$/apps/modules/Frontend/views/blogs/index.phtml" />
-        <option value="$PROJECT_DIR$/public/FrontendCore/js/login.js" />
-        <option value="$PROJECT_DIR$/apps/modules/Frontend/views/layouts/index.phtml" />
         <option value="$PROJECT_DIR$/public/FrontendCore/scss/_navbar.scss" />
         <option value="$PROJECT_DIR$/apps/modules/Frontend/views/partial/menu_top_desktop.phtml" />
         <option value="$PROJECT_DIR$/apps/modules/Frontend/views/layouts/sub/include_header.phtml" />
         <option value="$PROJECT_DIR$/apps/modules/Frontend/config/config.php" />
-        <option value="$PROJECT_DIR$/apps/modules/Frontend/controllers/IndexController.php" />
         <option value="$PROJECT_DIR$/apps/modules/Backend/models/LogCodeModel.php" />
         <option value="$PROJECT_DIR$/apps/modules/Frontend/controllers/ControllerBase.php" />
-        <option value="$PROJECT_DIR$/apps/modules/Frontend/controllers/UserController.php" />
         <option value="$PROJECT_DIR$/apps/modules/Frontend/controllers/PostsController.php" />
         <option value="$PROJECT_DIR$/apps/modules/Frontend/views/blogs/detail.phtml" />
         <option value="$PROJECT_DIR$/public/FrontendCore/js/fb_app.js" />
-        <option value="$PROJECT_DIR$/apps/modules/Frontend/views/partial/popup.phtml" />
-        <option value="$PROJECT_DIR$/apps/modules/Frontend/views/index/index.phtml" />
-        <option value="$PROJECT_DIR$/public/FrontendCore/js/agency.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/public/FrontendCore/js/agency.js" />
+        <option value="$PROJECT_DIR$/apps/modules/Frontend/controllers/IndexController.php" />
+        <option value="$PROJECT_DIR$/apps/modules/Frontend/views/index/index.phtml" />
+        <option value="$PROJECT_DIR$/apps/modules/Frontend/views/layouts/index.phtml" />
+        <option value="$PROJECT_DIR$/apps/modules/Frontend/views/partial/popup.phtml" />
+        <option value="$PROJECT_DIR$/apps/modules/Frontend/controllers/UserController.php" />
+        <option value="$PROJECT_DIR$/public/FrontendCore/js/login.js" />
       </list>
     </option>
   </component>
@@ -741,7 +796,13 @@
       <option name="project" value="LOCAL" />
       <updated>1472121379146</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="send mail">
+      <created>1472455572387</created>
+      <option name="number" value="00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1472455572387</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -851,13 +912,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/FrontendCore/js/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="332" column="25" selection-start-line="332" selection-start-column="25" selection-end-line="332" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/FrontendCore/scss/_navbar.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -869,13 +923,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-19.066668">
           <caret line="74" column="27" selection-start-line="74" selection-start-column="27" selection-end-line="74" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/views/layouts/index.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.8">
-          <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -900,14 +947,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/controllers/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="72" column="41" selection-start-line="72" selection-start-column="41" selection-end-line="72" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/modules/Backend/models/LogCodeModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -926,21 +965,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/controllers/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/controllers/PostsController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="55" column="146" selection-start-line="55" selection-start-column="146" selection-end-line="55" selection-end-column="146" />
-          <folding>
-            <element signature="e#40#71#0#PHP" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -960,33 +989,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/FrontendCore/js/fb_app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-          <folding>
-            <marker date="1472204094000" expanded="true" signature="2048:2121" placeholder="..." />
-            <marker date="1472204094000" expanded="true" signature="2122:2373" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/views/partial/popup.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.066667">
-          <caret line="275" column="103" selection-start-line="275" selection-start-column="103" selection-end-line="275" selection-end-column="103" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/views/index/index.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.166666">
-          <caret line="230" column="38" selection-start-line="230" selection-start-column="38" selection-end-line="230" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.060869563">
@@ -995,10 +997,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/controllers/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.8">
+          <caret line="38" column="26" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/views/index/index.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.033334">
+          <caret line="45" column="78" selection-start-line="45" selection-start-column="78" selection-end-line="45" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/FrontendCore/js/fb_app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding>
+            <marker date="1472455623100" expanded="true" signature="2048:2121" placeholder="..." />
+            <marker date="1472455623100" expanded="true" signature="2122:2373" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/views/partial/popup.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-41.3">
+          <caret line="59" column="18" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#4;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#4;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#5;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#5;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#form#0;n#div#2;n#div#0;n#div#0;n#div#6;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#div#6;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/FrontendCore/js/agency.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57621247">
-          <caret line="117" column="7" selection-start-line="117" selection-start-column="7" selection-end-line="117" selection-end-column="7" />
+        <state vertical-scroll-proportion="-49.793102">
+          <caret line="123" column="48" selection-start-line="123" selection-start-column="48" selection-end-line="123" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/views/layouts/index.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-21.0">
+          <caret line="30" column="52" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/modules/Frontend/controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-21.0">
+          <caret line="162" column="39" selection-start-line="162" selection-start-column="39" selection-end-line="162" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/FrontendCore/js/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.539261">
+          <caret line="335" column="9" selection-start-line="335" selection-start-column="9" selection-end-line="335" selection-end-column="9" />
           <folding />
         </state>
       </provider>
