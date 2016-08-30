@@ -1828,16 +1828,16 @@ input.filter-name, .select2-container .select2-selection--single, .input-popup {
       float: right;
       height: auto;
       padding: 0;
-      width: 350px; }
+      width: 450px; }
       .popupPlaygame .modal-dialog .popup-main .right-popup-area #postForm {
         width: 100%; }
         .popupPlaygame .modal-dialog .popup-main .right-popup-area #postForm textarea {
-          width: 350px;
-          height: 350px;
+          width: 450px;
+          height: 450px;
           margin: 0 auto;
           background-color: #f9f9f9;
           border: none;
-          padding: 45px 20px;
+          padding: 45px 20px 185px 20px;
           display: block; }
 
 #popupPlay-1 .popup-main .text-bold {
@@ -1856,7 +1856,7 @@ input.filter-name, .select2-container .select2-selection--single, .input-popup {
   background-color: #686964; }
 
 #popupGallery .modal-dialog {
-  width: 680px;
+  width: 780px;
   max-width: 98%; }
 
 @media screen and (max-width: 750px) {
@@ -1877,6 +1877,8 @@ input.filter-name, .select2-container .select2-selection--single, .input-popup {
     width: 100%;
     height: 450px;
     background-size: 100% 100% !important; }
+  .popupPlaygame .modal-dialog .popup-main .right-popup-area #postForm textarea {
+    width: 100%; }
 
   #popupGallery .modal-dialog {
     width: 80%;

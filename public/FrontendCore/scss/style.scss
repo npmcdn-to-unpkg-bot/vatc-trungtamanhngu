@@ -1119,16 +1119,16 @@ input.filter-name {
         float: right;
         height: auto;
         padding: 0;
-        width: 350px;
+        width: 450px;
         #postForm {
           width: 100%;
           textarea {
-            width: 350px;
-            height: 350px;
+            width: 450px;
+            height: 450px;
             margin: 0 auto;
             background-color: #f9f9f9;
             border: none;
-            padding: 45px 20px;
+            padding: 45px 20px 185px 20px;
             display: block;
           }
         }
@@ -1172,7 +1172,7 @@ input.filter-name {
 }
 #popupGallery{
   .modal-dialog{
-    width: 680px;
+    width: 780px;
     max-width: 98%;
   }
 }
@@ -1203,7 +1203,13 @@ input.filter-name {
           height: 450px;
           background-size: 100% 100% !important;
         }
-
+        .right-popup-area {
+          #postForm {
+            textarea {
+              width: 100%;
+            }
+          }
+        }
       }
     }
 
