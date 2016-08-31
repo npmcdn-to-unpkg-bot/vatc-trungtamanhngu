@@ -183,6 +183,7 @@ $(document).ready(function () {
                         "background": "url('" + rootUrl + "public/FrontendCore/images/play_" + result.data.hlv_id + ".png') no-repeat top left",
                         "background-size": "auto 100%"
                     });
+                    $(".btn-share-post").attr("data-rel", idPost);
                     $("#popupGallery").modal();
                 }
             },
@@ -205,19 +206,20 @@ $(document).ready(function () {
         }
     });
     $("body").on("click", ".btn-share-post", function () {
+        var idPost = $(this).attr("data-rel");
         shareDescription = $(".gallery-post").text();
-        sharePicture = $(".image-share").attr("src");
+        sharePicture = rootUrl + "public/uploads/images/test_share.png";
         callFBShare();
     });
 });
 function userPosts(idFrom) {
     var forgotvalidator = $(idFrom).validate();
     if (forgotvalidator.form()) {
-        //showLoading();
+        showLoading();
         var data = $(idFrom).serialize();
-        shareDescription = $(idFrom + " textarea[name='p_description']").val();
-        sharePicture = $(".image-share").attr("src");
-        callFBShare();
+        //shareDescription = $(idFrom + " textarea[name='p_description']").val();
+        //sharePicture = $(".image-share").attr("src");
+        //callFBShare();
         $.ajax({
             type: "POST",
             url: rootUrl + 'posts',
@@ -226,9 +228,9 @@ function userPosts(idFrom) {
                 hideLoading();
                 var result = $.parseJSON(response);
                 if (result.status == 1) {
-                    //shareDescription = result.description;
-                    //sharePicture = result.image;
-                    //callFBShare();
+                    shareDescription = result.description;
+                    sharePicture = rootUrl + result.image;
+                    callFBShare();
                 } else {
                     var error = result.message;
                     showMessageWhenWrong(error);

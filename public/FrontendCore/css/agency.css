@@ -1818,7 +1818,8 @@ input.filter-name, .select2-container .select2-selection--single, .input-popup {
       padding: 85px 30px;
       font-size: 14px;
       position: relative;
-      margin-bottom: 19px; }
+      margin-bottom: 19px;
+      line-height: 22px; }
     .popupPlaygame .modal-dialog .popup-main .left-popup-area {
       width: 250px;
       height: 350px; }
