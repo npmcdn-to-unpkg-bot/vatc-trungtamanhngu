@@ -7,7 +7,7 @@
   'acl' => false,
   'profiler' => false,
   'baseUrl' => '/',
-  'rootUrl' => 'http://trungtamanhngu.dev/',
+  'rootUrl' => 'http://trungtamanhngu.dev:8080/',
   'router' => 
   array (
     'default_module' => 'frontend',

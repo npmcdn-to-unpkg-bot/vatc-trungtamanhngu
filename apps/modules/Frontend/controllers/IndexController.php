@@ -36,6 +36,7 @@ class IndexController extends ControllerBase
         $bannerModel = new BannerModel();
         $ortherpageModel = new OrtherPageModel();
         $this->view->isPost = $this->request->getQuery('post');
+        $this->view->isHlv = $this->request->getQuery('hlv');
         $this->view->thele = $ortherpageModel::findFirst();
         $this->view->sliders = $bannerModel::find(array("bc_id =2"));
         $this->view->infographic = $bannerModel::findFirst(array("bc_id =3"));

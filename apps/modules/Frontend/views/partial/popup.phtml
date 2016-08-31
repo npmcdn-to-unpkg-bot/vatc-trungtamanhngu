@@ -12,6 +12,7 @@
             </div>
             <div class="modal-body">
                 <form onsubmit="loginUser(); return false; " id="login-form" name="login-form" class="form-horizontal">
+                    <input name="popupHlv" type="hidden">
                     <div class="content-popup">
                         <label class="error" for="message_error"></label>
                         <label class="error" for="us_name"></label>
@@ -74,6 +75,7 @@
             </div>
             <div class="modal-body">
                 <form onsubmit=" registerUser(); return false; " class="register-form" id="join-form">
+                    <input name="popupHlv" type="hidden">
                     <div class="content-popup">
                         <label class="error" for="message_error"></label>
                         <label class="error" for="us_name"></label>
@@ -283,10 +285,9 @@
                         </div>
                         <div class="row">
                             <div class="col-md-6 col-sm-6 col-xs-5 ">
-                                <a data-rel="<?php echo $coach->hlv_id ?>" data-dismiss="modal"
-                                   data-toggle="modal" <?php if (!$user) { ?>  data-target="#popupLogin" <?php } ?>
+                                <a data-rel="<?php echo $coach->hlv_id ?>"
                                    href="javascript:;"
-                                   class="btn-hlv-area btn-hlvplay <?php if ($user) { ?> btn-playgame  <?php } ?>">Tham
+                                   class="btn-hlv-area btn-hlvplay ">Tham
                                     Gia Ngay</a>
                             </div>
                             <div class="col-md-6 col-sm-6 col-xs-5 ">
@@ -370,16 +371,10 @@
             <a href="javascript:;" class="btn-close-popup" data-dismiss="modal" aria-label="Close">
                 <img src="<?php echo $this->url->get("public/FrontendCore/") ?>images/icon-close.png" alt="">
             </a>
-            <div class="left-popup-area">
-                <?php if (isset($gallery) && count($gallery) > 0) { ?>
-                    <img class="image-share" src="<?php echo $this->config['rootUrl'] . $gallery->ba_image_link ?>"
-                         alt="">
-                <?php } ?>
-            </div>
-            <div class="right-popup-area">
+            <div class="model-body">
                 <form id="postForm" onsubmit="return userPosts();return false;">
                             <textarea class="hq-hlv-post gallery-post"
-                                      style="background: #FFF url('<?php echo $this->url->get("public/FrontendCore/images/play_" . $coach->hlv_id . ".png") ?>') no-repeat top left;background-size:auto 100%;"></textarea>
+                                      style="width: 100%;background: #FFF url('<?php echo $this->url->get("public/FrontendCore/images/play_" . $coach->hlv_id . ".png") ?>') no-repeat top left;background-size:auto 100%;"></textarea>
                     <div class="col-md-12 ">
                         <a href="javascript:;"
                            class="btn-hlv-area btn-hlvplay btn-share-post">Share Facebook</a>

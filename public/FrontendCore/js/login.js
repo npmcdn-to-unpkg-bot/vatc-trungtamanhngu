@@ -42,7 +42,7 @@ function registerUser() {
                 if (result.status == 1) {
                     //redirect if has param redirect
                     var current_param = getUrlVars();
-                    afterLogin();
+                    afterLogin(result.popupHlv);
                 }
                 else {
                     var error = result.message;
@@ -77,7 +77,7 @@ function loginUser() {
                 if (result.status == 1) {
                     //redirect if has param redirect
                     var current_param = getUrlVars();
-                    afterLogin();
+                    afterLogin(result.popupHlv);
                 }
                 else {
                     var error = result.message;
@@ -112,16 +112,18 @@ function facebookLogin() {
 function submitLoginFacebook(response) {
     if (typeof (response.authResponse) != null && response.authResponse != null) {
         showLoading();
+        var hlvID=$("input[name='popupHlv']").val();
+        console.log(hlvID);
         $.ajax({
             type: "POST",
             url: rootUrl + "user/login-facebook",
-            data: {accesstoken: response.authResponse.accessToken}
+            data: {accesstoken: response.authResponse.accessToken,hlvID:hlvID}
         }).done(function (msg) {
             hideLoading();
             var result = $.parseJSON(msg);
             if (result.status === 1) {
                 showPopup('success', 'Thành Công', result.message);
-                afterLogin();
+                afterLogin(result.popupHlv);
             }
             else {
                 var error = result.message;
@@ -337,6 +339,11 @@ function showMessageWhenWrong(array_errors) {
         $("label[for='message_error']").show();
     }
 }
-function afterLogin() {
-    window.location.href = rootUrl + "?post=1";
+function afterLogin(hlvID) {
+    if(hlvID){
+        window.location.href = rootUrl + "?post=1&hlv="+hlvID;
+    }else{
+       window.location.reload();
+    }
+
 }

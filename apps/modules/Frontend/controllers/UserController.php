@@ -72,6 +72,7 @@ class UserController extends ControllerBase
         }
 
         $data = json_decode($request['data'], true);
+        $respon['popupHlv'] = false;
         $userModel = new \Backend\Models\UserModel();
         //Validation
         $validation = $userModel->validationLogin($data);
@@ -105,6 +106,9 @@ class UserController extends ControllerBase
         if (empty($user)) {
             $respon['message'] = "Mật khẩu hoặc Tài khoàn không chính xác ";
         } else {
+            if(!empty($data['popupHlv'])){
+                $respon['popupHlv'] = $data['popupHlv'];
+            }
             $user->update_at = date("Y-m-d H:i:s");
             $user->save();
             $this->createSession($user);
@@ -119,6 +123,8 @@ class UserController extends ControllerBase
         $response = array("status" => 0, "message" => "Thao tác không thành công");
         if ($this->request->isPost()) {
             $acesstoken = $this->request->getPost("accesstoken", null, false);
+            $hlvID = $this->request->getPost("hlvID");
+
             $fb = new \Facebook\Facebook([
                 'app_id' => $this->module_config_frontend->FACEBOOK_ID,
                 'app_secret' => $this->module_config_frontend->FACEBOOK_SECRECT,
@@ -154,6 +160,7 @@ class UserController extends ControllerBase
                 $response = $this->doSocialLogin($data_user);
             }
         }
+        $response['popupHlv'] = $hlvID;
         echo json_encode($response);
         die;
     }
@@ -237,6 +244,7 @@ class UserController extends ControllerBase
         }
 
         $data = json_decode($request['data'], true);
+        $respon['popupHlv'] = false;
         $userModel = new UserModel();
         //Validation
         $validation = $userModel->validationRegister($data);
@@ -246,6 +254,9 @@ class UserController extends ControllerBase
         }
         //End Validation
         if ($userModel->create($data)) {
+            if(!empty($data['popupHlv'])){
+                $respon['popupHlv'] = $data['popupHlv'];
+            }
             $respon['status'] = 1;
             $respon['message'] = 'Chúc Mừng Bạn đã đăng ký thành công';
             $this->createSession($userModel);

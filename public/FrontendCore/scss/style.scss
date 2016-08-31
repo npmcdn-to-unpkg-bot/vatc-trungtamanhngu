@@ -1107,6 +1107,7 @@ input.filter-name {
         font-size: 14px;
         position: relative;
         margin-bottom: 19px;
+        line-height: 22px;
       }
       .left-popup-area {
         width: 250px;
@@ -1119,16 +1120,16 @@ input.filter-name {
         float: right;
         height: auto;
         padding: 0;
-        width: 350px;
+        width: 450px;
         #postForm {
           width: 100%;
           textarea {
-            width: 350px;
-            height: 350px;
+            width: 450px;
+            height: 450px;
             margin: 0 auto;
             background-color: #f9f9f9;
             border: none;
-            padding: 45px 20px;
+            padding: 45px 20px 185px 20px;
             display: block;
           }
         }
@@ -1170,6 +1171,12 @@ input.filter-name {
     }
   }
 }
+#popupGallery{
+  .modal-dialog{
+    width: 780px;
+    max-width: 98%;
+  }
+}
 @media screen and (max-width: 750px){
   .popupPlaygame {
     .modal-dialog {
@@ -1197,10 +1204,22 @@ input.filter-name {
           height: 450px;
           background-size: 100% 100% !important;
         }
-
+        .right-popup-area {
+          #postForm {
+            textarea {
+              width: 100%;
+            }
+          }
+        }
       }
     }
 
+  }
+  #popupGallery{
+    .modal-dialog{
+      width: 80%;
+      margin: 0 auto;
+    }
   }
 }
 @media screen and (max-width: 1024px) {
