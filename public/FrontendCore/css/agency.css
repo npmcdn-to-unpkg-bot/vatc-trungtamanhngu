@@ -1885,7 +1885,7 @@ input.filter-name, .select2-container .select2-selection--single, .input-popup {
     width: 100%; }
 
   #popupGallery .modal-dialog {
-    width: 80%;
+    width: 95%;
     margin: 0 auto; } }
 @media screen and (max-width: 1024px) {
   .popupInfoHlv .modal-dialog {
