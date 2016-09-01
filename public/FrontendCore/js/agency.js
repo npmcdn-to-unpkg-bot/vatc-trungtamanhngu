@@ -208,7 +208,7 @@ $(document).ready(function () {
     $("body").on("click", ".btn-share-post", function () {
         var idPost = $(this).attr("data-rel");
         shareDescription = $(".gallery-post").text();
-        sharePicture = rootUrl + "public/uploads/images/test_share.png";
+        sharePicture = rootUrl + "public/uploads/images/sharePosts/" + idPost + ".jpg";
         callFBShare();
     });
 });

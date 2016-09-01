@@ -156,17 +156,18 @@ class ControllerBase extends Controller
         $mail->isSMTP();
         $mail->IsHTML(true);
         $mail->CharSet = "UTF-8";
-        $mail->Host = "smtp.zoho.com";
+        $mail->Host = "smtp.gmail.com";
         $mail->SMTPAuth = true;
-        $mail->Username = "no-reply@hoidapthutuchaiquan.vn";
-        $mail->Password = "Efp8+yY4(&H4+ubb";
-        $mail->SMTPSecure = "ssl";
-        $mail->Port = 465;
-        $mail->setFrom('no-reply@hoidapthutuchaiquan.vn', $company);
+        $mail->SMTPSecure = "tls";
+        $mail->Port = 587;
+        $mail->Username = $this->module_config_frontend->ACC_GMAIL_SEND_MAIL;
+        $mail->Password = $this->module_config_frontend->PASS_GMAIL_SEND_MAIL;
+        $mail->setFrom($this->module_config_frontend->NO_REPLY, $company);
         $mail->addAddress($emailSend, $nameSend);
         $mail->Subject = $title;
         $mail->Body = $body;
         $mail->send();
+
     }
 
 }
