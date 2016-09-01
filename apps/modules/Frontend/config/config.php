@@ -17,12 +17,12 @@ return new \Phalcon\Config(array(
     "GOOGLE_API_KEY" => "ash1-wo-jI4Lt-ef9NOoyrel",
 
     //acc test send mail
-    "ACC_GMAIL_SEND_MAIL" => "namtrungprofile.net@gmail.com",
-    "PASS_GMAIL_SEND_MAIL" => "trannamtrung",
-    "NO_REPLY" => "no-reply@namtrung-profile.net",
+//    "ACC_GMAIL_SEND_MAIL" => "namtrungprofile.net@gmail.com",
+//    "PASS_GMAIL_SEND_MAIL" => "trannamtrung",
+//    "NO_REPLY" => "no-reply@namtrung-profile.net",
 
     //acc real send mail
-//    "ACC_GMAIL_SEND_MAIL"=>"namtrungprofile.net@gmail.com",
-//    "PASS_GMAIL_SEND_MAIL"=>"trannamtrung",
-//    "NO_REPLY"=>"no-reply@namtrung-profile.net",
+    "ACC_GMAIL_SEND_MAIL"=>"vatc.khoidongtuonglai@gmail.com",
+    "PASS_GMAIL_SEND_MAIL"=>"2016vatckhoidongtuonglai",
+    "NO_REPLY"=>"no-reply@vatc.khoidongtuonglai",
 ));
