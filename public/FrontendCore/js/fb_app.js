@@ -35,10 +35,10 @@ function callFBShare() {
         message: shareDescription
     }, function (response) {
         if (response.post_id) {
-            window.location.reload();
+            window.location.href=rootUrl;
             // callback(urlCallBackShare, 'PUT', userFBID, 'share');
         } else {
-            window.location.reload();
+            window.location.href=rootUrl;
             //alert("Bạn phải share để có thể nhận được Giftcode");
         }
     });

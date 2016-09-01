@@ -92,13 +92,14 @@ class PostsController extends ControllerBase
         //font
         $font = $rootFolder . 'FrontendCore/fonts/Roboto-Black.ttf';
         //font size
-        $font_size = 14;
+        $font_size = 16;
         //image width
-        $width = 690;
+//        $width = 690;
+        $width = 1140;
         //text margin
         $margin = 5;
-        // lấy 700 ký tự của text
-        $text = substr($text, 0, 700);
+        // lấy 1000 ký tự của text
+        $text = substr($text, 0, 1000);
 
         //explode text by words
         $text_a = explode(' ', $text);
@@ -127,7 +128,7 @@ class PostsController extends ControllerBase
 
         //create colors
         $white = imagecolorallocate($im, 255, 255, 255);
-        $colorText = imagecolorallocate($im, 176, 171, 171);
+        $colorText = imagecolorallocate($im, 0, 0, 0);
         //color image
         imagefilledrectangle($im, 0, 0, $width, $height, $white);
 
@@ -135,7 +136,9 @@ class PostsController extends ControllerBase
         imagettftext($im, $font_size, 0, $margin, $font_size + $margin, $colorText, $font, $text_new);
 
 
-        $image_original = imagecreatefromjpeg($rootFolder . 'FrontendCore/images/share_' . $hlv_id . '.jpg');
+//        $image_original = imagecreatefromjpeg($rootFolder . 'FrontendCore/images/share_' . $hlv_id . '.jpg');
+        $image_original = imagecreatefromjpeg($rootFolder . 'FrontendCore/images/test_share.jpg');
+
         //forder share
         $folderShare = $rootFolder . "uploads/images/sharePosts";
         if (!is_dir($folderShare)) {
@@ -146,9 +149,10 @@ class PostsController extends ControllerBase
         $image_share = $folderShare ."/". $postId . '.jpg';
 
 
-        imagecopymerge($image_original, $im, 35, 90, 0, 0, $width, $height, 75);
+//        imagecopymerge($image_original, $im, 35, 90, 0, 0, $width, $height, 75);
+        imagecopymerge($image_original, $im, 30, 30, 0, 0, $width, $height, 75);
 
-        imagejpeg($image_original, $image_share, 80);
+        imagejpeg($image_original, $image_share, 100);
         //frees any memory associated with image
         imagedestroy($image_original);
         imagedestroy($im);
