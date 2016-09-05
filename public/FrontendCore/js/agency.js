@@ -178,7 +178,7 @@ $(document).ready(function () {
                 hideLoading();
                 var result = $.parseJSON(response);
                 if (result.status == 1) {
-                    $('.gallery-post').html(nl2br(result.data.p_description));
+                    $('.gallery-post textarea').html(nl2br(result.data.p_description));
                     $(".gallery-post").css({
                         "background": "url('" + rootUrl + "public/FrontendCore/images/play_" + result.data.hlv_id + ".png') no-repeat top left",
                         "background-size": "100% 100%"
@@ -207,12 +207,12 @@ $(document).ready(function () {
     });
     $("body").on("click", ".btn-share-post", function () {
         var idPost = $(this).attr("data-rel");
-        shareDescription = $(".gallery-post").text();
+        shareDescription = $(".gallery-post textarea").text();
         sharePicture = rootUrl + "public/uploads/images/sharePosts/" + idPost + ".jpg";
         callFBShare();
     });
 
-    $('.hq-hlv-post').keypress(function() {
+    $('.hq-hlv-post textarea').keypress(function() {
         var length = $(this).val().length;
         var length = maxLength-length;
         $('.chars-count').text(length);
