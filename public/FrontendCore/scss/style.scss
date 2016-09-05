@@ -1103,7 +1103,7 @@ input.filter-name {
         max-width: 100%;
         width: 800px;
         height: 500px;
-        margin: 64px auto;
+        margin: 25px auto;
         display: block;
         padding: 71px 30px 190px 30px;
         font-size: 14px;
@@ -1220,8 +1220,9 @@ input.filter-name {
   }
   #popupGallery{
     .modal-dialog{
-      width: 80%;
+      width: 95%;
       margin: 0 auto;
+
     }
   }
 }

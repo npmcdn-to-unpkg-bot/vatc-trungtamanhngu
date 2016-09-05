@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="1d3804c2-1eb1-46e4-9d83-9ae5df8c362c" name="vatc" url="http://vatc.hqsolu.com">
-        <fileTransfer host="vatc.hqsolu.com" port="21" rootFolder="/public_html" password="dfc4dfc1df9edfc5dfe8dfffdf9fdfebdfcbdf99" username="userweb_vatc">
+      <webServer id="1d3804c2-1eb1-46e4-9d83-9ae5df8c362c" name="vatc" url="http://khoidongtuonglai.vatc.edu.vn">
+        <fileTransfer host="khoidongtuonglai.vatc.edu.vn" port="21" rootFolder="/web/temp.vatc.hqsolu.com/public_html" password="dfefdfefdff0dfdddfdfdf9ddff9dfe2dffedfdf" username="vatc">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>

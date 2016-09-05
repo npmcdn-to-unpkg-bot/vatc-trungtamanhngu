@@ -211,6 +211,15 @@ $(document).ready(function () {
         sharePicture = rootUrl + "public/uploads/images/sharePosts/" + idPost + ".jpg";
         callFBShare();
     });
+
+    $('.hq-hlv-post').keypress(function() {
+        var length = $(this).val().length;
+        var length = maxLength-length;
+        $('.chars-count').text(length);
+    });
+    $('.popupPlaygame').on('hidden.bs.modal', function (e) {
+        $(".chars-count").text(maxLength);
+    })
 });
 function userPosts(idFrom) {
     var forgotvalidator = $(idFrom).validate();

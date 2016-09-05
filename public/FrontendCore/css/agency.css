@@ -1815,7 +1815,7 @@ input.filter-name, .select2-container .select2-selection--single, .input-popup {
       max-width: 100%;
       width: 800px;
       height: 500px;
-      margin: 64px auto;
+      margin: 25px auto;
       display: block;
       padding: 71px 30px 190px 30px;
       font-size: 14px;
@@ -1885,7 +1885,7 @@ input.filter-name, .select2-container .select2-selection--single, .input-popup {
     width: 100%; }
 
   #popupGallery .modal-dialog {
-    width: 80%;
+    width: 95%;
     margin: 0 auto; } }
 @media screen and (max-width: 1024px) {
   .popupInfoHlv .modal-dialog {

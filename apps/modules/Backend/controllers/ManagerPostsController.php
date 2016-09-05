@@ -33,7 +33,7 @@ class ManagerPostsController extends ControllerBase
         $this->view->setLayout("map");
         $this->view->data = $dataModel::find();
         $this->view->category_data = $dataCategoryModel::find();
-        $this->view->header_title = "Manager Coach";
+        $this->view->header_title = "Manager Posts";
     }
 
     public function detailContent($input)

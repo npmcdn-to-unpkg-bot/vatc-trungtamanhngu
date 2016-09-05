@@ -302,48 +302,63 @@
         </div>
         <div class="modal fade popupPlaygame " id="popupPlay-<?php echo $coach->hlv_id ?>" tabindex="-1" role="dialog"
              aria-labelledby="myModalLabel">
-            <div  class="modal-dialog" role="document">
+            <div class="modal-dialog" role="document">
 
-                <div style="background: transparent url(<?php echo $this->url->get("public/FrontendCore/images/bg_play_".$coach->hlv_id.".png") ?>) no-repeat bottom center" class="modal-content popup-main">
+                <div
+                    style="background: transparent url(<?php echo $this->url->get("public/FrontendCore/images/bg_play_" . $coach->hlv_id . ".png") ?>) no-repeat bottom center"
+                    class="modal-content popup-main">
                     <a href="javascript:;" class="btn-close-popup" data-dismiss="modal" aria-label="Close">
                         <img src="<?php echo $this->url->get("public/FrontendCore/") ?>images/icon-close.png" alt="">
                     </a>
                     <div class="modal-header">
-                        <h2 class="text-bold" >Cùng VATC</h2>
-                        <h1 class="text-bold" >Khởi động tương lai 2016</h1>
+                        <h2 class="text-bold">Cùng VATC</h2>
+                        <h1 class="text-bold">Khởi động tương lai 2016</h1>
                     </div>
                     <div class="model-body">
-                        <form id="postForm-<?php echo $coach->hlv_id ?>" onsubmit="return userPosts('#postForm-<?php echo $coach->hlv_id ?>');return false;">
+                        <form id="postForm-<?php echo $coach->hlv_id ?>"
+                              onsubmit="return userPosts('#postForm-<?php echo $coach->hlv_id ?>');return false;">
                             <input value="<?php echo $coach->hlv_id ?>" name="hlv_id" type="hidden">
                             <input name="ga_id" type="hidden"
                                    value="<?php echo isset($gallery) && count($gallery) > 0 ? $gallery->ba_id : '' ?>">
                             <div class="input-group input-group-lg">
                                 <span class="input-group-addon"><i class="text-bold fa fa-user"></i></span>
-                                <input value="<?php echo !empty($user) ? $user->us_name : '' ?>" readonly class="form-control input-popup"
+                                <input value="<?php echo !empty($user) ? $user->us_name : '' ?>" readonly
+                                       class="form-control input-popup"
                                        placeholder="Tên Thí Sinh" aria-describedby="sizing-addon1" type="text">
                             </div>
                             <div class="input-group input-group-lg">
                                 <span class="input-group-addon"><i class=" text-bold fa fa-envelope-o"></i></span>
-                                <input value="<?php echo !empty($user) ? $user->us_email : '' ?>" readonly class="form-control input-popup"
+                                <input value="<?php echo !empty($user) ? $user->us_email : '' ?>" readonly
+                                       class="form-control input-popup"
                                        placeholder="Email của bạn" aria-describedby="sizing-addon1" type="text">
                             </div>
                             <div class="input-group input-group-lg">
                                 <span class="input-group-addon"><i class="text-bold fa fa-mobile fa-2x"></i></span>
-                                <input value="<?php echo !empty($user) ? $user->us_phone : '' ?>" required="" minlength="10" maxlength="11" name="us_phone"
+                                <input value="<?php echo !empty($user) ? $user->us_phone : '' ?>" required=""
+                                       minlength="10" maxlength="11" name="us_phone"
                                        class="form-control input-popup"
                                        placeholder="Số Điện Thoại" aria-describedby="sizing-addon1" type="text">
                             </div>
                             <label class="error" for="us_phone"></label>
                             <div class="line"></div>
                             <p>Chọn <b class="text-bold">1</b> trong <b class="text-bold">3 quan điểm</b> của các <b
-                                    class="text-bold">Huấn luyện viên</b> và viết <b class="text-bold">một đoạn văn</b> để trả
+                                    class="text-bold">Huấn luyện viên</b> và viết <b class="text-bold">một đoạn văn</b>
+                                để trả
                                 lời câu hỏi sau:</p>
                             <div class="text-bold border-question">
-                                Theo bạn, hành trang nào bạn cho là quan trọng nhất để chuẩn bị con đường sự nghiệp của mình,
+                                Theo bạn, hành trang nào bạn cho là quan trọng nhất để chuẩn bị con đường sự nghiệp của
+                                mình,
                                 trước khi rời khỏi giảng đường ?
                             </div>
-                            <textarea class="hq-hlv-post" required name="p_description" placeholder="Chia sẻ của bạn "
-                                      style="background: #FFF url('<?php echo $this->url->get("public/FrontendCore/images/play_".$coach->hlv_id.".png") ?>') no-repeat top left;"></textarea>
+                            <?php $maxlength = 250; ?>
+                            <script type="text/javascript">
+                                var maxLength = <?php echo $maxlength; ?>;
+                            </script>
+                            <p style="color: red;max-width: 800px;text-align: left;position: relative;margin: 0 auto;top: 18px;">Còn lại <span class="chars-count"> <?php echo $maxlength; ?> </span> ký
+                                tự</p>
+                            <textarea maxlength="<?php echo $maxlength; ?>" class="hq-hlv-post" required
+                                      name="p_description" placeholder="Chia sẻ của bạn "
+                                      style="background: #FFF url('<?php echo $this->url->get("public/FrontendCore/images/play_" . $coach->hlv_id . ".png") ?>') no-repeat top left;"></textarea>
                             <label class="error" for="p_description"></label>
                             <div class="col-md-12 ">
                                 <a onclick="userPosts('#postForm-<?php echo $coach->hlv_id ?>');" href="javascript:;"
