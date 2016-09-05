@@ -181,7 +181,7 @@ $(document).ready(function () {
                     $('.gallery-post').html(nl2br(result.data.p_description));
                     $(".gallery-post").css({
                         "background": "url('" + rootUrl + "public/FrontendCore/images/play_" + result.data.hlv_id + ".png') no-repeat top left",
-                        "background-size": "auto 100%"
+                        "background-size": "100% 100%"
                     });
                     $(".btn-share-post").attr("data-rel", idPost);
                     $("#popupGallery").modal();
