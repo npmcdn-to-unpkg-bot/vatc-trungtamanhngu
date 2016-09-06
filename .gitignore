@@ -1,5 +1,6 @@
-# Created by .ignore support plugin (hsz.mobi)
 apps/data/
 public/uploads
 public/FrontendCore/images
 /.idea/
+apps/modules/Frontend/migrations/
+apps/modules/Frontend/models/

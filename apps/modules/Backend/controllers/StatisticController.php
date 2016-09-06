@@ -2,9 +2,13 @@
 
 namespace Backend\Controllers;
 
-class StatisticController extends ControllerBase {
+use Backend\Models\ManagerPostsModel;
 
-    public function getMonthOrderAction() {
+class StatisticController extends ControllerBase
+{
+
+    public function getMonthOrderAction()
+    {
         $statisticModel = new \Backend\Models\OrderModel();
         $month = date("n");
         $year = date("Y");
@@ -15,11 +19,11 @@ class StatisticController extends ControllerBase {
         }
         $array_data = array();
         $statistic = $statisticModel::find(array(
-                    "columns" => array(
-                        "value" => "count(or_id)",
-                        "time" => "date(or_create_date)"
-                    ),
-                    "YEAR(or_create_date)='{$year}' and MONTH(or_create_date)='{$month}' GROUP BY date(or_create_date)",
+            "columns" => array(
+                "value" => "count(or_id)",
+                "time" => "date(or_create_date)"
+            ),
+            "YEAR(or_create_date)='{$year}' and MONTH(or_create_date)='{$month}' GROUP BY date(or_create_date)",
         ));
         if ($statistic) {
 
@@ -54,7 +58,8 @@ class StatisticController extends ControllerBase {
         die;
     }
 
-    public function getMonthSaleAction() {
+    public function getMonthSaleAction()
+    {
         $statisticModel = new \Backend\Models\OrderModel();
         $month = date("n");
         $year = date("Y");
@@ -65,11 +70,11 @@ class StatisticController extends ControllerBase {
         }
         $array_data = array();
         $statistic = $statisticModel::find(array(
-                    "columns" => array(
-                        "value" => "sum(or_total)",
-                        "time" => "date(or_create_date)"
-                    ),
-                    "YEAR(or_create_date)='{$year}' and MONTH(or_create_date)='{$month}' and os_id = 2 GROUP BY date(or_create_date)",
+            "columns" => array(
+                "value" => "sum(or_total)",
+                "time" => "date(or_create_date)"
+            ),
+            "YEAR(or_create_date)='{$year}' and MONTH(or_create_date)='{$month}' and os_id = 2 GROUP BY date(or_create_date)",
         ));
         if ($statistic) {
 
@@ -104,7 +109,8 @@ class StatisticController extends ControllerBase {
         die;
     }
 
-    public function getMonthUserAction() {
+    public function getMonthUserAction()
+    {
         $statisticModel = new \Backend\Models\UserModel();
         $month = date("n");
         $year = date("Y");
@@ -115,11 +121,11 @@ class StatisticController extends ControllerBase {
         }
         $array_data = array();
         $statistic = $statisticModel::find(array(
-                    "columns" => array(
-                        "value" => "count(us_id)",
-                        "time" => "date(created_at)"
-                    ),
-                    "YEAR(created_at)='{$year}' and MONTH(created_at)='{$month}' GROUP BY date(created_at)",
+            "columns" => array(
+                "value" => "count(us_id)",
+                "time" => "date(created_at)"
+            ),
+            "YEAR(created_at)='{$year}' and MONTH(created_at)='{$month}' GROUP BY date(created_at)",
         ));
         if ($statistic) {
 
@@ -154,7 +160,8 @@ class StatisticController extends ControllerBase {
         die;
     }
 
-    public function getYearStatisticAction() {
+    public function getYearStatisticAction()
+    {
         $statisticModel = new \Multiple\Backend\Models\StatisticLauncherModel();
         $year = date("Y");
         if ($this->request->isPost()) {
@@ -162,17 +169,17 @@ class StatisticController extends ControllerBase {
         }
         $array_data = array();
         $statistic = $statisticModel::find(array(
-                    "columns" => array(
-                        "date" => "MONTH(date)",
-                        "install" => "SUM(install)",
-                        "uninstall" => "SUM(uninstall)",
-                        "first_login" => "SUM(first_login)",
-                        "download" => "SUM(download)",
-                        "play" => "SUM(play)",
-                        "active_user" => "SUM(active_user)",
-                        "daily_active" => "SUM(daily_active)",
-                    ),
-                    "YEAR(date)='{$year}' GROUP BY MONTH(date)",
+            "columns" => array(
+                "date" => "MONTH(date)",
+                "install" => "SUM(install)",
+                "uninstall" => "SUM(uninstall)",
+                "first_login" => "SUM(first_login)",
+                "download" => "SUM(download)",
+                "play" => "SUM(play)",
+                "active_user" => "SUM(active_user)",
+                "daily_active" => "SUM(daily_active)",
+            ),
+            "YEAR(date)='{$year}' GROUP BY MONTH(date)",
         ));
         if ($statistic) {
             $data_install = array();
@@ -183,14 +190,14 @@ class StatisticController extends ControllerBase {
             $data_active_user = array();
             $data_daily_active = array();
             foreach ($statistic as $sta) {
-                $data_install[] = (int) $sta->install;
-                $data_uninstall[] = (int) $sta->uninstall;
-                $data_first_login[] = (int) $sta->first_login;
-                $data_download[] = (int) $sta->download;
-                $data_play[] = (int) $sta->play;
-                $data_active_user[] = (int) $sta->active_user;
-                $data_daily_active[] = (int) $sta->daily_active;
-                $array_data['xAxis'][] = (int) $sta->date;
+                $data_install[] = (int)$sta->install;
+                $data_uninstall[] = (int)$sta->uninstall;
+                $data_first_login[] = (int)$sta->first_login;
+                $data_download[] = (int)$sta->download;
+                $data_play[] = (int)$sta->play;
+                $data_active_user[] = (int)$sta->active_user;
+                $data_daily_active[] = (int)$sta->daily_active;
+                $array_data['xAxis'][] = (int)$sta->date;
             }
             $array_data['data'] = array(
                 array(
@@ -275,12 +282,14 @@ class StatisticController extends ControllerBase {
         die;
     }
 
-    public function getTodayStatisticAction() {
+    public function getTodayStatisticAction()
+    {
 //        $orderModel = new \Backend\Models\OrderModel();
         $userModel = new \Backend\Models\UserModel();
+        $postsModel = new ManagerPostsModel();
         $today = date("Y-m-d");
-//        $order = $orderModel::find(array("date(or_create_date)='{$today}'"));
-//        $order_new = $orderModel::find(array("date(or_create_date)='{$today}' and os_id='7'"));
+        $order = $postsModel::find();
+        $order_new = $postsModel::find(array("p_status=0"));
 //        $total_sale = $orderModel::findFirst(array(
 //                    "columns" => array(
 //                        "total" => "SUM(or_total)",
@@ -288,15 +297,16 @@ class StatisticController extends ControllerBase {
 //                    "date(or_create_date)='{$today}' and os_id='2'",
 //        ));
         $user = $userModel::find(array("date(created_at)='{$today}'"));
-//        $statistic['order'] = count($order);
-//        $statistic['order_new'] = count($order_new);
+        $statistic['order'] = count($order);
+        $statistic['order_new'] = count($order_new);
 //        $statistic['total_sale'] = $total_sale->total;
         $statistic['customer'] = count($user);
         echo json_encode($statistic);
         die;
     }
 
-    private function mergeStatistic($array, $month = false, $year = false) {
+    private function mergeStatistic($array, $month = false, $year = false)
+    {
         $array_date = array();
         if (!empty($array)) {
             foreach ($array as $item) {
@@ -312,7 +322,8 @@ class StatisticController extends ControllerBase {
         return array_combine($array_date_create, $statistic);
     }
 
-    private function createStatisticArray($month, $year) {
+    private function createStatisticArray($month, $year)
+    {
         $arr = array();
         $m = $month < 10 ? '0' . $month : $month;
         $number_days = cal_days_in_month(CAL_GREGORIAN, $month, $year);

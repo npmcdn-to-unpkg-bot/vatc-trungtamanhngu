@@ -31,7 +31,7 @@ class ManagerPostsController extends ControllerBase
         $dataModel = new ManagerPostsModel();
         $dataCategoryModel = new ManagerHlvModel();
         $this->view->setLayout("map");
-        $this->view->data = $dataModel::find();
+        $this->view->data = $dataModel::find(array("order"=>"p_status asc,created_at desc"));
         $this->view->category_data = $dataCategoryModel::find();
         $this->view->header_title = "Manager Posts";
     }
@@ -54,6 +54,7 @@ class ManagerPostsController extends ControllerBase
         }
 
         $data = json_decode($input['data'], true);
+        $data['p_status'] = isset($data['p_status']) ? 1 : 0;
         $buildingModel = new ManagerPostsModel();
         if (empty($data['p_id']) || $data['p_id'] == NULL) {
             //insert

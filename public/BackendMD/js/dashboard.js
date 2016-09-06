@@ -368,14 +368,14 @@ function getTodaystatistic() {
             if (result)
             {
                 var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',');
-                // $(".nu-today-order").animateNumber({number: result.order, numberStep: comma_separator_number_step, easing: 'easeInQuad'}, 2000);
-                // $(".nu-today-order-new").animateNumber({number: result.order_new, numberStep: comma_separator_number_step, easing: 'easeInQuad'}, 2000);
+                 $(".nu-today-order").animateNumber({number: result.order, numberStep: comma_separator_number_step, easing: 'easeInQuad'}, 2000);
+                 $(".nu-today-order-new").animateNumber({number: result.order_new, numberStep: comma_separator_number_step, easing: 'easeInQuad'}, 2000);
                 // $(".nu-today-sale").animateNumber({number: result.total_sale, numberStep: comma_separator_number_step, easing: 'easeInQuad'}, 2000);
                 $(".nu-today-customers").animateNumber({number: result.customer, numberStep: comma_separator_number_step, easing: 'easeInQuad'}, 2000);
 
             } else {
-                // $(".nu-today-order").animateNumber({number: 0, easing: 'easeInQuad'}, 2000);
-                // $(".nu-today-order-new").animateNumber({number: 0, easing: 'easeInQuad'}, 2000);
+                 $(".nu-today-order").animateNumber({number: 0, easing: 'easeInQuad'}, 2000);
+                 $(".nu-today-order-new").animateNumber({number: 0, easing: 'easeInQuad'}, 2000);
                 // $(".nu-today-sale").animateNumber({number: 0, easing: 'easeInQuad'}, 2000);
                 $(".nu-today-customers").animateNumber({number: 0, easing: 'easeInQuad'}, 2000);
             }

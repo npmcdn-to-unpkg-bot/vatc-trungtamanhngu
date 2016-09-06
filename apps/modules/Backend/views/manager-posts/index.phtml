@@ -50,11 +50,12 @@
                     <th>User Name</th>
                     <th>User Email</th>
                     <th>Description</th>
+                    <th>Status</th>
                     <th>Action</th>
                 </tr>
                 </thead>
                 <tbody>
-                <?php if (count($data)>0) { ?>
+                <?php if (count($data) > 0) { ?>
                     <?php foreach ($data as $key => $val) { ?>
                         <tr>
                             <td><?php echo $val->p_id ?></td>
@@ -62,6 +63,13 @@
                             <td><?php echo $val->UserModel->us_name ?></td>
                             <td><?php echo $val->UserModel->us_email ?></td>
                             <td><?php echo $val->p_description ?></td>
+                            <td>
+                                <?php if ($val->p_status == 1) { ?>
+                                    <span class="label label-success">Show</span>
+                                <?php } else { ?>
+                                    <span class="label label-warning">Hide</span>
+                                <?php } ?>
+                            </td>
                             <td>
                                 <button onclick="showPopup(<?php echo $val->p_id ?>)" data-original-title="Edit"
                                         data-toggle="modal" data-target="#modal_form_horizontal" data-popup="tooltip"
@@ -90,3 +98,10 @@
 
 </div>
 <!-- /main content -->
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.datatable-highlight').DataTable({
+            "order": [[5, "asc"]]
+        });
+    });
+</script>

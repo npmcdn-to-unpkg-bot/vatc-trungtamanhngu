@@ -41,7 +41,7 @@ class IndexController extends ControllerBase
         $this->view->sliders = $bannerModel::find(array("bc_id =2"));
         $this->view->infographic = $bannerModel::findFirst(array("bc_id =3"));
         $this->view->blogs = $newsModel::find(array("n_status=1", "order" => "n_id desc", "limit" => 3));
-        $this->view->posts = $postModel::find(array("order" => "p_id desc"));
+        $this->view->posts = $postModel::find(array("p_status=1","order" => "p_id desc"));
         $this->view->gallery = $bannerModel::findFirst(array("bc_id =7"));
         $this->view->coachs = $managerHlvModel::find(array("order" => "hlv_id asc", "limit" => 3));
         $this->view->header_title = "Anh Ngữ Việt Mỹ";

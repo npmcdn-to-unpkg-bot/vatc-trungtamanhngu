@@ -7,7 +7,7 @@
   'acl' => false,
   'profiler' => false,
   'baseUrl' => '/',
-  'rootUrl' => 'http://trungtamanhngu.dev/',
+  'rootUrl' => 'http://trungtamanhngu.dev:8080/',
   'router' => 
   array (
     'default_module' => 'frontend',
@@ -90,10 +90,10 @@
   'database' => 
   array (
     'adapter' => 'Mysql',
-    'host' => 'vatc.hqsolu.com',
-    'username' => 'userweb_vatcdb',
-    'password' => '2iqesWeq0o',
-    'dbname' => 'userweb_vatcdb',
+    'host' => 'khoidongtuonglai.vatc.edu.vn',
+    'username' => 'vatc_u',
+    'password' => 'ukFlZbnT4D',
+    'dbname' => 'vatc_db',
     'charset' => 'utf8',
     'port' => '3306',
   ),
