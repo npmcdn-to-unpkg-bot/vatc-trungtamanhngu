@@ -212,18 +212,40 @@ $(document).ready(function () {
         callFBShare();
     });
 
-    $('.hq-hlv-post textarea').keypress(function() {
-        var length = $(this).val().length;
-        var length = maxLength-length;
-        $('.chars-count').text(length);
+    $('.hq-hlv-post textarea').keypress(function () {
+        checkPost($(this));
     });
     $('.popupPlaygame').on('hidden.bs.modal', function (e) {
         $(".chars-count").text(maxLength);
     })
 });
+function checkPost($this) {
+    var val = $this.val();
+    var length = val.length;
+    var arr = val.split(" ");
+    var character = maxLength - arr.length;
+    $(".text-count").show();
+    $(".text-count-error").hide();
+    if (character < 0) {
+        $(".text-count").hide();
+        $(".text-count-error").show();
+        $(".text-count-error").text("Quá số từ qui định.Vui lòng kiểm tra lại.");
+        $this.val("");
+        return;
+    } else if (character == 0) {
+        $this.attr("maxlength", length);
+        $('.chars-count').text(0);
+        return;
+    }
+    else {
+        $('.chars-count').removeAttr("maxlength");
+    }
+    $('.chars-count').text(character);
+}
 function userPosts(idFrom) {
     var forgotvalidator = $(idFrom).validate();
     if (forgotvalidator.form()) {
+        checkPost($(idFrom+' textarea'));
         showLoading();
         var data = $(idFrom).serialize();
         //shareDescription = $(idFrom + " textarea[name='p_description']").val();
