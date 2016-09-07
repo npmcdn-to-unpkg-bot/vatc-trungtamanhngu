@@ -212,7 +212,7 @@ $(document).ready(function () {
         callFBShare();
     });
 
-    $('.hq-hlv-post textarea').keypress(function () {
+    $('.hq-hlv-post textarea').keyup(function () {
         checkPost($(this));
     });
     $('.popupPlaygame').on('hidden.bs.modal', function (e) {
