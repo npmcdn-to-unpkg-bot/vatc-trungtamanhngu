@@ -259,6 +259,7 @@ function userPosts(idFrom) {
                 hideLoading();
                 var result = $.parseJSON(response);
                 if (result.status == 1) {
+                    $('.modal').modal('hide');
                     shareDescription = result.description;
                     sharePicture = rootUrl + result.image;
                     callFBShare();
